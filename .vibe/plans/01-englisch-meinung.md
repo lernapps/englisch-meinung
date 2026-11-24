@@ -230,9 +230,10 @@ page, which a link. -->
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
 - [x] Musterseite meinung-begruenden (Kapitel 1): Lesestück als Chat, Burger-Bild mit vier Schichten, Übungen leicht bis schwer, Diktat, Nachsprechen, Schreibauftrag, Zeichnung, Hörsätze; zusammen mit app.yaml, chapter.yaml und dem Inhaltsführer
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
-- [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
+- [x] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
+      Creator: Orchestrator: Muster bestätigt, übrige Seiten dürfen folgen; Gesamtcheck und Sprachprüfung vor dem PR
 - [ ] Kapitel 1: Wiederholungsseite das-brauchst-du und Seite meinung-sagen (Redemittel, Meinungsbarometer, Meinungswand)
 - [ ] Kapitel 1: Seite sport-musik (Chat über Lieblingsmusik und Serie, Sportarten)
 - [ ] Kapitel 1: Seite medien (Chat über soziale Medien, Chancen und Gefahren) und Kapitel-Rückblick
