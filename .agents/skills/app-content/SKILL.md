@@ -5,59 +5,111 @@ description: Use for any content work in this app - researching, writing, extend
 
 # Content guide of this app
 
-<!--
-Skeleton. Delete this comment when you fill the guide.
-- When: after the plan is confirmed, before any content. Replace every placeholder comment below; none may remain
-  (`lernapps check`, rule app-content-guide, fails once the plan is in Commit).
-- Keep the headings.
-- Concrete, for an agent without your conversation: files, ids, data files, one example.
-  - No: "Use varied exercises with figures where they help."
-  - Yes: "Every page ends with section `uebung`: one `generated` exercise of pattern 'Ohmsches Gesetz' from
-    `src/data/widerstaende.yaml`, one `matching` of symbols and parts."
-- Content decision changes → update this file in the same commit.
-- Public: no personal data, no goals of one learner.
--->
+„Meinung sagen und begründen“: Explainer (Einheiten-App `subject: englisch`, Format 2, Sprache Deutsch, englische Beispiele und Lesestücke, britisches Englisch) über Meinung und Argumentation. Der **Argument-Burger** (Opinion – Reason – Example – Opinion) trägt die App; in Kapitel 2 werden Burger gestapelt und mit Verbindungswörtern gehalten, in Kapitel 3 wird er zur **Waage** (Pro und Contra, die Schlussfolgerung zeigt, wohin sie sich neigt). Auftrag: Issue lernapps/apps#487 (Epic lernapps/apps#489, Konventionen dort, Abschnitt 8 für Stufen 7-10). Umfang der ersten Version: alle 3 Kapitel, 12 Bausteine.
 
 ## Curriculum
 
-<!-- FILL IN: Land, Schulform, Jahrgang; orientation (Lehrplan: document, issuer, year, address, page and unit per
-part; welcome, not required); where the creator's material differs, and which one the app follows. -->
+Englisch als erste Fremdsprache, Stufe 7-8 (Kapitel 1 und 2) und 9-10 (Kapitel 3). Kein Lehrplan: Reihenfolge und Bausteine kommen aus der Lernlandkarte `https://lernapps.net/apps/map/englisch.json` (Fokus `competency`; Einheiten-App über die Stränge `wortschatz`, `texte`, `landeskunde`). Vorwissen aus anderen Explainern (Wiederholungsseiten `das-brauchst-du`): freizeit-hobbys (englisch-alltag), konjunktionen und that-saetze (englisch-saetze-verbinden), passiv (englisch-verbketten), kleidung-einkaufen (englisch-grossbritannien). Nicht hier: Freizeit als Situation (#477), Zeitungstexte und Information/Meinung (#486, dort auch Gliederung ausführlich), Stilmittel selbst (#483), Demokratie und Menschenrechte (#484), Politik und Religion. `text-gliedern` und `stilmittel` stehen knapp auf den Seiten `kommentar` und `werbung`.
 
 ## Competencies
 
-<!-- FILL IN: every competency as "Ich kann …", grouped by chapter; per competency: page or round (file, id),
-exercise ids. -->
+Alle zwölf sind Lücken der Karte. Eine Seite je Baustein; Id = Karten-Id in `competencies:` der Seite (Wiederholungsseiten haben keine).
+
+1. Kapitel `was-ich-denke` („Was ich mag und was ich denke“, 7-8)
+   - `das-brauchst-du` (recap: englisch/freizeit-hobbys, englisch/konjunktionen, englisch/that-saetze)
+   - `meinung-redemittel` → `was-ich-denke/meinung-sagen`: „Ich kann meine Meinung sagen, zustimmen und widersprechen (In my opinion …, I agree because …).“
+   - `meinung-begruenden` → `was-ich-denke/meinung-begruenden` (Musterseite): „Ich kann in einem kurzen Text meine Meinung zu einem Thema sagen und mit Gründen und Beispielen stützen.“
+   - `sport-musik` → `was-ich-denke/sport-musik`: „Ich kann über Sportarten, Musik und Fernsehen sprechen und sagen, was ich mag.“
+   - `medien` → `was-ich-denke/medien`: „Ich kann über Medien und soziale Netzwerke sprechen, auch über ihre Chancen und Gefahren.“
+2. Kapitel `argumente-verbinden` („Argumente verbinden“, 7-8)
+   - `das-brauchst-du` (recap: englisch/passiv)
+   - `verbindungswoerter-argumentieren` → `argumente-verbinden/verbindungswoerter`: „Ich kann Gedanken mit however, therefore, moreover und on the one hand … on the other hand verknüpfen.“
+   - `umwelt` → `argumente-verbinden/umwelt`: „Ich kann über Umweltschutz sprechen, zum Beispiel über Müll, Recycling und Nachhaltigkeit.“
+   - `technik-fortschritt` → `argumente-verbinden/technik-fortschritt`: „Ich kann über Erfindungen und technischen Fortschritt sprechen und sagen, wann und von wem etwas erfunden wurde (was invented by …).“
+   - `leserbrief` → `argumente-verbinden/leserbrief`: „Ich kann einen Leserbrief schreiben, der sich auf einen Artikel bezieht.“
+3. Kapitel `pro-und-contra` („Pro und contra“, 9-10)
+   - `das-brauchst-du` (recap: englisch/kleidung-einkaufen)
+   - `konsum-werbung` → `pro-und-contra/konsum-werbung`: „Ich kann über Konsum, Werbung und meine Rechte als Verbraucherin oder Verbraucher sprechen.“
+   - `jugendkultur` → `pro-und-contra/jugendkultur`: „Ich kann Jugendkulturen früher und heute beschreiben, auch ihre Musik.“
+   - `kommentar` → `pro-und-contra/kommentar`: „Ich kann einen argumentativen Text mit Pro und Contra, klarer Gliederung und Schlussfolgerung schreiben.“
+   - `werbung` → `pro-und-contra/werbung`: „Ich kann untersuchen, mit welchen sprachlichen und bildlichen Mitteln eine Werbung wirken will.“
+
+Die „Ich kann“-Sätze sind die der Karte (nicht umformulieren); eine Seite sagt im Abschnitt „Das kannst du danach“ in eigenen Worten, was man danach kann. Übungs-IDs: Präfix = Seite (`begruenden-…`), Diktat `<präfix>-hoeren`, Nachsprechen `<präfix>-nachsprechen`, offene Aufgabe `<präfix>-schreiben`.
 
 ## Content structure
 
-<!-- FILL IN: how a chapter, page or round is built: sections or question groups in order, ids or titles, what
-each holds; length. -->
+- Pfad: `src/<kapitel>/chapter.yaml`, Seiten `src/<kapitel>/<seite>.yaml`, Bilder `src/images/`, Audio `src/audio/`.
+- Jede Seite (außer Wiederholungsseiten) hat die Abschnitts-IDs `einstieg` (Vorwissen-Frage als erste leichte Aufgabe, „Das kannst du danach“), `lesen` (ein Lesestück mit Randglossar als `vocabulary`), `neu` (Burger-, Barometer- oder Waage-Bild, Merke-Kasten), `uebung` (mindestens vier Übungen leicht → schwer: Verstehen, Belegen mit Zeile, Meinung; je typischem Fehler eine Meldung), `anwenden` (`speaking-task` und `open-task` mit `points` und `solution`), `weiter`. Titel sagen, was der Abschnitt tut. Wiederholungsseiten haben nur Text und höchstens zwei Übungen.
+- Länge: höchstens 350 Wörter Erklärtext (das Lesestück zählt nicht dazu), höchstens 4 Textblöcke hintereinander, Bild oder Übung in den ersten vier Blöcken, höchstens etwa 25 Items und 10 Übungen. Lesestück Stufe 7-8 etwa 150 bis 300 Wörter, Stufe 9-10 etwa 300 bis 600; höchstens ein Lesestück je Seite; Zeilen zum Belegen sind im Text nummeriert (`1`, `2` …).
+- Szene Kapitel 1 und 2 (Stufe 7-8): Chats und kurze Dialoge, ein Bild nur wo es etwas zeigt. Wo: die **Meinungswand** im Klassenzimmer von Mr Hill (neuer Ort, nur für diese App): links das Poster „Argument-Burger“, rechts das **Meinungsbarometer** (Skala disagree – agree, Namenskärtchen der Kinder). Kapitel 2: die Schülerzeitung der Millbrook School (namenlos: „the school newspaper“, Name aus #486 offen). Wer: Sophie, Ellie, Peter, Amir, Mr Hill, Mrs Parker (Figuren wie in #470, Zeichnungen aus `millbrook-klassenzimmer.svg` von hello-millbrook). Kein Schulfest, kein Lagerraum, keine Ausstellung „Our Millbrook“, keine Geschichtenecke.
+- Kapitel 3 (Stufe 9-10): keine erfundenen Kinder, auch Sophie kommt nicht vor; reale oder realistische Fälle mit Daten und Quellen, Ton sachlich; Du-Anrede. Heikle Themen neutral mit mehreren Sichtweisen, keine Wertung der Politik Erwachsener.
+- Keine Figuren-Einführung im Seitentext: keine Altersangaben, keine Familie, kein Datum; die Startseite nennt nur Namen und Rollen.
+- Anrede „du“.
 
 ## Terminology
 
-<!-- FILL IN: terms used and avoided (why); units, notation; how learners are addressed; glossary terms with
-wording. -->
+- „Ausdruck“ (fester Ausdruck), nie „Wendung“. Fachbegriffe noun, verb, adjective, sentence, tense.
+- Burger: **Opinion** (Meinung, oben und unten), **Reason** (Grund), **Example** (Beispiel); die Schichten heißen immer so. Waage: **Pro**, **Contra**, **conclusion** (Schlussfolgerung). **Meinungsbarometer**, **Meinungswand**. „Verbindungswörter“ (however, therefore, moreover).
+- Wörtertabellen heißen „Klassenzimmer-Poster · …“ und stehen im `vocabulary`-Block (Konvention: Tabellen mit Wörtern in den Vokabelblock); Kapitel 3 ohne Klassenzimmer: „Wörterkasten · …“.
+- Britisches Englisch (favourite, colour). Englische Aufgaben enthalten kein deutsches Wort.
+- Aussprache: Lesehilfe in deutscher Annäherung nur für neue schwere Wörter (betonte Silbe groß), keine Lautschrift (IPA gehört zu #482); Hörtexte nur ganze Sätze.
+- Wörter: Grundwortschatz A1/A2; jedes Wort, das eine Übung abfragt, steht vorher auf der Seite; Wörter außerhalb der Liste stehen im Randglossar der Seite und unten unter „Sources“.
+- „Ding“ nur für Gegenstände; Menschen und Beziehungen haben keinen „Besitzer“.
 
 ## Exercise patterns
 
-<!-- FILL IN: per pattern: name, competency, archetype form (block or question type, fixed parts, what varies),
-one example (file, id), data file. -->
+Aufbau leicht → schwer: wählen/zuordnen → ordnen → Lücke → schreiben mit Cue → Lesen und Belegen → Diktat und Nachsprechen → freie Aufgabe. Je Übung `mistakes` mit eigener Meldung je typischem Fehler; `hint` zeigt einen Weg, nennt aber die Lösung nicht; gleichwertige Antworten als Gruppe `(a|b)` im `target`; `form: { punctuation: ok }`.
+
+- Redemittel-Fächer (`matching` Ausdruck ↔ Fach Meinung/Zustimmung/Widerspruch); Meinungsbarometer (`single-choice` mit `info` je Option).
+- Burger bauen (`ordering` der vier Schichten), Schicht erkennen (`matching` Satz ↔ Schicht), fehlende Schicht (`single-choice`).
+- Satz bilden (`language-task` write mit Cue, z. B. `cue: "I · agree · because · fun"`), Lücke und Auswahl (`language-task` gap/choice: however, therefore, moreover, since/for, interested in).
+- Lesestück: Frage zum Text (`single-choice`), Beleg mit Zeilennummer (`multiple-choice` oder `single-choice`), Meinung (`open-task`).
+- Kapitel 2: Passiv (was invented by) als `language-task` write; Leserbrief: Teile zuordnen (`matching`), Brief schreiben (`open-task`).
+- Kapitel 3: Waage füllen (`matching` Argument ↔ Pro/Contra), Absätze ordnen (`ordering`), Werbemittel zuordnen (`matching` Beispiel ↔ Mittel ↔ Wirkung), argumentativer Text (`open-task` mit Punkten).
+- Hören und schreiben (`language-task` mit `audio`) und Nachsprechen (`speaking-task`): je Seite drei ganze Sätze, die im Seitentext nicht vorkommen.
+- `open-task`: immer `points` und eine Musterlösung; die App bewertet den Text nicht, die Kinder prüfen ihn an den Punkten. Keine Komponenten (`prefer-built-in-block`), keine Datendateien: Burger, Barometer, Waage sind Zeichnungen.
+- Jede Seite hat eine andere Menge an Übungsarten (`explainer-page-variety`).
+- Typische Fehler (jeweils `mistakes`): I am agree statt I agree; I am thinking that statt I think that; Meinung ohne Grund; Grund wiederholt die Meinung; „for example“ ohne Beispiel; however mit because verwechselt; therefore ohne Folge; I am interesting in statt interested in; since/for; was invent statt was invented; Leserbrief ohne Bezug zum Artikel; Seiten der Waage vermischt; neue Argumente im Schluss; Mittel und Wirkung verwechselt.
 
 ## Figures
 
-<!-- FILL IN: figure kinds and images, for what; conventions (colours, labels, units, orientation, sizes); alt
-texts and captions; image origin and licence. -->
+- Eigene SVG-Zeichnungen in `src/images/`, `CC-BY-4.0`, Hintergrund #f4efe2, Schrift mindestens 16 im viewBox, Beschriftung innerhalb des `viewBox`; keine Fotos, keine Figuren aus Büchern, Filmen oder Marken. `alt` sagt, was die Figur zeigt, nie die Lösung; die Figur zeigt nie dieselben Wörter wie die Aufgabe darunter.
+- Familien (Schichtfarben fest, in allen Bildern gleich): `burger-<seite>.svg` (vier Schichten von oben nach unten: Opinion #e8743b, Reason #2c6fd8, Example #138d75, Opinion #e8743b; gestapelt mit Verbindungsschild in Kapitel 2), `barometer-<seite>.svg` (Skala disagree – agree mit Namenskärtchen), `waage-<seite>.svg` (Kapitel 3: Pro #c0392b, Contra #2c6fd8, Neigung = conclusion, keine Figuren). Szenen `szene-<seite>.svg` mit Figuren als `<g id>` aus `millbrook-klassenzimmer.svg` von hello-millbrook, gleich gelassen (nur Kapitel 1 und 2, nur wo es etwas zeigt).
+- Skizze: `.vibe/sketches/burger-waage-barometer.svg`; die SVG-Dateien in `src/images/` sind die Quelle.
+- Gebaut: (wird mit den Seiten ergänzt)
 
 ## Sources
 
-<!-- FILL IN: sources linked or relied on (Lehrplan, second explanations, videos, articles), how verified, what
-is left out; the creator's material stays local, never committed. -->
+Karte `https://lernapps.net/apps/map/englisch.json` und die Baustein-Seiten `https://lernapps.net/apps/map/englisch/c/<id>/`; Grundwortschatz `https://lernapps.net/apps/map/englisch/grundwortschatz/` (A1/A2). Der Argument-Burger, die Waage und das Meinungsbarometer sind Unterrichtsbilder aus dem Auftrag (Issue #487); es wird keine Quelle zitiert und kein Satz übernommen. Alle Lesestücke, Dialoge, Chats, Leserbriefe, Anzeigen und Übungssätze sind eigene Texte (CC BY 4.0); Fakten stammen aus geöffneten Quellen (Stand 2026-11-24, Wikipedia CC BY-SA: nur Fakten, keine Sätze): „Mod (subculture)“, „Punk subculture“, „Plastic pollution“ (Zusammenfassungen geöffnet). Weitere Quellen mit Seite und Stand stehen hier, sobald die Seite gebaut ist. UNESCO und Ofcom waren nicht erreichbar (403): Zahlen von dort nur, wenn eine erreichbare Quelle sie belegt. Nicht geprüft und nicht benutzt: alles, was hier nicht steht. Audio: KI-Stimme `bf_emma` (britisch, weiblich), mit Skill `lernapps-audio` erzeugt und als KI-generiert markiert.
+
+## Hörliste (Sätze, die die Ersteller:in gezielt abhört)
+
+Hörsätze bleiben natürlich: kein Name und kein Wort wird nur wegen des Klangs angehängt. `regen_audio.py` schneidet das Ausklingen ab; Sätze, die auf ein einsilbiges Wort enden, stehen hier zum gezielten Abhören: (wird mit den Hörsätzen ergänzt)
 
 ## Adding a chapter or round
 
-<!-- FILL IN: the steps for a new chapter (explainer) or round (quiz), in order, with the files: competencies,
-content, exercises from the patterns, entry topics, check, commit. -->
+1. Baustein auf der Karte wählen; die Voraussetzungen müssen auf früheren Seiten stehen oder eine Wiederholungsseite bekommen.
+2. Seite `src/<kapitel>/<seite>.yaml` mit den Abschnitten `einstieg`, `lesen`, `neu`, `uebung`, `anwenden`, `weiter` anlegen (Muster: `was-ich-denke/meinung-begruenden.yaml`), in `chapter.yaml` eintragen, Competency-Id setzen.
+3. Lesestück als eigener Text nach Fakten, Quellen hier unter „Sources“; Zeichnungen aus den Familien oben im gleichen Stil.
+4. Übungen aus den Mustern oben, je mit `mistakes` und `hint`; 2 bis 3 davon in `selfAssessment` des Kapitels (Skill `lernapps-explainer-self-assessment`).
+5. Hörtexte: `src/audio/<satz>.mp3` mit `regen_audio.py` (Skill `lernapps-audio`), je Seite drei Diktat- und drei Nachsprechsätze, nicht zwischen Seiten wiederholen; Sätze mit einsilbigem Ende in die Hörliste.
+6. Wörter gegen den Grundwortschatz, Hörsätze gegen den Text derselben Seite prüfen (Prüfskript), `npx --no -- lernapps check`, committen.
 
 ## Rules learned from mistakes
 
-<!-- FILL IN: one line per rule with the mistake it came from. "None yet." until the first. -->
+Aus den Vorgängern (#470 bis #482) und der Konvention (Abschnitte 7 und 8):
+- Jede Übung fragt nur Wörter ab, die vorher auf der Seite stehen; eine Tabelle, die eine Übung beantwortet, steht nicht direkt darüber; Poster, Merke, Einstieg und Bild nennen andere Beispielsätze und Wörter als die Übungen darunter.
+- Englische Aufgaben enthalten kein deutsches Wort; der Cue ist englisch, der deutsche Hinweis steht in `source` oder in der Aufgabe.
+- Mit `(a|b)` gleichwertige richtige Antworten zulassen; Auswahlaufgaben zur Großschreibung zeigen alle Optionen gleich geschrieben.
+- Audio: das Ausklingen am Satzende abschneiden (`regen_audio.py`), keine Namen nur für den Klang anhängen; Diktat und Nachsprechen bringen neue Sätze: kein Hörsatz steht wörtlich oder fast wörtlich im Seitentext oder in einer anderen Übung derselben Seite.
+- Bilder: Beschriftung im `viewBox`; Bildunterschrift nennt, wer wer ist; das `alt` verrät nie die Lösung.
+- Als Auswahl nur echte Lernerfehler, keine Unwörter; jeder Distraktor und jedes typische Fehlerbild eine eigene Meldung; ein Einstiegs-`single-choice` hat mindestens drei Optionen; Optionstexte enden ohne Punkt.
+- Eine Auswahl-Übung (`mode: choice`) braucht einen deutschen Satz (`source`) als Start.
+- Höchstens eine kurze Wörtertabelle (Vokabelblock) je Seite; Seiten mit mehr als etwa 25 Items oder 10 Übungen kürzen.
+- `lernapps check` zählt Texte, Optionen, Infos und Meldungen zusammen (höchstens 350 Wörter): Meldungen knapp halten.
+- Ein Doppelpunkt in einem Hinweis, einer Meldung oder einer `explanation` lässt das YAML scheitern: vermeiden oder in Anführungszeichen setzen.
+- Offene Aufgaben: immer `points` und Musterlösung mit dem Hinweis, dass die App den Text nicht bewertet; die Musterlösung hat andere Figuren und Themen als das Lesestück.
+- Die `competencies:` jeder Seite sind Karten-Ids; Wiederholungsseiten (`recap`) haben keine.
+- Bekannte Eigenheiten der Vorlage: `ordering` zeigt Auswahlfelder statt Karten, `accepted` einer Sprach-Aufgabe wirkt nicht (Gruppen `(a|b)`), im Modus `choice` zeigt die App `mistakes` nicht, `punctuation: hint` meldet bei richtiger Antwort „Achte auf die Satzzeichen“ (darum `punctuation: ok`).
+- Keine Figuren-Einführung im Seitentext (keine Altersangaben, keine Familie, kein Datum); die Startseite nennt nur Namen und Rollen.
+- Keine Sätze aus fremden Texten; jede Faktenangabe steht mit geöffneter Quelle unter „Sources“.
