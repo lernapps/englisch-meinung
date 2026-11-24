@@ -1,10 +1,15 @@
 # yaml-language-server: $schema=../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 format: 2
-# The strand of the learning map the app stays in, <subject>/<strand> (e.g. mathematik/stochastik); then each page
-# names its competencies. none: the app is on no strand, and no page names competencies. A unit app across the strands
-# of a subject whose map allows it names subject: <subject> (e.g. franzoesisch) instead of strand.
-strand: none
-title: Platzhalter
-intro: Dieses Kapitel hält den Platz frei, bis der geplante Inhalt da ist.
+subject: englisch
+title: Meinung sagen und begründen
+intro: In Mr Hills Klasse an der Millbrook School sagen alle ihre Meinung. Sophie, Ellie, Peter und Amir sind Schülerinnen und Schüler, Mr Hill ist der Englischlehrer, Mrs Parker die Gastmutter. Du lernst, auf Englisch zu sagen, was du denkst, es zu begründen, Argumente zu verbinden, einen Leserbrief zu schreiben und Pro und Contra in einem Text abzuwägen.
 languages: [de]
-chapters: [thema]
+scope:
+  text: Die App erklärt für Jugendliche, wie man auf Englisch seine Meinung sagt, sie begründet und Argumente abwägt. Der Argument-Burger trägt sie mit vier Schichten (Opinion, Reason, Example, Opinion). Gelernt werden Redemittel für Meinung, Zustimmung und Widerspruch, eine Meinung mit Grund und Beispiel begründen, über Sport, Musik, Fernsehen und soziale Medien sprechen, Gedanken mit however und therefore verbinden, über Umwelt und Technik sprechen, einen Leserbrief schreiben, über Konsum und Werbung sprechen, Jugendkulturen beschreiben, einen argumentativen Text mit Pro und Contra schreiben und Werbung untersuchen. Alle Lesestücke und Beispiele sind eigene Texte. Offene Aufgaben haben Punkte und eine Musterlösung; die App bewertet den Text nicht.
+  out:
+    - Freizeit und Hobbys als Situation (steht im Explainer „Alltag“)
+    - Zeitungstexte und der Unterschied zwischen Information und Meinung
+    - Stilmittel selbst, Demokratie und Menschenrechte
+    - Politik und Religion
+    - Bewertung der Aussprache und der freien Texte durch die App
+chapters: [was-ich-denke]

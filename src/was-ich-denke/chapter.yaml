@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Was ich mag und was ich denke
+summary: An der Meinungswand sagen Mr Hills Schülerinnen und Schüler, was sie denken. Du lernst, deine Meinung zu sagen, mit einem Grund und einem Beispiel zu stützen und über Sport, Musik, Fernsehen und soziale Medien zu sprechen.
+pages: [meinung-begruenden]

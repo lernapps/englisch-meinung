@@ -1,0 +1,255 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: "Meinung begründen: der Argument-Burger"
+description: "Mr Hill fragt Why? Du lernst, deine Meinung mit einem Grund und einem Beispiel zu stützen."
+competencies: [meinung-begruenden]
+scope: Die Seite zeigt, wie man auf Englisch eine Meinung begründet. Eine Meinung besteht aus vier Schichten, dem Argument-Burger. Ganz oben steht die Meinung (Opinion), dann der Grund (Reason) mit because, dann ein Beispiel (Example) mit for example, ganz unten die Meinung noch einmal mit So. Ein Lesestück (ein Chat über einen Filmabend) zeigt zwei Burger. Gefragt wird, welche Schicht fehlt, welche Zeile ein Beispiel hat und wie man Meinung, Grund und Beispiel in ganzen Sätzen bildet. Nicht hier, weil es andere Seiten sind, nämlich die Redemittel für Zustimmung und Widerspruch, Themen wie Musik und Medien, Verbindungswörter wie however und der Leserbrief.
+blocks:
+  - type: section
+    id: einstieg
+    title: Mr Hill fragt Why?
+    blocks:
+      - type: figure
+        image: images/szene-meinung-begruenden.svg
+        alt: "Im Klassenzimmer hängen links ein Poster mit vier bunten Schichten und rechts ein Meinungsbarometer mit der Skala disagree bis agree. Sophie, Ellie und Amir stehen links, Mr Hill steht rechts und fragt in einer Sprechblase: „Why do you think so?“"
+        caption: "An der Meinungswand: links das Poster Argument-Burger, rechts das Meinungsbarometer. Von links: Sophie (Zöpfe), Ellie (roter Pferdeschwanz), Amir (Brille) und Mr Hill (graue Haare)."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "An der **Meinungswand** stellen die Kinder ihr Kärtchen auf agree oder disagree. Sophie sagt: „I think pizza is the best food.“ Mr Hill fragt: „Why do you think so?“ Sophie hat gesagt, was sie meint. Mr Hill will mehr wissen."
+      - type: single-choice
+        id: begruenden-start
+        text: Was braucht Sophie jetzt für ihre Antwort?
+        options:
+          - text: Einen Grund, zum Beispiel mit because
+            correct: true
+            info: Mr Hill fragt nach dem Warum.
+          - text: Ihre Meinung noch einmal mit anderen Worten
+            correct: false
+            info: Das sagt nichts Neues.
+          - text: Eine Frage an Mr Hill
+            correct: false
+            info: Mr Hill hat schon gefragt.
+        explanation: Ein Grund macht die Meinung stark.
+      - type: text
+        text: "**Das kannst du danach:** Du sagst nicht nur, was du denkst, sondern auch warum. Du stützt deine Meinung mit einem Grund und einem Beispiel."
+  - type: section
+    id: lesen
+    title: Zwei Burger in einem Chat
+    blocks:
+      - type: vocabulary
+        caption: Klassenzimmer-Poster · Wörter zum Chat
+        languages: { source: de, target: en }
+        entries:
+          - target: screen
+            source: Leinwand, Bildschirm
+          - target: huge
+            source: riesig
+          - target: detail
+            source: Einzelheit
+          - target: amazing
+            source: toll, erstaunlich
+          - target: expensive
+            source: teuer
+          - target: pause
+            source: anhalten
+          - target: reason
+            source: Grund
+          - target: example
+            source: Beispiel
+          - target: opinion
+            source: Meinung
+      - type: text
+        text: "Ellie, Amir und Sophie wählen einen Film für Freitag. Die Zahlen sind die Zeilen."
+      - type: text
+        text: |
+          **1** Ellie: Mr Hill says we can choose a film for Friday. Cinema or home?
+
+          **2** Amir: Cinema, of course! I think the cinema is the best place for a film.
+
+          **3** Sophie: Why do you think so?
+
+          **4** Amir: Because the screen is huge. For example, in the last space film I saw a whole planet, and every detail looked amazing.
+
+          **5** Ellie: I disagree. In my opinion, home is better.
+
+          **6** Sophie: Why?
+
+          **7** Ellie: The cinema is expensive, and you cannot pause the film. Last Sunday I made snacks at home, and I paused the film three times for pizza!
+
+          **8** Sophie: I see both sides. I agree with Ellie, because it is cheaper at home. But Amir is right too, because the big screen is exciting.
+
+          **9** Amir: So we need a third idea.
+
+          **10** Ellie: A film night at school with a big screen!
+
+          **11** Sophie: Good idea! That is why I like a big screen at school.
+  - type: section
+    id: neu
+    title: Vier Schichten halten eine Meinung
+    blocks:
+      - type: figure
+        image: images/burger-meinung-begruenden.svg
+        alt: "Ein Burger aus vier farbigen Schichten. Oben orange: Opinion mit einem Satz zur Lieblingsjahreszeit. Darunter blau: Reason mit einem Grund. Darunter grün: Example mit einem Beispiel. Unten wieder orange: Opinion mit dem Schluss. Unter dem Bild steht: Opinion, Reason, Example, Opinion."
+        caption: "Der Argument-Burger auf dem Poster. Orange sind die beiden Brötchen (Meinung), blau ist der Grund, grün das Beispiel."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              **Eine Meinung braucht vier Schichten.** Oben steht die Meinung (**Opinion**), zum Beispiel mit *I think …*. Dann kommt der Grund (**Reason**), meist mit *because*. Danach folgt ein Beispiel (**Example**), meist mit *For example, …*. Unten sagst du die Meinung noch einmal, zum Beispiel mit *So …* oder *That is why …*. Nach *because* steht ein ganzer Satz mit Verb.
+  - type: section
+    id: uebung
+    title: Schichten finden, ordnen und schreiben
+    blocks:
+      - type: single-choice
+        id: begruenden-lesen
+        text: Warum findet Amir das Kino besser als zu Hause?
+        options:
+          - text: Die Leinwand ist riesig
+            correct: true
+            info: Das sagt Amir in Zeile 4.
+          - text: Das Kino ist billiger
+            correct: false
+            info: Das sagt Sophie über zu Hause.
+          - text: Man kann den Film anhalten
+            correct: false
+            info: Das sagt Ellie über zu Hause.
+        explanation: Amirs Grund steht nach because.
+      - type: multiple-choice
+        id: begruenden-beleg
+        text: In welchen Zeilen steht ein Beispiel? Wähle alle richtigen.
+        options:
+          - text: Zeile 4
+            correct: true
+            info: "Amir erzählt vom letzten Film im Kino: For example, …"
+          - text: Zeile 7
+            correct: true
+            info: Ellie erzählt vom letzten Sonntag.
+          - text: Zeile 2
+            correct: false
+            info: Hier sagt Amir nur seine Meinung.
+          - text: Zeile 5
+            correct: false
+            info: Hier sagt Ellie nur ihre Meinung.
+        explanation: Ein Beispiel erzählt, was wirklich passiert ist.
+      - type: matching
+        id: begruenden-schichten
+        text: Ordne jeden Satz einer Schicht zu.
+        pairs:
+          - left: I think maths is easy.
+            right: Opinion oben
+          - left: because the teacher explains it twice.
+            right: Reason
+          - left: For example, I solved ten tasks in one hour.
+            right: Example
+          - left: So maths is my favourite subject.
+            right: Opinion unten
+        explanation: Dazwischen liegen Grund und Beispiel.
+      - type: single-choice
+        id: begruenden-fehlt
+        text: "Lies die Meinung: „I think cycling is great. For example, I cycle to the park every Saturday. So cycling is my favourite hobby.“ Welche Schicht fehlt?"
+        options:
+          - text: Der Grund
+            correct: true
+            info: Es fehlt ein Satz mit because.
+          - text: Das Beispiel
+            correct: false
+            info: Der Satz mit For example ist da.
+          - text: Die Meinung unten
+            correct: false
+            info: Der letzte Satz mit So ist die Meinung unten.
+          - text: Keine Schicht
+            correct: false
+            info: Der Grund fehlt.
+        explanation: Zuerst die Meinung, dann der Grund, dann das Beispiel.
+      - type: ordering
+        id: begruenden-ordnen
+        text: Bringe die Sätze in die Reihenfolge des Burgers.
+        items:
+          - I think dogs are better than cats.
+          - They love to go for walks.
+          - For example, a dog at the gate waits for me every morning.
+          - So I prefer dogs.
+        explanation: Meinung, Grund, Beispiel, Meinung.
+      - type: language-task
+        id: begruenden-satz
+        languages: { source: de, target: en }
+        task: "Schreibe die Sätze auf Englisch. Satz 1: Ich denke, Lesen ist nützlich. Satz 2: Ich mag Züge, weil sie leise sind. Satz 3: Zum Beispiel lese ich jede Woche ein Buch. Die englischen Wörter stehen als Hilfe da."
+        form: { case: hint, punctuation: ok, apostrophe: ok }
+        items:
+          - cue: I · think · reading · useful
+            target: I think (that |)reading is useful.
+            mistakes:
+              - answer: I am think reading is useful.
+                message: Nach I steht think ohne am.
+              - answer: I think reading useful.
+                message: Im englischen Satz braucht es ein Verb, hier is.
+          - cue: I · like · trains · because · quiet
+            target: I like trains because (they are|they're) quiet.
+            mistakes:
+              - answer: I like trains because quiet.
+                message: Hinter because fehlt ein Verb.
+              - answer: I like trains because they quiet.
+                message: Nach because fehlt das Verb are.
+              - answer: I like trains because of they are quiet.
+                message: Vor einem ganzen Satz steht because, nicht because of.
+          - cue: for example · I · read · book · every week
+            target: For example, I read a book every week.
+            mistakes:
+              - answer: For example, I read book every week.
+                message: Vor book fehlt der Artikel a.
+              - answer: For example, I reading a book every week.
+                message: Nach I steht read ohne ing.
+      - type: language-task
+        id: begruenden-hoeren
+        languages: { source: de, target: en }
+        task: Hör zu und schreibe, was du hörst.
+        form: { case: hint, punctuation: ok }
+        items:
+          - audio: i-like-autumn-because-the-trees-are-beautiful.mp3
+            target: I like autumn because the trees are beautiful.
+          - audio: for-example-a-friend-of-mine-plays-chess-every-evening.mp3
+            target: For example, a friend of mine plays chess every evening.
+          - audio: that-is-why-i-think-reading-is-important.mp3
+            target: That is why I think reading is important.
+  - type: section
+    id: anwenden
+    title: Dein eigener Burger
+    blocks:
+      - type: speaking-task
+        id: begruenden-nachsprechen
+        language: en
+        items:
+          - audio: what-is-your-reason.mp3
+            text: What is your reason?
+          - audio: can-you-give-me-an-example.mp3
+            text: Can you give me an example?
+          - audio: i-think-this-is-a-good-idea.mp3
+            text: I think this is a good idea.
+        hint: Hör zu. Sprich dann langsam nach.
+      - type: open-task
+        id: begruenden-schreiben
+        task: "Wähle ein Thema, zu dem du eine Meinung hast (zum Beispiel ein Essen, ein Hobby oder ein Fach). Schreibe in vier Sätzen deinen Argument-Burger: Meinung, Grund, Beispiel, Meinung."
+        points:
+          - text: Es sind vier Sätze, die in dieser Reihenfolge stehen, Opinion, Reason, Example, Opinion.
+            source: /was-ich-denke/meinung-begruenden/#neu
+          - text: Der Grund beginnt mit because und ist ein ganzer Satz mit Verb.
+            source: /was-ich-denke/meinung-begruenden/#neu
+          - text: Das Beispiel ist etwas, das wirklich passiert ist, mit For example.
+            source: /was-ich-denke/meinung-begruenden/#neu
+          - text: Der letzte Satz sagt die Meinung noch einmal, zum Beispiel mit So oder That is why.
+            kind: form
+        solution: |
+          I think homework is useful.
+          It is useful because it helps me remember the lesson.
+          For example, I learned ten new words last week by writing them in my homework.
+          So I think a little homework every day is a good idea.
+        hint: Die App bewertet nicht. Prüfe deinen Text anhand der Punkte.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Auf den nächsten Seiten sprichst du über Musik, Sport, Fernsehen und soziale Medien."

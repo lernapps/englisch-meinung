@@ -36,6 +36,7 @@ Jugendliche lernen, zu Themen aus ihrem Leben (Musik, Medien, Umwelt, Technik, K
 - Kein Alter, keine Familie, kein Datum der Figuren im Seitentext; die Startseite nennt nur Namen und Rollen.
 - Ort für Kapitel 1: die „Meinungswand“ im Klassenzimmer von Mr Hill mit dem Meinungsbarometer (Skala agree – disagree, Namenskärtchen) und dem Argument-Burger als Poster. Neuer Ort, nur für diesen Explainer (guess; muss in den Konventionen als Kommentar eingetragen werden).
 - Kapitel 2: Die Schülerzeitung der Millbrook School (aus #486) nimmt den Leserbrief auf; ihr Name bleibt offen („the school newspaper“), damit #486 nicht widersprochen wird (guess).
+- `scope`: ja, in `src/app.yaml` und auf jeder Seite (Text und `out`), wie die Vorgänger-Apps: der Tutor bekommt so den genauen Inhalt (guess).
 - Look and feel: fixed by the archetype.
 
 ## Notes
@@ -220,14 +221,14 @@ page, which a link. -->
       `npx --no -- lernapps create --archetype explainer`.
 - [x] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
       no "FILL IN" left. Commit it before any content.
-- [ ] Load skill `lernapps-explainer`.
-- [ ] Load skill `lernapps-content-questions`. Read whole, with your file tool:
+- [x] Load skill `lernapps-explainer`.
+- [x] Load skill `lernapps-content-questions`. Read whole, with your file tool:
       `.agents/skills/lernapps-explainer/references/blocks.md` and
       `.agents/skills/lernapps-explainer/references/exercises.md`. A foreign language: also
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
-- [ ] Decide whether the app needs `scope`, as "`scope`" in
+- [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-- [ ] Musterseite meinung-begruenden (Kapitel 1): Lesestück als Chat, Burger-Bild mit vier Schichten, Übungen leicht bis schwer, Diktat, Nachsprechen, Schreibauftrag, Zeichnung, Hörsätze; zusammen mit app.yaml, chapter.yaml und dem Inhaltsführer
+- [x] Musterseite meinung-begruenden (Kapitel 1): Lesestück als Chat, Burger-Bild mit vier Schichten, Übungen leicht bis schwer, Diktat, Nachsprechen, Schreibauftrag, Zeichnung, Hörsätze; zusammen mit app.yaml, chapter.yaml und dem Inhaltsführer
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
