@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Argumente verbinden
+summary: Du verbindest Gedanken mit however, therefore und moreover, sprichst über Umwelt und Technik und schreibst einen Leserbrief an die Schülerzeitung.
+pages: [das-brauchst-du, verbindungswoerter, umwelt, technik-fortschritt, leserbrief]

@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du hier
+description: "Kurze Wiederholung: das Passiv im simple present und simple past."
+recap: [englisch/passiv]
+scope: Die Seite wiederholt knapp das Passiv im simple present und simple past auf Englisch. Gezeigt werden is, are, was und were mit dem Partizip, by für die Person und die Partizipien von invent, build, make, write und discover. Zwei kurze Aufgaben prüfen das Wissen. Nicht hier, weil es andere Seiten sind, nämlich die Verbindungswörter, Umwelt, Erfindungen und der Leserbrief.
+blocks:
+  - type: text
+    text: |
+      Kannst du das schon? **Ich kann Sätze im Passiv im simple present und simple past bilden und sagen, wer etwas getan hat (by …).** Dann kannst du diese Seite überspringen. Wenn nicht, hilft dir die Wiederholung.
+
+      Im Passiv steht die Sache vorn. Du brauchst eine Form von **be** und das **Partizip**. Heute: **is** oder **are**. *Many photos are taken here.* Früher: **was** oder **were**. *The windows were cleaned.* Mit **by** nennst du die Person: *The soup was made by Mrs Parker.*
+  - type: vocabulary
+    caption: Klassenzimmer-Poster · Partizipien
+    languages: { source: de, target: en }
+    entries:
+      - target: invent – invented
+        source: erfinden
+      - target: build – built
+        source: bauen
+      - target: make – made
+        source: machen, herstellen
+      - target: write – written
+        source: schreiben
+      - target: discover – discovered
+        source: entdecken
+  - type: single-choice
+    id: passiv-wahl
+    text: Welcher Satz ist richtig?
+    options:
+      - text: The picture was drawn by Amir
+        correct: true
+        info: Nach was steht das Partizip drawn.
+      - text: The picture was drew by Amir
+        correct: false
+        info: Drew ist die Vergangenheitsform, kein Partizip.
+      - text: The picture was drawing by Amir
+        correct: false
+        info: Die ing-Form gehört nicht ins Passiv.
+    explanation: Was oder were und das Partizip.
+  - type: language-task
+    id: passiv-luecke
+    languages: { source: de, target: en }
+    mode: choice
+    task: Wähle die richtige Form von be.
+    items:
+      - source: Die Bilder wurden gestern gemalt.
+        target: "The pictures [were] painted yesterday."
+        distractors: [[was, are]]
+      - source: Das Buch wird oft gelesen.
+        target: "The book [is] often read."
+        distractors: [[are, was]]
+    explanation: Heute is oder are, früher was oder were. Die Mehrzahl braucht are oder were.

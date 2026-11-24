@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 330" role="img">
+<title>Zeitleiste von den 1950ern bis heute mit drei Beispielen für Zeitformen</title>
+<rect width="720" height="330" fill="#f4efe2"/>
+<rect x="40" y="62" width="540" height="64" rx="8" fill="#d9e4f7" stroke="#2c6fd8" stroke-width="2"/>
+<rect x="580" y="62" width="100" height="64" rx="8" fill="#fbe0d8" stroke="#c0392b" stroke-width="2"/>
+<text x="310" y="90" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#222">then: simple past</text>
+<text x="310" y="114" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#333">(the 1950s to the 2010s)</text>
+<text x="630" y="90" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#222">now</text>
+<text x="630" y="114" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#333">present</text>
+<line x1="40" y1="150" x2="680" y2="150" stroke="#333" stroke-width="3"/>
+<line x1="40" y1="142" x2="40" y2="158" stroke="#333" stroke-width="2"/>
+<text x="40" y="182" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#222">1950s</text>
+<line x1="131" y1="142" x2="131" y2="158" stroke="#333" stroke-width="2"/>
+<text x="131" y="182" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#222">1960s</text>
+<line x1="223" y1="142" x2="223" y2="158" stroke="#333" stroke-width="2"/>
+<text x="223" y="182" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#222">1970s</text>
+<line x1="314" y1="142" x2="314" y2="158" stroke="#333" stroke-width="2"/>
+<text x="314" y="182" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#222">1980s</text>
+<line x1="406" y1="142" x2="406" y2="158" stroke="#333" stroke-width="2"/>
+<text x="406" y="182" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#222">1990s</text>
+<line x1="497" y1="142" x2="497" y2="158" stroke="#333" stroke-width="2"/>
+<text x="497" y="182" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#222">2000s</text>
+<line x1="589" y1="142" x2="589" y2="158" stroke="#333" stroke-width="2"/>
+<text x="589" y="182" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#222">2010s</text>
+<line x1="680" y1="142" x2="680" y2="158" stroke="#333" stroke-width="2"/>
+<text x="680" y="182" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#222">2020s</text>
+<rect x="20" y="204" width="200" height="114" rx="8" fill="#fff" stroke="#333" stroke-width="2"/>
+<text x="32" y="230" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222">simple past</text>
+<text x="32" y="256" font-family="sans-serif" font-size="16" fill="#222">In the 1970s, teenagers</text>
+<text x="32" y="278" font-family="sans-serif" font-size="16" fill="#222">danced at youth clubs.</text>
+<rect x="260" y="204" width="200" height="114" rx="8" fill="#fff" stroke="#333" stroke-width="2"/>
+<text x="272" y="230" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222">present</text>
+<text x="272" y="256" font-family="sans-serif" font-size="16" fill="#222">Today, teenagers share</text>
+<text x="272" y="278" font-family="sans-serif" font-size="16" fill="#222">songs online.</text>
+<rect x="500" y="204" width="200" height="114" rx="8" fill="#fff" stroke="#333" stroke-width="2"/>
+<text x="512" y="230" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222">used to</text>
+<text x="512" y="256" font-family="sans-serif" font-size="16" fill="#222">Teenagers used to write</text>
+<text x="512" y="278" font-family="sans-serif" font-size="16" fill="#222">letters. Now they send</text>
+<text x="512" y="300" font-family="sans-serif" font-size="16" fill="#222">messages.</text>
+</svg>

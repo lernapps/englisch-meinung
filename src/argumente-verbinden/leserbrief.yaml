@@ -1,0 +1,267 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: "Leserbrief: auf einen Artikel antworten"
+description: "Die Schülerzeitung hat einen Artikel gedruckt und bittet um Post. Du liest einen Leserbrief und schreibst selbst einen."
+competencies: [leserbrief]
+scope: Die Seite zeigt, wie man auf Englisch einen Leserbrief an eine Zeitung schreibt, der sich auf einen Artikel bezieht. Ein Leserbrief an die Schülerzeitung antwortet auf einen Artikel über Plastikmüll. Er hat vier Teile, die Anrede (Dear Editor), den Bezug zum Artikel (In your article about …), die Meinung als Argument-Burger und den Schluss (Yours faithfully, mit Namen Yours sincerely). Gefragt wird, welcher Teil in welcher Zeile steht, wie man den Bezug und die Meinung in ganzen Sätzen bildet und wie man Verbindungswörter einsetzt. Nicht hier, weil es andere Seiten sind, nämlich Verbindungswörter, Umwelt und Erfindungen.
+blocks:
+  - type: section
+    id: einstieg
+    title: Die Schülerzeitung bittet um Post
+    blocks:
+      - type: figure
+        image: images/zeitung-leserbrief.svg
+        alt: "Ein Zeitungsausschnitt der Schülerzeitung mit der Überschrift Plastic waste at our school, grauen Textzeilen, einem gelben Kasten mit den Worten Write to us! und einem Briefumschlag."
+        caption: "Ein Ausschnitt aus der Schülerzeitung."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: Der Artikel endet mit der Bitte, der Zeitung zu schreiben.
+      - type: single-choice
+        id: brief-start
+        text: Was ist ein Leserbrief?
+        options:
+          - text: Ein Brief an die Zeitung, der auf einen Artikel antwortet
+            correct: true
+            info: Die Leser schreiben der Zeitung ihre Meinung.
+          - text: Ein Artikel, den die Zeitung über ihre Leser schreibt
+            correct: false
+            info: Beim Leserbrief schreiben die Leser.
+          - text: Ein Brief der Zeitung an alle Leser
+            correct: false
+            info: Beim Leserbrief geht die Post an die Zeitung.
+        explanation: Ein Leserbrief ist die Antwort eines Lesers.
+      - type: text
+        text: "**Das kannst du danach:** Du schreibst einen Brief, der auf einen Artikel antwortet, mit Anrede, Bezug, Meinung und Schluss."
+  - type: section
+    id: lesen
+    title: Ellies Brief an die Schülerzeitung
+    blocks:
+      - type: vocabulary
+        caption: Klassenzimmer-Poster · Wörter zum Brief
+        languages: { source: de, target: en }
+        entries:
+          - target: editor
+            source: Redakteur, Redakteurin
+          - target: article
+            source: Artikel
+          - target: water station
+            source: Trinkwasserstelle
+          - target: fill
+            source: füllen
+          - target: throw away
+            source: wegwerfen
+      - type: text
+        text: "Die Zahlen sind die Zeilen."
+      - type: text
+        text: |
+          **1** Dear Editor,
+
+          **2** In your article about plastic waste, you ask what our school can do. I read it carefully, and I would like to answer.
+
+          **3** I think the school should buy a water station for the canteen.
+
+          **4** My reason is that pupils can fill their bottles again and again, so nobody has to buy a new one.
+
+          **5** For example, I buy a plastic bottle every morning, so I throw away five bottles every week.
+
+          **6** So a water station is the best way to make less plastic waste at our school, and every pupil can use it every day.
+
+          **7** Some pupils say it is too expensive. However, a bottle that we use again is cheaper than a new bottle every day. Moreover, a water station is good for the environment.
+
+          **8** Thank you for reading my letter. I hope the school will try the idea for one term.
+
+          **9** Yours faithfully,
+
+          **10** Ellie Parker
+  - type: section
+    id: neu
+    title: Ein Leserbrief hat vier Teile
+    blocks:
+      - type: figure
+        image: images/brief-leserbrief.svg
+        alt: "Ein Brief auf weißem Papier. Oben steht eine Anrede, darunter ein Satz mit Bezug zu einem Artikel, dann ein Argument-Burger aus vier farbigen Schichten, unten ein Dankessatz, eine Schlussformel und ein Name. Rechts stehen Klammern mit den deutschen Namen der Teile."
+        caption: "Die vier Teile eines Leserbriefs."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              **1. Anrede:** Du kennst den Namen nicht? Dann schreibst du *Dear Editor,* oder *Dear Sir or Madam,*. Kennst du ihn, schreibst du *Dear Mr Hill,*. Nie *Dear Mister*.
+
+              **2. Bezug:** Sage, auf welchen Artikel du antwortest: *In your article about …, you say that …*
+
+              **3. Meinung:** Ein Burger mit Opinion, Reason, Example und Opinion. Mit however oder moreover fügst du eine Gegenseite an.
+
+              **4. Schluss:** Ein Dank, dann *Yours faithfully,* nach einer Anrede ohne Namen, und *Yours sincerely,* nach einer Anrede mit Namen. Dann steht dein Name.
+  - type: section
+    id: uebung
+    title: Teile finden, Sätze bauen, Brief ordnen
+    blocks:
+      - type: single-choice
+        id: brief-lesen
+        text: Was schlägt Ellie in ihrem Brief vor?
+        options:
+          - text: Die Schule soll eine Trinkwasserstelle kaufen
+            correct: true
+            info: Das steht in Zeile 3.
+          - text: Die Schule soll mehr Mülleimer aufstellen
+            correct: false
+            info: Das steht im Artikel, nicht in Ellies Brief.
+          - text: Die Schule soll keine Flaschen mehr erlauben
+            correct: false
+            info: Davon steht nichts im Brief.
+        explanation: Ellies Meinung steht in Zeile 3.
+      - type: single-choice
+        id: brief-beleg
+        text: In welcher Zeile steht der Bezug zum Artikel?
+        options:
+          - text: Zeile 2
+            correct: true
+            info: "Hier steht: In your article about plastic waste …"
+          - text: Zeile 3
+            correct: false
+            info: Hier steht die Meinung.
+          - text: Zeile 5
+            correct: false
+            info: Hier steht das Beispiel.
+          - text: Zeile 8
+            correct: false
+            info: Hier steht der Schluss.
+        explanation: Der Bezug nennt den Artikel und sein Thema.
+      - type: matching
+        id: brief-teile
+        text: Zu welchem Teil des Briefs gehört der Satz? Ordne zu.
+        pairs:
+          - left: Dear Sir or Madam,
+            right: Anrede
+          - left: I am writing about your article on the new sports hall.
+            right: Bezug
+          - left: I think we should have longer breaks.
+            right: Meinung
+          - left: Thank you for your time. Yours faithfully,
+            right: Schluss
+        explanation: Anrede, Bezug, Meinung und Schluss.
+      - type: language-task
+        id: brief-bezug
+        languages: { source: de, target: en }
+        task: "Schreibe auf Englisch. Satz 1: In Ihrem Artikel über Klassenfahrten sagen Sie, dass sie zu teuer sind. Satz 2: Ich denke, die Schule sollte mehr Bücher kaufen. Satz 3: Mein Grund ist, dass die Kinder einen ruhigen Ort brauchen. Ergänze, was für einen ganzen Satz fehlt."
+        form: { case: hint, punctuation: ok, apostrophe: ok }
+        items:
+          - cue: in your article · school trips · you · say · too expensive
+            target: In your article about school trips, you say (that |)they are too expensive.
+            mistakes:
+              - answer: On your article about school trips, you say they are too expensive.
+                message: Auf Englisch sagt man hier nicht on.
+              - answer: In your article school trips, you say they are too expensive.
+                message: Vor dem Thema des Artikels fehlt ein kleines Wort.
+              - answer: In your article about school trips, you say they too expensive.
+                message: Hinter they fehlt ein Verb.
+          - cue: I · think · school · should · buy · more · books
+            target: I think (that |)the school should buy more books.
+            mistakes:
+              - answer: I think the school should to buy more books.
+                message: Nach should steht das Verb ohne to.
+              - answer: I think the school should buy more book.
+                message: Nach more steht die Mehrzahl.
+          - cue: my reason · pupils · need · quiet place
+            target: My reason is (that |)pupils need a quiet place.
+            mistakes:
+              - answer: My reason is because pupils need a quiet place.
+                message: Nach My reason is steht that oder gar kein Wort, nicht because.
+              - answer: My reason is that pupils need quiet place.
+                message: Vor quiet place fehlt der Artikel.
+      - type: language-task
+        id: brief-verbinden
+        languages: { source: de, target: en }
+        mode: choice
+        task: Wähle das Verbindungswort, das zum deutschen Satz passt.
+        items:
+          - source: Manche sagen, der Bus sei voll. Aber ich finde ihn praktisch.
+            target: "Some pupils say the bus is full. [However], I find it useful."
+            distractors: [[Therefore, Moreover]]
+          - source: Die Pause ist zu kurz. Deshalb sind viele müde.
+            target: "The break is too short. [Therefore], many pupils are tired."
+            distractors: [[However, Because]]
+          - source: Der Club ist kostenlos. Außerdem ist er in der Schule.
+            target: "The club is free. [Moreover], it is at school."
+            distractors: [[However, Therefore]]
+        explanation: Gegensatz, Folge, Ergänzung.
+      - type: ordering
+        id: brief-ordnen
+        text: Bringe den Brief in die richtige Reihenfolge.
+        items:
+          - Dear Editor,
+          - In your article about school clubs, you ask for new ideas.
+          - I think we should start a chess club because it is quiet and fun.
+          - I hope you will think about my idea.
+          - Yours faithfully,
+        explanation: Anrede, Bezug, Meinung, Schluss.
+      - type: language-task
+        id: brief-hoeren
+        languages: { source: de, target: en }
+        task: Hör zu und schreibe, was du hörst.
+        form: { case: hint, punctuation: ok }
+        items:
+          - audio: i-am-writing-about-your-last-article.mp3
+            target: I am writing about your last article.
+          - audio: please-send-your-letters-to-the-editor-by-friday.mp3
+            target: Please send your letters to the editor by Friday.
+          - audio: many-pupils-have-answered-our-question.mp3
+            target: Many pupils have answered our question.
+  - type: section
+    id: anwenden
+    title: Dein eigener Leserbrief
+    blocks:
+      - type: speaking-task
+        id: brief-nachsprechen
+        language: en
+        items:
+          - audio: let-me-tell-you-my-opinion.mp3
+            text: Let me tell you my opinion.
+          - audio: in-my-view-the-school-should-do-something.mp3
+            text: In my view, the school should do something.
+          - audio: i-look-forward-to-your-answer.mp3
+            text: I look forward to your answer.
+        hint: Hör zu. Sprich dann langsam nach.
+      - type: open-task
+        id: brief-schreiben
+        task: "Stell dir vor, die Schülerzeitung hat einen Artikel über das Schulessen gedruckt. Schreibe einen Leserbrief in sechs bis acht Sätzen mit Anrede, Bezug zum Artikel, einem Burger und einem Schluss."
+        points:
+          - text: Die Anrede und die Schlussformel passen zusammen.
+            source: /argumente-verbinden/leserbrief/#neu
+          - text: Ein Satz sagt, auf welchen Artikel du antwortest.
+            source: /argumente-verbinden/leserbrief/#neu
+          - text: Die Meinung hat Opinion, Reason, Example und Opinion.
+            source: /was-ich-denke/meinung-begruenden/#neu
+          - text: Ein Verbindungswort (however, therefore oder moreover) steht am Satzanfang, danach ein Komma.
+            source: /argumente-verbinden/verbindungswoerter/#neu
+        solution: |
+          Dear Editor,
+
+          In your article about school lunches, you say that the canteen needs more choice. I agree with you.
+          I think the canteen should have a fruit bar.
+          My reason is that fruit is healthy and many pupils are hungry after lunch.
+          For example, last week a lot of pupils bought sweets at the shop because they were still hungry.
+          So a fruit bar would help.
+          However, some pupils say that fruit is too expensive. Moreover, the school can buy it in large boxes.
+          Thank you for reading my letter.
+
+          Yours faithfully,
+          Amir
+        hint: Die App bewertet nicht. Prüfe deinen Text anhand der Punkte.
+  - type: section
+    id: weiter
+    title: Rückblick auf das Kapitel
+    blocks:
+      - type: text
+        text: |
+          In diesem Kapitel hast du vier Dinge gelernt:
+
+          - Du verbindest Gedanken mit however, therefore, moreover und on the one hand … on the other hand.
+          - Du sprichst über Müll und Recycling und machst Vorschläge mit should.
+          - Du sagst, wann und von wem etwas erfunden wurde (was invented by …).
+          - Du schreibst einen Leserbrief, der sich auf einen Artikel bezieht.
+
+          Im nächsten Kapitel wägst du Pro und Contra ab.

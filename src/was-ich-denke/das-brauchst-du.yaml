@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du hier
+description: Kurze Wiederholung von Hobbys, Verbindungswörtern und that-Sätzen, bevor du deine Meinung sagst.
+recap: [englisch/freizeit-hobbys, englisch/konjunktionen, englisch/that-saetze]
+scope: Die Seite wiederholt, was für das Kapitel nötig ist, und übt es nicht neu. Hobbys im simple present (I like, I play, I go, he likes), die Verbindungswörter and, but, or, because, when und so und der that-Satz (I think that …). Nicht hier, weil es andere Seiten sind, nämlich Redemittel für Meinung, Zustimmung und Widerspruch, der Argument-Burger und Themen wie Sport, Musik und Medien.
+blocks:
+  - type: text
+    text: |
+      Kannst du das schon? **Ich kann über meine Hobbys, Haustiere und meine Freizeit sprechen.** **Ich kann Sätze mit and, but, or, because, when und so verbinden.** **Ich kann Gedanken und Aussagen mit einem that-Satz anschließen (I think that …).**
+
+      Wenn du etwas üben willst: Hobbys findest du im Explainer [Alltag: Ich, meine Familie, mein Zuhause](https://lernapps.net/apps/start/englisch-alltag/). Verbindungswörter und that-Sätze findest du im Explainer [Sätze verbinden mit Satzstreifen](https://lernapps.net/apps/start/englisch-saetze-verbinden/).
+  - type: vocabulary
+    caption: Klassenzimmer-Poster · Hobbys im simple present
+    languages: { source: de, target: en }
+    entries:
+      - target: I like …
+        source: ich mag …
+        example: { target: "I like drawing.", source: "Ich zeichne gern." }
+      - target: I play …
+        source: ich spiele …
+        example: { target: "I play the guitar.", source: "Ich spiele Gitarre." }
+      - target: I go …
+        source: ich gehe …
+        example: { target: "I go to the park.", source: "Ich gehe in den Park." }
+      - target: he likes, she likes
+        source: er mag, sie mag
+        note: Bei he, she und it steht ein -s am Verb.
+      - target: I do not like …
+        source: ich mag … nicht
+  - type: text
+    text: |
+      **Verbindungswörter:** *and* (und), *but* (aber), *or* (oder), *because* (weil), *when* (wenn, als), *so* (also). Beispiel: *I like tea, but I do not like coffee.* Nach *because* steht ein ganzer Satz.
+
+      **That-Satz:** Nach *think*, *know* oder *say* kann *that* stehen: *I think that it is a good plan.* Du kannst *that* auch weglassen.
+  - type: language-task
+    id: brauchen-verbinden
+    languages: { source: de, target: en }
+    mode: choice
+    task: Wähle das Verbindungswort.
+    form: { case: hint, punctuation: ok }
+    items:
+      - source: Ich bleibe zu Hause, weil es kalt ist.
+        target: "I stay at home [because] it is cold."
+        distractors: [[so, but]]
+      - source: Es ist spät, also gehe ich ins Bett.
+        target: "It is late, [so] I go to bed."
+        distractors: [[because, but]]
+      - source: Ich mag Fußball, aber ich spiele nicht gut.
+        target: "I like football, [but] I do not play well."
+        distractors: [[so, or]]
+  - type: single-choice
+    id: brauchen-that
+    text: Welcher Satz ist richtig?
+    options:
+      - text: I think that the film is good
+        correct: true
+        info: Nach think steht ein ganzer Satz mit Verb, hier is.
+      - text: I am thinking that the film is good
+        correct: false
+        info: Wer seine Meinung sagt, benutzt think ohne am und ohne -ing.
+      - text: I think that the film good
+        correct: false
+        info: Im that-Satz fehlt das Verb is.
+    explanation: Meinung sagen heißt I think, ohne am und ohne -ing.

@@ -1,0 +1,259 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: "Meinung sagen, zustimmen und widersprechen"
+description: "Am Meinungsbarometer sagst du, was du denkst, stimmst anderen zu oder widersprichst ihnen."
+competencies: [meinung-redemittel]
+scope: Die Seite zeigt, wie man auf Englisch seine Meinung sagt, zustimmt und widerspricht. Meinung sagen mit In my opinion und I think that, zustimmen mit I agree und You are right, widersprechen mit I disagree und I do not agree, dazu I see your point und I am not sure. Ein Lesestück (ein Chat über die Mittagspause) zeigt die Ausdrücke im Gespräch. Gefragt wird, in welche Gruppe ein Ausdruck gehört, wo man sein Kärtchen auf das Meinungsbarometer stellt und wie man Sätze ohne die Fehler I am agree und I am thinking that bildet. Nicht hier, weil es andere Seiten sind, nämlich der Argument-Burger mit Grund und Beispiel, Themen wie Musik und Medien und Verbindungswörter wie however.
+blocks:
+  - type: section
+    id: einstieg
+    title: Mr Hill fragt, was ihr denkt
+    blocks:
+      - type: figure
+        image: images/szene-meinung-sagen.svg
+        alt: "Im Klassenzimmer hängen links ein Poster mit vier beschrifteten bunten Schichten und rechts ein Meinungsbarometer mit der Skala disagree bis agree und zwei Namenskärtchen, Peter und Ellie. Ellie, Peter und Amir stehen links, Mr Hill steht rechts und fragt in einer Sprechblase: „What do you think?“"
+        caption: "An der Meinungswand: links das Poster Argument-Burger, rechts das Meinungsbarometer. Von links: Ellie (roter Pferdeschwanz), Amir (Brille), Peter (gelbe Jacke) und Mr Hill (graue Haare)."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "Mr Hill fragt die Klasse: „What do you think?“ (Was denkt ihr?) Jeder stellt sein Namenskärtchen auf das **Meinungsbarometer**. Dann sagt jeder, warum."
+      - type: single-choice
+        id: sagen-start
+        text: Welcher Satz sagt eine Meinung?
+        options:
+          - text: I think the school bus is too slow
+            correct: true
+            info: Das ist eine Meinung. Eine andere Person kann anders denken.
+          - text: The school bus comes at eight
+            correct: false
+            info: Das ist eine Tatsache. Man kann sie prüfen.
+          - text: The school bus has forty seats
+            correct: false
+            info: Das ist eine Tatsache. Man kann sie zählen.
+        explanation: Eine Meinung sagt, was jemand denkt. Eine Tatsache kann man prüfen.
+      - type: text
+        text: "**Das kannst du danach:** Du sagst deine Meinung, stimmst anderen zu und widersprichst ihnen höflich."
+  - type: section
+    id: lesen
+    title: Ein Chat über die Mittagspause
+    blocks:
+      - type: vocabulary
+        caption: Klassenzimmer-Poster · Wörter zum Chat
+        languages: { source: de, target: en }
+        entries:
+          - target: lunch break
+            source: Mittagspause
+          - target: canteen
+            source: Kantine
+          - target: queue
+            source: Warteschlange
+          - target: relax
+            source: sich ausruhen
+          - target: enough
+            source: genug
+          - target: believe
+            source: glauben
+          - target: I see your point
+            source: ich verstehe, was du meinst
+          - target: You are right
+            source: du hast recht
+          - target: I am not sure
+            source: ich bin nicht sicher
+      - type: text
+        text: "Mr Hill fragt im Klassenchat, ob die Mittagspause zu kurz ist. Die Zahlen sind die Zeilen."
+      - type: text
+        text: |
+          **1** Mr Hill: Our lunch break is forty-five minutes. Is that too short? Put your card on the barometer and tell us why.
+
+          **2** Ellie: In my opinion, it is too short. I think that we need more time to eat and to relax.
+
+          **3** Amir: I disagree. I believe that forty-five minutes is enough. We can play football after lunch.
+
+          **4** Sophie: I see your point, Amir. But I am not sure. The queue in the canteen is very long.
+
+          **5** Amir: That is true. The queue is long on Fridays.
+
+          **6** Ellie: You are right, Sophie. And I do not agree with Amir about the football. We cannot eat and play in forty-five minutes.
+
+          **7** Amir: I do not agree with you, Ellie. I eat in ten minutes!
+
+          **8** Sophie: Ha! I agree with Ellie, and I agree with Amir about the queue.
+
+          **9** Mr Hill: Good. You can agree with one thing and disagree with another. Where is your card, Sophie?
+
+          **10** Sophie: In the middle. I am not sure yet.
+
+          **11** Ellie: A second lunch queue would help everyone.
+
+          **12** Amir: Good idea. I agree with that.
+  - type: section
+    id: neu
+    title: Drei Fächer für deine Meinung
+    blocks:
+      - type: figure
+        image: images/barometer-meinung-sagen.svg
+        alt: "Ein Meinungsbarometer mit der Frage „Is a long school day a good idea?“ und einer Skala von disagree links bis agree rechts. Drei Namenskärtchen stehen auf der Skala: Sophie, Amir und Ellie."
+        caption: "Das Meinungsbarometer: Je weiter rechts das Kärtchen steht, desto mehr stimmt die Person zu."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              **Meinung sagen:** *In my opinion, …* oder *I think that …*. Nimm nur einen der beiden Ausdrücke, nicht *In my opinion I think*. **Zustimmen:** *I agree.* **Widersprechen:** *I disagree.* Nach *I* steht *agree* ohne *am*: nicht *I am agree*. Für *think* gilt dasselbe: *I think*, nicht *I am thinking*. Das Kärtchen links heißt disagree, rechts agree, in der Mitte steht man bei *I am not sure*.
+  - type: section
+    id: uebung
+    title: Ausdrücke sortieren, einsetzen und schreiben
+    blocks:
+      - type: single-choice
+        id: sagen-lesen
+        text: Was meint Ellie über die Mittagspause?
+        options:
+          - text: Sie ist zu kurz
+            correct: true
+            info: Das sagt Ellie in Zeile 2.
+          - text: Sie ist lang genug
+            correct: false
+            info: Das glaubt Amir in Zeile 3.
+          - text: Sie ist zu lang
+            correct: false
+            info: Das sagt in dem Chat niemand.
+        explanation: Ellie beginnt mit In my opinion.
+      - type: multiple-choice
+        id: sagen-beleg
+        text: In welchen Zeilen stimmt jemand einer anderen Person zu? Wähle alle richtigen.
+        options:
+          - text: Zeile 5
+            correct: true
+            info: Amir sagt That is true zu Sophie.
+          - text: Zeile 6
+            correct: true
+            info: Ellie sagt You are right zu Sophie.
+          - text: Zeile 12
+            correct: true
+            info: Amir sagt I agree zu Ellies Idee.
+          - text: Zeile 3
+            correct: false
+            info: Hier widerspricht Amir mit I disagree.
+          - text: Zeile 7
+            correct: false
+            info: Hier widerspricht Amir Ellie.
+        explanation: Zustimmen heißt, dass jemand dasselbe denkt.
+      - type: matching
+        id: sagen-faecher
+        text: In welches Fach gehört der Ausdruck?
+        pairs:
+          - left: I believe that the library is too quiet.
+            right: Meinung sagen
+          - left: That is true.
+            right: Zustimmen
+          - left: I do not agree with you.
+            right: Widersprechen
+        explanation: Jeder Ausdruck hat ein Fach.
+      - type: language-task
+        id: sagen-luecken
+        languages: { source: de, target: en }
+        mode: choice
+        task: Wähle den Ausdruck, der in die Lücke passt.
+        form: { case: hint, punctuation: ok }
+        items:
+          - source: Ich stimme Ellie zu.
+            target: "I [agree] with Ellie."
+            distractors: [[am agree, am agreeing]]
+          - source: Ich bin nicht deiner Meinung.
+            target: "I [do not] agree with you."
+            distractors: [[am not, not]]
+          - source: Ich denke, dass der Schulgarten schön ist.
+            target: "I [think] that the school garden is nice."
+            distractors: [[am thinking, am think]]
+      - type: single-choice
+        id: sagen-barometer
+        text: "Mr Hill fragt: „Is a school uniform a good idea?“ Peter sagt: „I do not agree.“ Wo steht sein Kärtchen?"
+        options:
+          - text: Links, bei disagree
+            correct: true
+            info: Peter widerspricht, darum steht sein Kärtchen links.
+          - text: In der Mitte
+            correct: false
+            info: In der Mitte steht, wer sagt I am not sure.
+          - text: Rechts, bei agree
+            correct: false
+            info: Rechts steht, wer zustimmt. Peter stimmt nicht zu.
+        explanation: Wer widerspricht, steht bei disagree.
+      - type: language-task
+        id: sagen-satz
+        languages: { source: de, target: en }
+        task: "Schreibe die Sätze auf Englisch. Satz 1: Meiner Meinung nach macht Fußball Spaß. Satz 2: Ich bin nicht deiner Meinung. Satz 3: Ich denke, Musik ist wichtig. Die englischen Wörter sind nur eine Hilfe: Ergänze, was für einen ganzen Satz fehlt."
+        form: { case: hint, punctuation: ok, apostrophe: ok }
+        items:
+          - cue: in my opinion · football · fun
+            target: In my opinion, football is fun.
+            mistakes:
+              - answer: In my opinion I think football is fun.
+                message: Du sagst die Meinung doppelt. Nimm nur einen der beiden Ausdrücke.
+              - answer: In my opinion, football fun.
+                message: Im englischen Satz braucht es ein Verb, hier is.
+          - cue: I · not · agree · you
+            target: I (do not|don't) agree with you.
+            mistakes:
+              - answer: I am not agree with you.
+                message: Nach I steht agree ohne am. Für nicht braucht agree das Wort do.
+              - answer: I not agree with you.
+                message: Für nicht braucht agree das Wort do.
+              - answer: I (do not|don't) agree you.
+                message: Nach agree fehlt with.
+          - cue: I · think · music · important
+            target: I think (that |)music is important.
+            mistakes:
+              - answer: I am thinking that music is important.
+                message: Wer seine Meinung sagt, benutzt think ohne am und ohne -ing.
+              - answer: I think that music important.
+                message: Im that-Satz fehlt das Verb is.
+      - type: language-task
+        id: sagen-hoeren
+        languages: { source: de, target: en }
+        task: Hör zu und schreibe, was du hörst.
+        form: { case: hint, punctuation: ok }
+        items:
+          - audio: i-think-the-new-gym-is-great.mp3
+            target: I think the new gym is great.
+          - audio: you-are-right-the-bus-is-always-late.mp3
+            target: You are right, the bus is always late.
+          - audio: i-disagree-because-the-room-is-too-small.mp3
+            target: I disagree, because the room is too small.
+  - type: section
+    id: anwenden
+    title: Deine Karte an der Meinungswand
+    blocks:
+      - type: speaking-task
+        id: sagen-nachsprechen
+        language: en
+        items:
+          - audio: what-is-your-opinion.mp3
+            text: What is your opinion?
+          - audio: do-you-agree-with-me.mp3
+            text: Do you agree with me?
+          - audio: that-is-a-good-point.mp3
+            text: That is a good point.
+        hint: Hör zu. Sprich dann langsam nach.
+      - type: open-task
+        id: sagen-schreiben
+        task: "Mr Hill fragt: „Is a trip to a museum a good idea?“ Schreibe drei bis vier Sätze: deine Meinung und ein Satz, in dem du jemandem zustimmst oder widersprichst."
+        points:
+          - text: Die Meinung beginnt mit In my opinion oder I think that, nicht mit beiden.
+            source: /was-ich-denke/meinung-sagen/#neu
+          - text: Ein Satz stimmt zu oder widerspricht, ohne am vor agree.
+            source: /was-ich-denke/meinung-sagen/#neu
+          - text: Die Sätze sind ganze Sätze mit Verb.
+            kind: form
+        solution: |
+          In my opinion, a trip to a museum is a good idea.
+          Peter says that museums are boring. I see his point, but I disagree.
+          I think that we can learn a lot, and my card is on agree.
+        hint: Die App bewertet nicht. Prüfe deinen Text anhand der Punkte.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Mr Hill sagt: „Please give a reason.“ Auf der nächsten Seite lernst du, wie du deine Meinung mit einem Grund und einem Beispiel stützt."

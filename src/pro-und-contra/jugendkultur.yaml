@@ -1,0 +1,261 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Jugendkulturen früher und heute
+description: "Ein Sachtext über Mods, Punks und Grime in Großbritannien. Du beschreibst eine Jugendkultur früher und heute, auch ihre Musik."
+competencies: [jugendkultur]
+scope: Die Seite zeigt, wie man auf Englisch Jugendkulturen früher und heute beschreibt. Ein Sachtext (Stand 24. November 2026, nach Wikipedia) nennt Fakten zu Mods, Punks und Grime in Großbritannien, mit Jahrzehnten, Kleidung, Musik und Ideen. Gelernt werden das simple past für früher, das Präsens für heute, used to mit Grundform, since und for, in the 1960s mit s, die Wörter fashion (nicht mode) und listen to sowie Wörter für Kleidung und Musik. Gefragt wird, welche Zeitform passt, wie man früher und heute in ganzen Sätzen beschreibt, in welcher Zeile ein Fakt steht und was für und gegen die Zugehörigkeit durch Musik und Mode spricht. Nicht hier, weil es andere Seiten sind, nämlich der argumentative Text mit Waage, Werbung und Konsum. Die App bewertet keine freien Texte.
+blocks:
+  - type: section
+    id: einstieg
+    title: Was ist eine Jugendkultur?
+    blocks:
+      - type: text
+        text: "Junge Menschen in Großbritannien haben oft mit Kleidung und Musik gezeigt, wer sie sind. Im Text unten kommt dafür das Wort *subculture* vor."
+      - type: single-choice
+        id: jugend-start
+        text: Was meint das Wort subculture wohl am ehesten?
+        options:
+          - text: Eine Gruppe mit eigenem Stil, eigener Musik und eigenen Ideen
+            correct: true
+            info: Das passt zu den Gruppen im Text.
+          - text: Eine Kultur, die unter der Erde stattfindet
+            correct: false
+            info: Das ist eine wörtliche Übersetzung von sub, die hier nicht passt.
+          - text: Eine Musikrichtung nur für Kinder
+            correct: false
+            info: Es geht um Gruppen, nicht um das Alter der Musik.
+        explanation: Zu einer Subkultur gehören meist Kleidung, Musik und gemeinsame Ideen.
+      - type: text
+        text: "**Das kannst du danach:** Du beschreibst eine Jugendkultur früher und heute, mit Kleidung und Musik, in der richtigen Zeitform."
+  - type: section
+    id: lesen
+    title: Mods, Punks und Grime
+    blocks:
+      - type: vocabulary
+        caption: Wörterkasten · Wörter zum Sachtext
+        languages: { source: de, target: en }
+        entries:
+          - target: subculture
+            source: Jugendkultur, Subkultur
+          - target: scooter
+            source: Motorroller
+          - target: parka
+            source: Parka
+          - target: tailor-made
+            source: maßgeschneidert
+          - target: rocker
+            source: Rocker
+          - target: revival
+            source: Wiederbelebung
+          - target: jukebox
+            source: Musikbox
+          - target: working-class
+            source: aus einer Arbeiterfamilie
+          - target: mohawk
+            source: Irokesenschnitt
+          - target: zine
+            source: selbst gemachtes Heft
+          - target: do-it-yourself
+            source: selbst gemacht
+          - target: pirate radio
+            source: Piratensender
+          - target: MC
+            source: Rapper oder Rapperin am Mikrofon
+          - target: beats per minute
+            source: Schläge pro Minute
+          - target: lyrics
+            source: Liedtext
+          - target: belong
+            source: dazugehören
+      - type: text
+        text: "Der Text ist ein eigener Text nach Fakten aus Wikipedia („Mod (subculture)“, „Punk subculture“, „Grime music“), Stand 24. November 2026. Die Zahlen sind die Zeilen."
+      - type: text
+        text: |
+          **1** Young people in Britain have often used clothes and music to show who they are. A group with its own style, music and ideas is called a subculture. This text looks at three of them: the mods, the punks and the fans of grime.
+
+          **2** The mods began in London in the late 1950s. The word comes from *modernist*, because the first mods listened to modern jazz. Young men often wore tailor-made suits and skinny ties, and many rode scooters. Over their clothes they put on parkas to keep them clean. Many young women had short haircuts and wore trousers or shirts, flat shoes and little make-up.
+
+          **3** The mods liked jazz best, but they also listened to soul, rhythm and blues and ska. They met in coffee bars, which stayed open until the early hours, while pubs closed at about 11 pm. Some coffee bars had jukeboxes, and in the mid-1960s the mods were fans of pop groups with rhythm and blues influences.
+
+          **4** In the early and mid-1960s, some mods had well-publicised fights with a rival group, the rockers. By 1965 the conflict was getting smaller, and mod style became a part of the general fashion of "Swinging London". By the early 1970s the subculture had declined. There was a mod revival in Britain in the late 1970s, and mods still exist today on a smaller scale.
+
+          **5** Punk came later. According to the same source, the subculture appeared in New York in 1974 and in the United Kingdom in 1976. Punk rock is loud, and most songs are short and simple, with only a few chords. A typical band has a singer, one or two guitarists, a bass player and a drummer.
+
+          **6** Punks wore T-shirts, leather jackets and boots. Some had brightly coloured hair or a spiked mohawk, and tattoos and jewellery were part of the look. Many early punks came from working-class families. Their main ideas were that people should be free and should not simply follow the rules. Many liked to do things themselves: some made their own magazines, called zines, and some published their own music.
+
+          **7** Grime is a much younger sound. It began in East London in the early 2000s and grew out of UK garage, with influences from jungle, dancehall and hip-hop. The beat is fast, usually around 140 beats per minute, and the MCs are important. Their lyrics often describe life in the city. At first the music spread on pirate radio stations. In the middle of the 2000s it reached a larger audience in the UK. Writers sometimes compare grime with punk, because both grew out of simple technology and a do-it-yourself attitude.
+
+          **8** What do the three groups have in common? Each used fashion and music to create a feeling of belonging. Some people say this is a strong reason to join a group. Others prefer to follow no group at all.
+  - type: section
+    id: neu
+    title: Früher und heute beschreiben
+    blocks:
+      - type: figure
+        image: images/zeitleiste-jugendkultur.svg
+        alt: "Eine Zeitleiste von den 1950er-Jahren bis zu den 2020er-Jahren. Ein blauer Balken über den Jahrzehnten bis zu den 2010er-Jahren trägt den Text then: simple past, ein roter kurzer Balken am Ende den Text now: present. Darunter drei Kästen mit je einem Beispielsatz, überschrieben mit simple past, present und used to."
+        caption: "Früher und heute auf der Zeitleiste, mit drei Beispielsätzen."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              - **Früher:** simple past mit einer Zeit, die vorbei ist: *In the 1990s, people collected stickers.* Nicht *are collecting*, das beschreibt, was jetzt passiert.
+              - **Heute:** Präsens: *Today, people keep photos on their phones.*
+              - **Früher üblich:** *used to* mit der Grundform: *People used to send postcards.* Nach *used to* steht kein *-ing*.
+              - **Jahrzehnte** haben ein s und keinen Apostroph: *in the 1990s*.
+              - **since** nennt einen Zeitpunkt (*since 1990*), **for** eine Dauer (*for thirty years*).
+              - **Wörter:** *fashion* ist die Mode bei Kleidung, nicht *mode*. Musik hörst du mit *listen to*.
+  - type: section
+    id: uebung
+    title: Zeitform wählen und beschreiben
+    blocks:
+      - type: single-choice
+        id: jugend-lesen
+        text: Woher kommt das Wort mod nach Zeile 2?
+        options:
+          - text: Von modernist, weil die ersten Mods moderne Jazzmusik hörten
+            correct: true
+            info: So steht es in Zeile 2.
+          - text: Von motor, weil die Mods Roller fuhren
+            correct: false
+            info: Die Roller stehen im Text, das Wort hat aber einen anderen Ursprung.
+          - text: Von model, weil die Mods Mode zeigten
+            correct: false
+            info: Mode kommt im Text vor, mit dem Wort hat das nichts zu tun.
+        explanation: Das Wort steht am Anfang von Zeile 2 und wird dort erklärt.
+      - type: matching
+        id: jugend-beleg
+        text: Welche Angabe steht in welcher Zeile?
+        pairs:
+          - left: Mods zogen Parkas über ihre Kleidung.
+            right: Zeile 2
+          - left: Coffeebars blieben bis in die frühen Morgenstunden offen.
+            right: Zeile 3
+          - left: Punk entstand 1974 in New York.
+            right: Zeile 5
+          - left: Grime begann in Ostlondon.
+            right: Zeile 7
+        explanation: Orte, Jahre und Kleidung findest du, wenn du den Text danach durchsuchst.
+      - type: language-task
+        id: jugend-zeit
+        languages: { source: de, target: en }
+        mode: choice
+        task: Wähle die passende Form oder das passende Wort für die Lücke.
+        form: { case: hint, punctuation: ok }
+        items:
+          - source: In den 1960ern trugen Mods Parkas auf ihren Rollern.
+            target: "In the 1960s, mods [wore] parkas on their scooters."
+            distractors: [[wear, are wearing]]
+          - source: Heute hören viele junge Leute Grime.
+            target: "Today, many young people [listen] to grime."
+            distractors: [[listened, listens]]
+          - source: Frühe Punks gingen oft zu kleinen Konzerten.
+            target: "Early punks used to [go] to small concerts."
+            distractors: [[going, went]]
+          - source: Die Mods gibt es seit vielen Jahren.
+            target: "Mods have existed [for] many years."
+            distractors: [[since]]
+          - source: Die Mode der 1960er war sehr elegant.
+            target: "The [fashion] of the 1960s was very elegant."
+            distractors: [[mode]]
+      - type: language-task
+        id: jugend-beschreiben
+        languages: { source: de, target: en }
+        task: "Schreibe die Sätze auf Englisch. Satz 1: In den 1960ern trugen die Mods Anzüge. Satz 2: Heute hören junge Leute Grime. Satz 3: Punks machten früher ihre eigenen Hefte. Die englischen Wörter sind nur eine Hilfe: Ergänze, was für einen ganzen Satz fehlt."
+        form: { case: hint, punctuation: ok, apostrophe: ok }
+        items:
+          - cue: in the 1960s · mods · wear · suits
+            target: In the 1960s, mods wore suits.
+            mistakes:
+              - answer: In the 1960s, mods are wearing suits.
+                message: Are wearing beschreibt, was gerade passiert. Die 1960er sind vorbei.
+              - answer: In the 1960s, mods wear suits.
+                message: Für eine vergangene Zeit brauchst du das simple past.
+              - answer: In the 1960, mods wore suits.
+                message: Ein Jahrzehnt heißt the 1960s, mit s.
+          - cue: today · young people · listen to · grime
+            target: (Today|Nowadays), young people listen to grime.
+            mistakes:
+              - answer: Today, young people listen grime.
+                message: Nach listen fehlt to.
+              - answer: Today, young people listened to grime.
+                message: Mit today brauchst du das Präsens.
+          - cue: punks · used to · make · own magazines
+            target: Punks used to make their own magazines.
+            mistakes:
+              - answer: Punks used to making their own magazines.
+                message: Nach used to steht die Grundform ohne ing.
+              - answer: Punks use to make their own magazines.
+                message: In diesem Satz über früher heißt es used to, mit d.
+      - type: multiple-choice
+        id: jugend-procontra
+        text: "Thema: Music and fashion help young people to feel part of a group. Welche Sätze sind ein Pro? Wähle alle richtigen."
+        options:
+          - text: Shared music gives young people something to talk about.
+            correct: true
+            info: Das ist ein Vorteil, also ein Pro.
+          - text: Some young people may feel left out if they do not follow a style.
+            correct: false
+            info: Das ist ein Nachteil, also ein Contra.
+          - text: A shared style can show which ideas a group likes.
+            correct: true
+            info: Das ist ein Vorteil, siehe Zeile 6.
+          - text: Following a group style can cost a lot of money.
+            correct: false
+            info: Das ist ein Nachteil, also ein Contra.
+        explanation: Ein Pro nennt einen Vorteil, ein Contra einen Nachteil.
+      - type: language-task
+        id: jugend-hoeren
+        languages: { source: de, target: en }
+        task: Hör zu und schreibe, was du hörst.
+        form: { case: hint, punctuation: ok }
+        items:
+          - audio: we-used-to-play-outside-after-school.mp3
+            target: We used to play outside after school.
+          - audio: today-many-young-people-share-photos-on-their-phones.mp3
+            target: Today, many young people share photos on their phones.
+          - audio: music-and-clothes-can-help-people-feel-they-belong.mp3
+            target: Music and clothes can help people feel they belong.
+  - type: section
+    id: anwenden
+    title: Eine Jugendkultur beschreiben
+    blocks:
+      - type: speaking-task
+        id: jugend-nachsprechen
+        language: en
+        items:
+          - audio: which-kind-of-music-do-you-prefer.mp3
+            text: Which kind of music do you prefer?
+          - audio: fashion-changes-very-quickly.mp3
+            text: Fashion changes very quickly.
+          - audio: i-would-like-to-know-more-about-this-subculture.mp3
+            text: I would like to know more about this subculture.
+        hint: Hör zu. Sprich dann langsam nach.
+      - type: open-task
+        id: jugend-schreiben
+        task: "Wähle eine Jugendkultur (zum Beispiel Mods, Punks, Grime oder eine, die du kennst). Beschreibe in fünf bis sechs Sätzen, wie sie früher aussah und klang und wie es heute ist."
+        points:
+          - text: Das Frühere steht im simple past, mit einer Zeit wie in the 1970s.
+            source: /pro-und-contra/jugendkultur/#neu
+          - text: Das Heutige steht im Präsens, zum Beispiel mit Today.
+            source: /pro-und-contra/jugendkultur/#neu
+          - text: Mindestens ein Satz mit used to und der Grundform.
+            source: /pro-und-contra/jugendkultur/#neu
+          - text: Kleidung und Musik werden genannt.
+            source: /pro-und-contra/jugendkultur/#lesen
+          - text: Ein vorsichtiger Satz sagt, ob Musik und Mode Zugehörigkeit schaffen, zum Beispiel mit can oder some.
+            kind: form
+        solution: |
+          Hip-hop began in New York in the early 1970s. DJs played records at block parties, and people danced and rapped.
+          In those years, the fans used to meet at parties in the streets.
+          Today, hip-hop has local styles in many countries, and many young people listen to it on their phones.
+          Many fans enjoy the lyrics and the beat.
+          Some people say that music like this can help them feel part of a group.
+        hint: Die App bewertet nicht. Prüfe deinen Text anhand der Punkte.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Auf der nächsten Seite legst du Pro und Contra auf die Waage und schreibst einen argumentativen Text."

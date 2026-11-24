@@ -1,0 +1,281 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: "Verbindungswörter: Burger mit einem Schild verbinden"
+description: "Zwei Burger werden gestapelt, dazwischen steht ein Schild. Du lernst however, therefore, moreover und on the one hand … on the other hand."
+competencies: [verbindungswoerter-argumentieren]
+scope: Die Seite zeigt, wie man zwei Gedanken auf Englisch mit einem Verbindungswort verknüpft. Zwei Argument-Burger werden gestapelt, dazwischen steht ein Schild mit dem Verbindungswort. However zeigt einen Gegensatz, therefore eine Folge, moreover eine Ergänzung, on the one hand … on the other hand zwei Seiten einer Sache. Ein Lesestück (ein Chat über den Schulweg zu Fuß, mit dem Rad oder mit dem Bus) zeigt alle vier. Gefragt wird, welche Beziehung ein Satz zeigt, welches Wort passt und wie man Sätze mit Punkt und Komma richtig verbindet. Nicht hier, weil es andere Seiten sind, nämlich Umwelt, Erfindungen und der Leserbrief.
+blocks:
+  - type: section
+    id: einstieg
+    title: Ein leeres Schild zwischen zwei Burgern
+    blocks:
+      - type: figure
+        image: images/schild-verbindungswoerter.svg
+        alt: "Zwei Argument-Burger aus je vier farbigen Schichten stehen übereinander. Der obere sagt, dass die neue Bücherei toll ist, weil sie viele Comics hat. Der untere sagt, dass die Öffnungszeiten schlecht sind, weil die Bücherei früh schließt. Zwischen den Burgern hängt ein weißes Schild mit einem Fragezeichen."
+        caption: "Zwei Burger übereinander. Das Schild in der Mitte ist noch leer."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "Der obere Burger lobt die Bücherei, der untere kritisiert sie."
+      - type: single-choice
+        id: verbinden-start
+        text: Was soll das Schild zwischen den Burgern sagen?
+        options:
+          - text: Der zweite Burger sagt das Gegenteil
+            correct: true
+            info: Auf Lob folgt Kritik. Das ist ein Gegensatz.
+          - text: Der zweite Burger ist die Folge des ersten
+            correct: false
+            info: Aus dem Lob folgt keine Kritik.
+          - text: Der zweite Burger sagt noch etwas Gutes
+            correct: false
+            info: Der untere Burger kritisiert.
+        explanation: Das Schild zeigt die Beziehung.
+      - type: text
+        text: "**Das kannst du danach:** Du verbindest zwei Gedanken mit dem richtigen Schild-Wort."
+  - type: section
+    id: lesen
+    title: Wie kommst du zur Schule? Ein Chat
+    blocks:
+      - type: vocabulary
+        caption: Klassenzimmer-Poster · Wörter zum Chat
+        languages: { source: de, target: en }
+        entries:
+          - target: however
+            source: aber, jedoch
+          - target: therefore
+            source: deshalb, darum
+          - target: moreover
+            source: außerdem
+          - target: on the one hand … on the other hand
+            source: einerseits … andererseits
+          - target: dangerous
+            source: gefährlich
+          - target: on the way
+            source: unterwegs
+          - target: keep fit
+            source: fit bleiben
+          - target: main road
+            source: Hauptstraße
+          - target: umbrella
+            source: Regenschirm
+      - type: text
+        text: "Die Zahlen sind die Zeilen."
+      - type: text
+        text: |
+          **1** Ellie: Mr Hill wants us to write about our way to school. Do you walk, cycle or take the bus?
+
+          **2** Amir: I cycle. It is quick. However, the main road is dangerous in the morning.
+
+          **3** Sophie: On the one hand, I like the bus because I can read on the way. On the other hand, it is often late.
+
+          **4** Ellie: I walk. It takes twenty minutes, so it keeps me fit. Moreover, I meet my friends on the way.
+
+          **5** Amir: Walking is slow. However, you are right about the friends.
+
+          **6** Sophie: What about rain, Ellie? Do you still walk?
+
+          **7** Ellie: Yes, I take an umbrella. Rain is not a big problem for me.
+
+          **8** Sophie: The bus was late again today. Therefore, I leave home ten minutes earlier now.
+
+          **9** Amir: Good idea! I have an idea for Mr Hill, too. We can write about the good and the bad things of each way.
+
+          **10** Ellie: Yes, and we can read our texts to the class on Friday.
+  - type: section
+    id: neu
+    title: Das Schild sagt, wie zwei Gedanken zusammenhängen
+    blocks:
+      - type: figure
+        image: images/burger-verbindungswoerter.svg
+        alt: "Zwei Argument-Burger aus je vier farbigen Schichten stehen übereinander. Der obere handelt vom Schulgarten als schönem Ort, der untere vom Schulgarten als Lernort. Zwischen den Burgern hängt ein Schild mit einem Verbindungswort."
+        caption: "Zwei gestapelte Burger. Das Schild zwischen ihnen ist das Verbindungswort."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              **Jedes Schild zeigt eine andere Beziehung.**
+
+              - **However** zeigt einen Gegensatz: *I like the park. However, it is often windy.*
+              - **Therefore** zeigt eine Folge: *The pool is closed. Therefore, we play outside.*
+              - **Moreover** ergänzt etwas Gleichgerichtetes: *The museum is free. Moreover, it is warm inside.*
+              - **On the one hand … on the other hand …** zeigt zwei Seiten einer Sache: *On the one hand, a cat is quiet. On the other hand, it needs care.*
+
+              Diese Wörter beginnen einen neuen Satz: Davor steht ein Punkt, danach ein Komma. Zwei ganze Sätze nur mit einem Komma zu verbinden ist ein Fehler. **However** und **because** sind verschieden: Because gibt einen Grund, however einen Gegensatz. Und **but** und **however** zusammen brauchst du nie.
+  - type: section
+    id: uebung
+    title: Beziehung erkennen, Wort wählen, Sätze schreiben
+    blocks:
+      - type: single-choice
+        id: verbinden-lesen
+        text: Was macht Sophie, weil der Bus oft zu spät kommt?
+        options:
+          - text: Sie fährt früher von zu Hause los
+            correct: true
+            info: Das sagt Sophie in Zeile 8.
+          - text: Sie geht zu Fuß wie Ellie
+            correct: false
+            info: Ellie geht zu Fuß, nicht Sophie.
+          - text: Sie fährt mit dem Rad
+            correct: false
+            info: Das tut Amir.
+        explanation: Die Folge steht nach therefore.
+      - type: multiple-choice
+        id: verbinden-beleg
+        text: In welchen Zeilen steht however? Wähle alle richtigen.
+        options:
+          - text: Zeile 2
+            correct: true
+            info: Amir spricht über das Rad.
+          - text: Zeile 5
+            correct: true
+            info: Amir spricht über das Gehen.
+          - text: Zeile 3
+            correct: false
+            info: Hier steht on the one hand … on the other hand.
+          - text: Zeile 8
+            correct: false
+            info: Hier steht therefore.
+        explanation: However steht bei einem Gegensatz.
+      - type: matching
+        id: verbinden-zuordnen
+        text: Welche Beziehung zeigt das Verbindungswort? Ordne zu.
+        pairs:
+          - left: The bike is cheap. However, it has no light.
+            right: Gegensatz
+          - left: It is dark. Therefore, I wear a jacket.
+            right: Folge
+          - left: The path is short. Moreover, it is safe.
+            right: Ergänzung
+          - left: On the one hand, walking is slow. On the other hand, it is healthy.
+            right: zwei Seiten
+        explanation: Vier Beziehungen.
+      - type: language-task
+        id: verbinden-waehlen
+        languages: { source: de, target: en }
+        mode: choice
+        task: Wähle das Wort, das zur deutschen Beziehung passt.
+        items:
+          - source: Ich fahre gern Rad. Aber es ist oft nass.
+            target: "I like cycling. [However], it is often wet."
+            distractors: [[Therefore, Because]]
+          - source: Der Bus ist teuer. Deshalb gehe ich zu Fuß.
+            target: "The bus is expensive. [Therefore], I walk."
+            distractors: [[However, Moreover]]
+          - source: Der Weg ist kurz. Außerdem ist er schön.
+            target: "The way is short. [Moreover], it is lovely."
+            distractors: [[However, Therefore]]
+        explanation: Gegensatz, Folge, Ergänzung.
+      - type: ordering
+        id: verbinden-ordnen
+        text: Bringe die Sätze in eine gute Reihenfolge. Es sind ein Burger und ein Schild.
+        items:
+          - I like walking to school.
+          - It is good for my health.
+          - However, it is slow in the morning.
+          - Therefore, I get up early.
+        explanation: Meinung, Gegensatz, Folge.
+      - type: language-task
+        id: verbinden-satz
+        languages: { source: de, target: en }
+        task: "Schreibe auf Englisch. Satz 1: Das Rad ist schnell. Aber es ist nicht sicher. Satz 2: Es regnet. Deshalb nehme ich den Bus. Satz 3: Radfahren ist billig. Außerdem ist es gesund. Satz 4: Einerseits ist der Zug schnell. Andererseits ist er teuer. Ergänze Verb und Artikel."
+        form: { case: hint, apostrophe: ok }
+        hint: Achte auf Punkt und Komma.
+        items:
+          - cue: bike · quick · however · not · safe
+            target: The bike is quick. However, it is not safe.
+            mistakes:
+              - answer: The bike is quick however it is not safe.
+                message: Vor however steht ein Punkt, danach ein Komma.
+              - answer: The bike is quick. However it is not safe.
+                message: Nach However steht ein Komma.
+              - answer: The bike is quick, however it is not safe.
+                message: Ein Komma allein verbindet zwei ganze Sätze nicht.
+              - answer: The bike is quick but however it is not safe.
+                message: But und however sagen beide aber. Du brauchst nur eines.
+              - answer: The bike is quick because it is not safe.
+                message: Because gibt einen Grund. Hier brauchst du einen Gegensatz.
+          - cue: it · rain · therefore · I · take · bus
+            target: "It (rains|is raining). Therefore, I take the bus."
+            mistakes:
+              - answer: It is raining. However, I take the bus.
+                message: Hier folgt etwas aus dem Regen, es ist kein Gegensatz.
+              - answer: It is raining. Therefore I take the bus.
+                message: Nach Therefore steht ein Komma.
+              - answer: It is raining, therefore I take the bus.
+                message: Ein Komma allein verbindet zwei ganze Sätze nicht.
+              - answer: It is raining. Therefore, I take bus.
+                message: Vor bus fehlt der Artikel the.
+          - cue: cycling · cheap · moreover · healthy
+            target: Cycling is cheap. Moreover, it is healthy.
+            mistakes:
+              - answer: Cycling is cheap. Moreover it is healthy.
+                message: Nach Moreover steht ein Komma.
+              - answer: Cycling is cheap. However, it is healthy.
+                message: Beide Sätze sagen etwas Gutes.
+              - answer: Cycling is cheap. Moreover, is healthy.
+                message: Nach Moreover fehlt das Subjekt.
+          - cue: on the one hand · train · quick · on the other hand · expensive
+            target: On (the |)one hand, the train is quick. On the other hand, it is expensive.
+            mistakes:
+              - answer: On the one hand, the train is quick. On the other side, it is expensive.
+                message: Hier sagt man nicht side. Schau in den Merke-Kasten.
+              - answer: On the one side, the train is quick. On the other side, it is expensive.
+                message: Der Ausdruck hat nicht das Wort side. Schau in den Merke-Kasten.
+      - type: language-task
+        id: verbinden-hoeren
+        languages: { source: de, target: en }
+        task: Hör zu und schreibe, was du hörst.
+        form: { case: hint, punctuation: ok }
+        items:
+          - audio: the-lesson-was-long-however-it-was-interesting.mp3
+            target: The lesson was long. However, it was interesting.
+          - audio: it-was-very-cold-therefore-we-stayed-inside.mp3
+            target: It was very cold. Therefore, we stayed inside.
+          - audio: moreover-the-ticket-is-cheap-and-the-train-is-comfortable.mp3
+            target: Moreover, the ticket is cheap and the train is comfortable.
+  - type: section
+    id: anwenden
+    title: Deine zwei Burger mit einem Schild
+    blocks:
+      - type: speaking-task
+        id: verbinden-nachsprechen
+        language: en
+        items:
+          - audio: i-understand-your-point-however-i-think-differently.mp3
+            text: I understand your point. However, I think differently.
+          - audio: therefore-we-need-a-better-idea.mp3
+            text: Therefore, we need a better idea.
+          - audio: on-the-other-hand-i-do-not-mind-waiting.mp3
+            text: On the other hand, I do not mind waiting.
+        hint: Hör zu. Sprich dann langsam nach.
+      - type: open-task
+        id: verbinden-schreiben
+        task: "Wähle ein Thema, zu dem es zwei Seiten gibt (zum Beispiel ein Haustier). Schreibe zwei Burger aus je vier Sätzen. Verbinde sie mit einem Schild: however, therefore oder moreover."
+        points:
+          - text: Jeder Burger hat vier Schichten in der richtigen Reihenfolge.
+            source: /argumente-verbinden/verbindungswoerter/#neu
+          - text: Das Verbindungswort passt zur Beziehung der beiden Burger.
+            source: /argumente-verbinden/verbindungswoerter/#neu
+          - text: Das Verbindungswort beginnt einen neuen Satz, danach steht ein Komma.
+            source: /argumente-verbinden/verbindungswoerter/#neu
+          - text: Die Sätze sind ganze Sätze mit Verb.
+            kind: form
+        solution: |
+          I think a dog is a good pet.
+          A dog is a friend and it makes me go outside.
+          For example, I walk with my dog for an hour every day.
+          So a dog is a great pet.
+          However, a dog needs a lot of time.
+          A dog cannot stay alone all day.
+          For example, a neighbour has to visit it twice a day when the family is at work.
+          So a dog is not right for everybody.
+        hint: Die App bewertet nicht. Prüfe deinen Text anhand der Punkte.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Auf der nächsten Seite liest du einen Artikel der Schülerzeitung über Müll und Recycling. Dort setzt du die Verbindungswörter gleich ein."

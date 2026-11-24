@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Pro und contra
+summary: Du wägst Argumente ab. Du sprichst über Konsum und Werbung, beschreibst Jugendkulturen früher und heute, schreibst einen argumentativen Text mit Pro, Contra und Schlussfolgerung und untersuchst Werbung.
+pages: [das-brauchst-du, konsum-werbung, jugendkultur, kommentar, werbung]

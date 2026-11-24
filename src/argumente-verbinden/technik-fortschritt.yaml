@@ -1,0 +1,240 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: "Technik und Fortschritt: was invented by …"
+description: "Mr Hill will ein Plakat über Erfindungen. Du lernst, wann und von wem etwas erfunden wurde."
+competencies: [technik-fortschritt]
+scope: Die Seite handelt von Erfindungen und technischem Fortschritt auf Englisch. Ein Chat nennt Fakten zum World Wide Web, zum Papier, zu einem Verfahren für altes Papier und zum Fahrrad mit Kette. Gelernt werden Sätze im Passiv mit was invented by, was built in und is used for, die Partizipien invented, built, made und written, der Unterschied zwischen by und from und der vorsichtige Satz People say, wenn nicht klar ist, wer etwas erfunden hat. Gefragt wird, wann und von wem etwas erfunden wurde und wie man Passivsätze bildet. Nicht hier, weil es andere Seiten sind, nämlich Verbindungswörter, Umwelt und der Leserbrief.
+blocks:
+  - type: section
+    id: einstieg
+    title: Was gibt es am längsten?
+    blocks:
+      - type: figure
+        image: images/erfindungen-technik-fortschritt.svg
+        alt: "Drei Karten nebeneinander. Links ein rotes Fahrrad mit der Beschriftung bicycle, in der Mitte ein Blatt Papier mit blauen Zeilen und der Beschriftung paper, rechts ein Bildschirm mit der Adresszeile www und der Beschriftung web page."
+        caption: "Drei Erfindungen: das Fahrrad, das Papier und die Webseite."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: Mr Hill hängt ein Plakat über Erfindungen auf. Amir, Sophie und Ellie suchen Fakten.
+      - type: single-choice
+        id: technik-start
+        text: Welche dieser Erfindungen gibt es schon am längsten?
+        options:
+          - text: Das Papier
+            correct: true
+            info: Papier wurde schon vor etwa 1900 Jahren gemacht.
+          - text: Das Fahrrad mit Kette
+            correct: false
+            info: Das Fahrrad mit Kette kam viel später.
+          - text: Das World Wide Web
+            correct: false
+            info: Das Web ist die jüngste der drei Erfindungen.
+        explanation: Papier ist viel älter als ein Fahrrad mit Kette und als das Web.
+      - type: text
+        text: "**Das kannst du danach:** Du sagst, wann und von wem etwas erfunden wurde."
+  - type: section
+    id: lesen
+    title: Fakten für das Plakat
+    blocks:
+      - type: vocabulary
+        caption: Klassenzimmer-Poster · Wörter zum Chat
+        languages: { source: de, target: en }
+        entries:
+          - target: invent, invention
+            source: erfinden, Erfindung
+          - target: the public
+            source: die Öffentlichkeit
+          - target: process
+            source: Verfahren
+          - target: ink
+            source: Tinte
+          - target: recycled
+            source: wiederverwertet
+          - target: chain
+            source: Kette
+          - target: ball bearing
+            source: Kugellager
+          - target: develop
+            source: entwickeln
+          - target: web
+            source: Netz, Gewebe (hier das Internet-Angebot)
+      - type: text
+        text: "Die drei Kinder sammeln Fakten. Die Zahlen sind die Zeilen."
+      - type: text
+        text: |
+          **1** Amir: Mr Hill wants one fact for our poster about inventions. I found one. The World Wide Web was invented by Tim Berners-Lee in 1989.
+
+          **2** Sophie: Cool! Is it used for anything special?
+
+          **3** Amir: It is used for sharing information. It was opened to the public in 1993.
+
+          **4** Sophie: My fact is about paper. Paper was made in China at least as early as the year 105.
+
+          **5** Ellie: Was it invented by one person?
+
+          **6** Sophie: People say that Cai Lun invented the process. However, older paper-like pieces were found, so nobody is sure.
+
+          **7** Ellie: I have a fact about recycling. A process for taking ink out of recycled paper was invented by the German Justus Claproth in 1774.
+
+          **8** Amir: Today this process is called deinking. And what about bikes?
+
+          **9** Ellie: The first upright bike with a chain was developed around 1885.
+
+          **10** Sophie: Several parts that were important for cars, like ball bearings, were first made for bicycles.
+  - type: section
+    id: neu
+    title: Im Passiv steht die Sache vorn
+    blocks:
+      - type: figure
+        image: images/satzbau-technik-fortschritt.svg
+        alt: "Vier farbige Kästchen stehen nebeneinander und bilden einen Satz: The cake, was made, by the pupils, in a day. Unter jedem Kästchen steht, was es ist: Sache, was oder were mit Partizip, by mit Person, Zeit. Darunter steht: Die Sache steht vorn. Die Person kommt hinter by."
+        caption: "Die Bausteine eines Passivsatzes."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              **Passiv in der Vergangenheit:** was oder were und das Partizip. *The poster was made in a week.* Die Person nennst du mit **by**: *The poster was made by the class.*
+
+              **Passiv heute:** is oder are und das Partizip. *A pen is used for writing.* Das Material nennst du mit **from**: *The table is made from wood.* Das heißt **by** für die Person und **from** für das Material, also nie *invented from*.
+
+              Das Partizip endet oft auf -ed (invent, invented). Einige sind unregelmäßig: build, built, make, made, write, written. Nach was steht nie die Grundform (*was invent*) und nie die ing-Form (*was inventing*).
+
+              Ist nicht klar, wer etwas erfunden hat, bleib vorsichtig: *People say that …*
+  - type: section
+    id: uebung
+    title: Erfindungen zuordnen, Passiv schreiben
+    blocks:
+      - type: single-choice
+        id: technik-lesen
+        text: Warum sagt Sophie in Zeile 6 „People say“?
+        options:
+          - text: Man hat ältere papierähnliche Stücke gefunden, darum ist nicht sicher, wer das Verfahren erfand
+            correct: true
+            info: Das steht in Zeile 6 nach However.
+          - text: Cai Lun lebte nicht in China
+            correct: false
+            info: Davon steht nichts im Chat.
+          - text: Papier wurde erst 1989 erfunden
+            correct: false
+            info: Die Jahreszahl 1989 gehört zum Web.
+        explanation: Wenn nicht klar ist, wer etwas erfunden hat, sagt man People say.
+      - type: number
+        id: technik-jahr
+        text: In welchem Jahr wurde das Web für alle geöffnet? Lies Zeile 3.
+        answer: 1993
+        tolerance: 0
+        explanation: Das Web wurde 1993 für die Öffentlichkeit geöffnet. 1989 ist das Jahr, in dem es erfunden wurde.
+      - type: matching
+        id: technik-zuordnen
+        text: Welche Erfindung gehört zu welcher Person oder Jahreszahl? Ordne zu.
+        pairs:
+          - left: the World Wide Web
+            right: Tim Berners-Lee, 1989
+          - left: a process for taking ink out of recycled paper
+            right: Justus Claproth, 1774
+          - left: the first upright bike with a chain
+            right: um 1885
+        explanation: Die Fakten stehen in den Zeilen 1, 7 und 9.
+      - type: language-task
+        id: technik-luecke
+        languages: { source: de, target: en }
+        mode: gap
+        task: Schreibe das fehlende Wort.
+        items:
+          - source: Der Brief wurde von Ellie geschrieben.
+            target: "The letter was [written] by Ellie."
+          - source: Die Tasche wurde aus Plastik gemacht.
+            target: "The bag was made [from] plastic."
+          - source: Das Buch wird von vielen Kindern gelesen.
+            target: "The book is [read] by many children."
+        explanation: Nach was oder is steht das Partizip. By nennt die Person, from das Material.
+      - type: language-task
+        id: technik-passiv
+        languages: { source: de, target: en }
+        task: "Schreibe auf Englisch. Satz 1: Das Web wurde 1989 erfunden. Satz 2: Das Fenster wurde von Mr Hill geöffnet. Satz 3: Fahrräder werden zum Reisen benutzt. Die englischen Wörter sind nur eine Hilfe: Ergänze, was für einen ganzen Satz fehlt."
+        form: { case: hint, punctuation: ok, apostrophe: ok }
+        items:
+          - cue: web · invent · 1989
+            target: The (World Wide |)web was invented in 1989.
+            mistakes:
+              - answer: The web was invent in 1989.
+                message: Nach was steht das Partizip, nicht die Grundform.
+              - answer: The web was inventing in 1989.
+                message: Das Passiv braucht das Partizip. Die ing-Form gehört nicht dazu.
+              - answer: The web invented in 1989.
+                message: Im Passiv fehlt das Wort was.
+              - answer: The web was invented at 1989.
+                message: Vor einer Jahreszahl steht ein anderes kleines Wort.
+          - cue: window · open · Mr Hill
+            target: The window was opened by Mr Hill.
+            mistakes:
+              - answer: The window was open by Mr Hill.
+                message: Das Partizip von open endet auf -ed.
+              - answer: The window was opened from Mr Hill.
+                message: Die Person steht nach by, nicht nach from.
+              - answer: The window opened by Mr Hill.
+                message: Im Passiv fehlt das Wort was.
+          - cue: bicycles · use · travel
+            target: Bicycles are used for travelling.
+            mistakes:
+              - answer: Bicycles are use for travelling.
+                message: Nach are steht das Partizip used.
+              - answer: Bicycles is used for travelling.
+                message: Bicycles ist Mehrzahl. Dazu passt eine andere Form von be.
+              - answer: Bicycles are used to travelling.
+                message: Der Zweck steht nach used mit einem kleinen Wort, das hier nicht to heißt.
+      - type: language-task
+        id: technik-hoeren
+        languages: { source: de, target: en }
+        task: Hör zu und schreibe, was du hörst.
+        form: { case: hint, punctuation: ok }
+        items:
+          - audio: the-old-school-was-built-a-long-time-ago.mp3
+            target: The old school was built a long time ago.
+          - audio: mobile-phones-are-used-in-every-country.mp3
+            target: Mobile phones are used in every country.
+          - audio: our-classroom-was-cleaned-by-the-pupils.mp3
+            target: Our classroom was cleaned by the pupils.
+  - type: section
+    id: anwenden
+    title: Ist diese Erfindung nützlich?
+    blocks:
+      - type: speaking-task
+        id: technik-nachsprechen
+        language: en
+        items:
+          - audio: when-was-it-invented.mp3
+            text: When was it invented?
+          - audio: many-useful-things-were-invented-long-ago.mp3
+            text: Many useful things were invented long ago.
+          - audio: tell-me-more-about-this-machine.mp3
+            text: Tell me more about this machine.
+        hint: Hör zu. Sprich dann langsam nach.
+      - type: open-task
+        id: technik-schreiben
+        task: "Wähle eine Erfindung, die du jeden Tag benutzt. Schreibe einen Satz im Passiv darüber, zum Beispiel mit is used for. Beantworte dann mit einem Burger aus vier Sätzen die Frage: Is this invention useful?"
+        points:
+          - text: Der Passivsatz hat is oder are und ein Partizip.
+            source: /argumente-verbinden/technik-fortschritt/#neu
+          - text: Der Burger hat vier Schichten in der richtigen Reihenfolge.
+            source: /was-ich-denke/meinung-begruenden/#neu
+          - text: Die Meinung ist begründet, und das Beispiel ist etwas, das wirklich passiert ist.
+            source: /was-ich-denke/meinung-begruenden/#neu
+          - text: Du schreibst nur Fakten, die du sicher weißt. Sonst schreibst du People say.
+            kind: form
+        solution: |
+          A mobile phone is used for calling and for messages.
+          I think it is a very useful invention.
+          It is useful because I can talk to my friends at any time.
+          For example, last week I asked a friend for help when I missed my train.
+          So I think the mobile phone is useful.
+        hint: Die App bewertet nicht. Prüfe deinen Text anhand der Punkte.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Auf der letzten Seite schreibst du einen Leserbrief an die Schülerzeitung. Er antwortet auf den Artikel über Plastikmüll."

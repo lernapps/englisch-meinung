@@ -1,0 +1,275 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Konsum, Werbung und deine Rechte
+description: "Ein Sachtext über billige Kleidung und über deine Rechte beim Einkaufen in Großbritannien. Du sprichst darüber und sagst deine Meinung mit Grund und Beispiel."
+competencies: [konsum-werbung]
+scope: Die Seite zeigt, wie man auf Englisch über Konsum, Kleidung und die Rechte als Verbraucherin oder Verbraucher spricht. Ein Sachtext (Stand 24. November 2026, nach Wikipedia und gov.uk) nennt Zahlen zu fast fashion, zur Umwelt und zu Rechten beim Einkaufen in Großbritannien, jeweils mit mehreren Sichtweisen. Gelernt werden die Wörter consumer, refund, receipt, warranty, fast fashion, sustainable, second-hand und brand, der Unterschied von consumer und customer, buy und by, borrow und lend, much und many, und was ein Pro und ein Contra ist. Gefragt wird, in welcher Zeile eine Zahl steht, welches Recht zu welcher Lage passt und wie man eine Meinung zu einem Kauf mit Grund und Beispiel schreibt. Nicht hier, weil es andere Seiten sind, nämlich die Waage mit Pro und Contra in einem ganzen Text, die Analyse von Werbung und Jugendkulturen. Rechtsberatung gibt es nicht.
+blocks:
+  - type: section
+    id: einstieg
+    title: Was zeigst du, wenn etwas kaputt ist?
+    blocks:
+      - type: text
+        text: "Du kaufst in einem Geschäft in Großbritannien ein T-Shirt. Zu Hause siehst du ein Loch im Stoff. Du gehst am nächsten Tag zurück in den Laden."
+      - type: single-choice
+        id: konsum-start
+        text: Was bringst du mit, damit man dir glaubt, dass du das T-Shirt dort gekauft hast?
+        options:
+          - text: Den Kassenbon
+            correct: true
+            info: Der Bon zeigt, was du wann bezahlt hast.
+          - text: Ein Foto vom Schaufenster
+            correct: false
+            info: Das zeigt nur, dass es den Laden gibt.
+          - text: Die Werbung des Ladens
+            correct: false
+            info: Eine Werbung zeigt nicht, dass du etwas gekauft hast.
+        explanation: Einen Beleg über den Kauf kannst du vorzeigen.
+      - type: text
+        text: "**Das kannst du danach:** Du sprichst über Kleidung und Konsum, nennst deine Rechte beim Einkaufen und sagst deine Meinung zu einem Kauf mit Grund und Beispiel."
+  - type: section
+    id: lesen
+    title: Billige Kleidung und deine Rechte
+    blocks:
+      - type: vocabulary
+        caption: Wörterkasten · Wörter zum Sachtext
+        languages: { source: de, target: en }
+        entries:
+          - target: consumer
+            source: Verbraucherin, Verbraucher
+          - target: fast fashion
+            source: schnelle, billige Mode
+          - target: brand
+            source: Marke
+          - target: sustainable
+            source: nachhaltig
+          - target: second-hand
+            source: gebraucht gekauft
+          - target: landfill
+            source: Mülldeponie
+          - target: emissions
+            source: Abgase, Ausstoß
+          - target: faulty
+            source: fehlerhaft, kaputt
+          - target: refund
+            source: Geld zurück
+          - target: repair, replace
+            source: reparieren, ersetzen
+          - target: warranty
+            source: Garantie des Herstellers
+          - target: receipt
+            source: Kassenbon
+          - target: in the sale
+            source: im Angebot (reduziert)
+          - target: till
+            source: Kasse
+          - target: garment
+            source: Kleidungsstück
+          - target: textiles
+            source: Stoffe, Textilien
+          - target: cancel
+            source: widerrufen, stornieren
+          - target: proof of purchase
+            source: Kaufbeleg
+          - target: label
+            source: Etikett
+      - type: text
+        text: "Der Text ist ein eigener Text nach Fakten aus Wikipedia („Fast fashion“) und von gov.uk („Accepting returns and giving refunds: the law“), Stand 24. November 2026. Die Zahlen sind die Zeilen."
+      - type: text
+        text: |
+          **1** Many young people like new clothes, and shops are happy to sell them. The term *fast fashion* describes shops that copy new trends quickly and sell them cheaply. According to Wikipedia, about 36% of all clothes that people bought in the world in 2026 belong to this group.
+
+          **2** There are good reasons for this. Low prices mean that more people can wear the latest styles, and the same article estimates that the industry gives work to 60 to 70 million people. For many consumers, a cheap top for a party is simply a good deal.
+
+          **3** However, there is another side. The United Nations Environment Programme says that people buy about 60% more clothes than they used to, but keep each item for only half as long. It also says that every second, the equivalent of a truckload of old textiles is buried in landfill or burned. Wikipedia gives an estimate of 2 to 8% of the world's greenhouse gas emissions for the fashion industry.
+
+          **4** What can consumers do? A study of T-shirts, mentioned by Wikipedia, found that if a garment lasts longer, its carbon emissions could fall by about half. That is why some people prefer second-hand clothes, repair a jumper instead of throwing it away, or look for sustainable brands. Others say that they cannot pay more for quality, or that clothes and brands are a way to show who you are. Both sides have a point.
+
+          **5** Whatever you choose, you have rights when you buy something in Britain. The government explains them on gov.uk. In a sale, your rights are exactly the same as at full price. A shop is not allowed to put up a sign that says "no refunds" to take them away.
+
+          **6** If an item is faulty, not as described or does not do what it should, the shop must offer a full refund. If you only change your mind in a shop, for example because the size or the colour is wrong, the shop does not have to give your money back.
+
+          **7** Online, it is different. You can cancel an order within 14 days after you receive the item, and then you have another 14 days to send it back. The shop must refund you within 14 days of getting it back.
+
+          **8** If you find a fault later, you can ask for a repair or a replacement. Within six months, the shop must repair or replace the item, unless it can prove that the item was not faulty. You can make a claim for up to six years (five in Scotland). A warranty does not take these rights away. The shop may ask for proof of purchase, for example a receipt, a bank statement or the packaging.
+  - type: section
+    id: neu
+    title: Beleg, Mengen und Pro und Contra
+    blocks:
+      - type: figure
+        image: images/beleg-konsum-werbung.svg
+        alt: "Ein Kassenbon auf weißem Papier mit gezacktem unterem Rand. Oben der Name eines erfundenen Geschäfts, darunter zwei Waren mit Preisen, eine Summe und der Hinweis auf Kartenzahlung. Rechts zeigen drei Pfeile auf Geschäft, Waren mit Preisen und Summe."
+        caption: "Ein Bon aus einem erfundenen Geschäft. Rechts steht, was die Zeilen zeigen."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              **Pro und Contra.** Ein *Pro* ist ein Grund dafür, ein *Contra* ein Grund dagegen. Im Sachtext stehen oft beide.
+
+              **Kleine Wörter, große Fehler.**
+
+              - *consumer* ist eine Person, die etwas verbraucht oder kauft, ganz allgemein. *customer* ist die Kundin oder der Kunde in einem Geschäft: *The customer at the desk is waiting.*
+              - *much* gehört zu Dingen, die du nicht zählst, *many* zu Dingen, die du zählst: *How much water? How many bottles?*
+              - *buy* heißt kaufen, *by* heißt mit oder bei: *I buy a scarf. I travel by bus.*
+              - *borrow* heißt sich etwas leihen, *lend* heißt jemandem etwas leihen: *I borrow a book. The library lends me the book.*
+              - *in the sale* heißt reduziert: *The coats are in the sale this week.*
+  - type: section
+    id: uebung
+    title: Zahlen belegen, Rechte zuordnen, Wörter wählen
+    blocks:
+      - type: single-choice
+        id: konsum-lesen
+        text: Was bedeutet fast fashion nach Zeile 1?
+        options:
+          - text: Neue Trends werden schnell kopiert und billig verkauft
+            correct: true
+            info: So beschreibt es Zeile 1.
+          - text: Kleidung, die besonders lange hält
+            correct: false
+            info: Zeile 3 sagt das Gegenteil, die Stücke werden kürzer getragen.
+          - text: Kleidung, die es nur in großen Städten gibt
+            correct: false
+            info: Davon steht im Text nichts.
+        explanation: Das Wort fast beschreibt, wie schnell neue Mode in die Läden kommt.
+      - type: matching
+        id: konsum-beleg
+        text: Welche Angabe steht in welcher Zeile?
+        pairs:
+          - left: 36 % der gekauften Kleidung weltweit
+            right: Zeile 1
+          - left: Etwa 60 % mehr Kleidung als früher
+            right: Zeile 3
+          - left: 14 Tage, um online zu widerrufen
+            right: Zeile 7
+          - left: Sechs Monate für Reparatur oder Ersatz
+            right: Zeile 8
+        explanation: Zahlen findest du schnell, wenn du den Text nach ihnen durchsuchst.
+      - type: matching
+        id: konsum-rechte
+        text: Welches Recht passt zu welcher Lage? Die Zeilen 5 bis 8 helfen.
+        pairs:
+          - left: Ein kaputtes T-Shirt war im Angebot.
+            right: Die Rechte sind wie bei vollem Preis.
+          - left: In der Filiale passen die Jeans nicht, sie haben aber keinen Fehler.
+            right: Der Laden muss kein Geld zurückgeben.
+          - left: Du hast online bestellt und die Ware seit drei Tagen.
+            right: Du kannst die Bestellung noch widerrufen.
+          - left: Nach vier Monaten reißt eine Naht, die schon fehlerhaft war.
+            right: Reparatur oder Ersatz, außer der Laden beweist das Gegenteil.
+        explanation: Entscheidend ist, ob es einen Fehler gibt und wo du gekauft hast.
+      - type: language-task
+        id: konsum-woerter
+        languages: { source: de, target: en }
+        mode: choice
+        task: Wähle das passende englische Wort für die Lücke.
+        form: { case: hint, punctuation: ok }
+        items:
+          - source: Ich möchte Geld zurück für dieses T-Shirt.
+            target: "I want a [refund] for this T-shirt."
+            distractors: [[receipt, warranty]]
+          - source: Bring bitte den Kassenbon mit.
+            target: "Please bring the [receipt]."
+            distractors: [[refund, warranty]]
+          - source: Die Kundin an der Kasse wartet.
+            target: "The [customer] at the till is waiting."
+            distractors: [[consumer]]
+          - source: Ich gehe in den Laden, um einen Schal zu kaufen.
+            target: "I go to the shop to [buy] a scarf."
+            distractors: [[by]]
+          - source: Der Schal war im Angebot.
+            target: "The scarf was in the [sale]."
+            distractors: [[sell]]
+      - type: language-task
+        id: konsum-menge
+        languages: { source: de, target: en }
+        task: "Schreibe die Sätze auf Englisch. Satz 1: Wie viele Pullover hast du? Satz 2: Ich habe nicht viel Geld. Satz 3: Kannst du mir fünf Pfund leihen? Die englischen Wörter sind nur eine Hilfe: Ergänze, was für einen ganzen Satz fehlt."
+        form: { case: hint, punctuation: ok, apostrophe: ok }
+        items:
+          - cue: how many · jumpers · you · have
+            target: How many jumpers do you have?
+            mistakes:
+              - answer: How much jumpers do you have?
+                message: Pullover kannst du zählen, dann passt many.
+              - answer: How many jumpers you have?
+                message: In der Frage steht do vor you.
+          - cue: I · not · have · much · money
+            target: (I do not|I don't) have much money.
+            mistakes:
+              - answer: I don't have many money.
+                message: Money kannst du nicht zählen, dann passt much.
+          - cue: can · you · lend · me · five pounds
+            target: Can you lend me five pounds?
+            mistakes:
+              - answer: Can you borrow me five pounds?
+                message: Die Person gibt das Geld her, dann passt lend, nicht borrow.
+      - type: multiple-choice
+        id: konsum-procontra
+        text: "Das Thema ist: Young people should buy new clothes often. Welche Sätze sind ein Contra? Wähle alle richtigen."
+        options:
+          - text: Old clothes often end up in landfill.
+            correct: true
+            info: Das ist ein Problem, siehe Zeile 3.
+          - text: Cheap prices let more people follow trends.
+            correct: false
+            info: Das ist ein Pro, siehe Zeile 2.
+          - text: People keep clothes for only half as long as before.
+            correct: true
+            info: Das spricht gegen häufiges Kaufen, siehe Zeile 3.
+          - text: Clothes can show who you are.
+            correct: false
+            info: Das ist ein Pro, siehe Zeile 4.
+        explanation: Ein Contra nennt ein Problem, ein Pro einen Vorteil.
+      - type: language-task
+        id: konsum-hoeren
+        languages: { source: de, target: en }
+        task: Hör zu und schreibe, was du hörst.
+        form: { case: hint, punctuation: ok }
+        items:
+          - audio: i-always-keep-the-receipt-when-i-buy-something.mp3
+            target: I always keep the receipt when I buy something.
+          - audio: can-i-return-this-jacket-if-it-is-too-small.mp3
+            target: Can I return this jacket if it is too small?
+          - audio: many-people-buy-their-clothes-online-nowadays.mp3
+            target: Many people buy their clothes online nowadays.
+  - type: section
+    id: anwenden
+    title: Deine Meinung zu einem Kauf
+    blocks:
+      - type: speaking-task
+        id: konsum-nachsprechen
+        language: en
+        items:
+          - audio: excuse-me-i-would-like-to-return-this-jumper.mp3
+            text: Excuse me, I would like to return this jumper.
+          - audio: could-you-check-the-label-please.mp3
+            text: Could you check the label, please?
+          - audio: it-is-better-to-buy-fewer-clothes-and-wear-them-longer.mp3
+            text: It is better to buy fewer clothes and wear them longer.
+        hint: Hör zu. Sprich dann langsam nach.
+      - type: open-task
+        id: konsum-schreiben
+        task: "Wähle einen Kauf, zu dem du eine Meinung hast (zum Beispiel Sportschuhe, ein Spiel oder eine Jacke). Schreibe in fünf bis sechs Sätzen deine Meinung mit Grund und Beispiel und nenne eine andere Sicht."
+        points:
+          - text: Die Meinung steht oben und unten, dazwischen Grund und Beispiel.
+            source: /was-ich-denke/meinung-begruenden/#neu
+          - text: Der Grund hängt mit because an der Meinung, das Beispiel ist etwas Konkretes.
+            source: /was-ich-denke/meinung-begruenden/#neu
+          - text: Ein Satz nennt die andere Sicht, zum Beispiel mit Some people say.
+            kind: form
+          - text: Mindestens ein Wort aus dem Wörterkasten kommt vor.
+            source: /pro-und-contra/konsum-werbung/#lesen
+        solution: |
+          I think a good pair of trainers is worth the money.
+          Good trainers last longer, because the material is strong.
+          For example, my last pair lasted three school years.
+          Some people say cheap trainers are the better deal, but they often break after a few months.
+          So I buy fewer trainers, and I keep the receipt in case there is a fault.
+        hint: Die App bewertet nicht. Prüfe deinen Text anhand der Punkte.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Auf der nächsten Seite beschreibst du Jugendkulturen früher und heute, auch ihre Musik."
