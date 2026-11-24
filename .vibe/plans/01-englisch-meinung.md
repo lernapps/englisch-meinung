@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: plan
+phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -158,8 +158,9 @@ Alle zwölf sind Lücken der Karte (`practisedBy` leer).
       learners see after each. Keep the files in `.vibe/sketches/`.
 - [x] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
       plain words (what learners see and do, what the app cannot do). At most 2 questions.
-- [ ] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
+- [x] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
       them, then ask again.
+      Creator: Orchestrator: Plan bestätigt; Start mit Musterseite meinung-begruenden; ein Lesestück je Seite; Handys und Konsum sachlich abwägen
 
 ### Content method
 
@@ -215,7 +216,7 @@ page, which a link. -->
 
 ### Tasks
 
-- [ ] Load skill `lernapps-cli`. Create the app as its section "Create" says:
+- [x] Load skill `lernapps-cli`. Create the app as its section "Create" says:
       `npx --no -- lernapps create --archetype explainer`.
 - [ ] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
       no "FILL IN" left. Commit it before any content.
