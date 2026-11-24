@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" font-family="sans-serif" font-size="16">
+<rect width="960" height="360" fill="#f4efe2"/>
+<text x="20" y="28" font-size="18" font-weight="bold">Skizze: drei Bilder der App (Schichtfarben gleich in allen Bildern)</text>
+<g transform="translate(20,50)">
+<text x="0" y="0" font-weight="bold">1 Argument-Burger (Kapitel 1-2)</text>
+<rect x="0" y="12" width="260" height="42" rx="10" fill="#e8743b"/><text x="14" y="39">Opinion: I think …</text>
+<rect x="0" y="60" width="260" height="42" rx="6" fill="#2c6fd8"/><text x="14" y="87" fill="#fff">Reason: because …</text>
+<rect x="0" y="108" width="260" height="42" rx="6" fill="#138d75"/><text x="14" y="135" fill="#fff">Example: for example …</text>
+<rect x="0" y="156" width="260" height="42" rx="10" fill="#e8743b"/><text x="14" y="183">Opinion: So I think …</text>
+<text x="0" y="230">Gestapelt (Kap. 2): ein zweiter Burger, </text><text x="0" y="252">dazwischen Schild „however / therefore“</text></g>
+<g transform="translate(340,50)">
+<text x="0" y="0" font-weight="bold">2 Meinungsbarometer (Kapitel 1)</text>
+<line x1="0" y1="110" x2="260" y2="110" stroke="#34495e" stroke-width="4"/>
+<text x="0" y="140">disagree</text><text x="200" y="140">agree</text>
+<rect x="30" y="60" width="64" height="30" rx="6" fill="#fff" stroke="#34495e"/><text x="38" y="81">Sophie</text>
+<rect x="150" y="60" width="64" height="30" rx="6" fill="#fff" stroke="#34495e"/><text x="168" y="81">Amir</text>
+<text x="0" y="190">Kärtchen mit Namen, Satz darüber:</text><text x="0" y="212">„Social media is good for friends.“</text></g>
+<g transform="translate(680,50)">
+<text x="0" y="0" font-weight="bold">3 Waage (Kapitel 3, ohne Figuren)</text>
+<line x1="130" y1="30" x2="130" y2="190" stroke="#34495e" stroke-width="6"/>
+<line x1="20" y1="60" x2="240" y2="90" stroke="#34495e" stroke-width="6"/>
+<rect x="0" y="62" width="100" height="40" fill="#c0392b"/><text x="14" y="88" fill="#fff">PRO ×2</text>
+<rect x="160" y="92" width="100" height="40" fill="#2c6fd8"/><text x="170" y="118" fill="#fff">CONTRA ×3</text>
+<text x="0" y="230">Die Waage neigt sich zur schwereren Seite;</text><text x="0" y="252">die Schlussfolgerung sagt, wohin.</text></g>
+</svg>

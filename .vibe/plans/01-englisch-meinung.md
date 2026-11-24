@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: explore
+phase: plan
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -117,9 +117,10 @@ Alle zwölf sind Lücken der Karte (`practisedBy` leer).
       off), and which misconception the feedback catches.
 - [x] Write under "Notes" the scope: what is in, what is out and why, the data range (for example "all main-group
       elements", never a silent "1–20"), the languages.
-- [ ] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
+- [x] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
       approach, the scope, every "(guess)", the sources and what is unchecked, the archetype and its reason. Stop and
       wait. Changes: change them, then ask again.
+      Creator: Orchestrator: Recherche bestätigt; Raten 1-4 ja; passiv als Wiederholungsseite (recap passiv, englisch-verbketten); text-gliedern knapp auf kommentar erklären; stilmittel knapp auf werbung
 
 ### Answers
 
@@ -145,25 +146,59 @@ Alle zwölf sind Lücken der Karte (`practisedBy` leer).
 
 ### Tasks
 
-- [ ] Map the content as "Map the content" of skill `lernapps-explainer-design` says, and write the result under
+- [x] Map the content as "Map the content" of skill `lernapps-explainer-design` says, and write the result under
       "Content method".
-- [ ] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
-- [ ] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
+- [x] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
+- [x] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
       opening task, the change of activity, the reward, the story.
-- [ ] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
+- [x] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
       screen, `npx --no -- lernapps plan add --at pattern "<task>"`. Then the others, one call each:
       `npx --no -- lernapps plan add --at pages "<task>"`. Each task says what it builds and what it shows.
-- [ ] Draw a sketch of each screen, component or interactive exercise: a static SVG or image, or the steps with what
+- [x] Draw a sketch of each screen, component or interactive exercise: a static SVG or image, or the steps with what
       learners see after each. Keep the files in `.vibe/sketches/`.
-- [ ] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
+- [x] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
       plain words (what learners see and do, what the app cannot do). At most 2 questions.
 - [ ] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
       them, then ask again.
 
 ### Content method
 
-<!-- One line each: the patterns and where; the figures and how they are made; the data files; each component, what it
-checks and what it cannot; how a later agent adds a chapter. It becomes the content guide in Code. -->
+**Format:** Einheiten-App `subject: englisch`, Sprache `[de]`. Jede Seite (außer recap) hat die Abschnitts-IDs `einstieg` (Vorwissen-Frage, erste leichte Aufgabe, „Das kannst du danach“), `lesen` (Lesestück mit Randglossar als `vocabulary`), `neu` (Burger/Waage-Bild, Merke), `uebung` (Verstehen, Belegen, Meinung, mindestens vier Übungen leicht → schwer), `anwenden` (Schreib- oder Sprechauftrag mit `points` und `solution`), `weiter`. Höchstens ein Lesestück, etwa 25 Items, 350 Wörter Erklärtext. Übungs-IDs: Präfix = Seite; Diktat `…-hoeren`, Nachsprechen `…-nachsprechen`, offene Aufgabe `…-schreiben`.
+
+**Seiten (Pfad → Baustein):**
+- `was-ich-denke/` : `das-brauchst-du` (recap `englisch/freizeit-hobbys, englisch/konjunktionen, englisch/that-saetze`) · `meinung-sagen` (`meinung-redemittel`) · `meinung-begruenden` (`meinung-begruenden`, **Musterseite**) · `sport-musik` · `medien`.
+- `argumente-verbinden/` : `das-brauchst-du` (recap `englisch/passiv`, Verweis auf englisch-verbketten) · `verbindungswoerter` (`verbindungswoerter-argumentieren`) · `umwelt` · `technik-fortschritt` · `leserbrief`.
+- `pro-und-contra/` : `das-brauchst-du` (recap `englisch/kleidung-einkaufen`) · `konsum-werbung` · `jugendkultur` · `kommentar` (text-gliedern knapp erklärt) · `werbung` (stilmittel knapp erklärt).
+- Zeichnungen (eigene SVG, `CC-BY-4.0`, Schicht-Farben fest): `burger-<seite>.svg` (vier Schichten Opinion rot-orange, Reason blau, Example grün, Opinion rot-orange; Reihenfolge von oben nach unten), `barometer-<seite>.svg` (Skala disagree – agree mit Namenskärtchen), in Kapitel 2 gestapelte Burger mit Verbindungswörtern, in Kapitel 3 `waage-<seite>.svg` (zwei Schalen Pro/Contra, Neigung = Schlussfolgerung). Figuren aus `millbrook-klassenzimmer.svg` von hello-millbrook nur in Kapitel 1-2 und nur wo ein Bild etwas zeigt (Meinungswand); Kapitel 3 ohne Figuren.
+- Hörsätze: je Seite drei Diktat- und drei Nachsprechsätze mit `bf_emma`, neue Sätze (nicht im Seitentext), ganze Sätze, `regen_audio.py`, Hörliste im Inhaltsführer.
+- Selbsteinschätzung: je Kapitel 2 bis 3 verständliche Übungen je Seite (Skill `lernapps-explainer-self-assessment`).
+
+**Muster je Baustein** (Name · Art · Form):
+- Redemittel-Fächer · zuordnen · `matching` Ausdruck ↔ Fach (Meinung, Zustimmung, Widerspruch); Meinungsbarometer · einordnen · `single-choice` mit `info` je Option.
+- Burger bauen · ordnen · `ordering` der vier Schichten; Schicht erkennen · zuordnen · `matching` Satz ↔ Schicht; fehlende Schicht finden · urteilen · `single-choice` mit Meldung je Option.
+- Satz mit Cue · Form bilden · `language-task` write (`cue: "I · agree · because · fun"`), je typischem Fehler eine Meldung (`mistakes`).
+- Lücke/Auswahl · Form wählen · `language-task` gap/choice (however, therefore, moreover; since/for, interested in).
+- Lesestück verstehen · lesen und belegen · `single-choice`/`multiple-choice` mit Verweis auf Zeile (Zeilennummer im Text), Meinung als `open-task`.
+- Diktat/Nachsprechen · `language-task` mit `audio`, `speaking-task`.
+- Anwenden · `open-task` mit `points` (Burger vollständig, Verbindungswort richtig, Beispiel konkret) und Musterlösung.
+- Kapitel 3: Waage füllen · `matching` Argument ↔ Pro/Contra; Absätze ordnen · `ordering`; Werbemittel zuordnen · `matching` Beispiel ↔ Mittel ↔ Wirkung.
+- Keine Komponenten, keine Datendateien (`prefer-built-in-block`): Burger, Barometer und Waage sind Zeichnungen.
+
+**Engagement je Seite (Opening, Wechsel, Belohnung, Geschichte, Wiederholung):**
+- `meinung-sagen`: Opening: Mr Hill stellt eine Frage an der Meinungswand, Sophie stellt ihr Kärtchen auf das Barometer; erst Auswahl, welcher Satz zustimmt. Wechsel: Chat lesen → Fächer füllen → Satz schreiben. Belohnung: man sagt eine eigene Meinung ohne Fehler wie I am agree. Story: die Meinungswand wird eingeführt. Wiederholung: that-Satz aus dem Recap kommt in „I think that …“ wieder.
+- `meinung-begruenden`: Opening: ein Burger mit fehlender Schicht (erst raten, welche), dann Burger-Bild. Wechsel: ordnen → erkennen → schreiben. Belohnung: eigener Burger zu einem Thema der Kinder. Story: Mr Hill hängt das Burger-Poster auf, Ellie und Sophie streiten freundlich über ein Thema. Wiederholung: Redemittel von Seite 1 im Burger.
+- `sport-musik`: Opening: Chat „Lieblingsmusik“, Zeile belegen. Belohnung: eine eigene Meinung zu Musik als vollständiger Burger. Wechsel: Chat → Wortfeld → Burger-Satz → Diktat.
+- `medien`: Opening: Barometer zu „Social media is good for friends“. Wechsel: Chat → Chancen/Gefahren sortieren → Meinung begründen. Belohnung: Meinung mit Gegenargument-Satz („Some people say … but …“).
+- `verbindungswoerter`: Opening: zwei Burger-Sätze, welches Wort verbindet sie; Belohnung: zwei Burger gestapelt mit however/therefore. Wechsel: Schilder-Bild → Auswahl → Lücke → ordnen.
+- `umwelt`: Opening: Frage „Was liegt in unserem Müll?“ (Sortieren); Lesestück: kurzer Artikel mit Fakten; Belohnung: ein Vorschlag mit Begründung für die Schule; Story: Anlass für den Leserbrief.
+- `technik-fortschritt`: Opening: Erfindung raten (Bild), Passiv am Zeitstrahl-ähnlichen Ordnen; Belohnung: Passivsatz zu einer Erfindung plus Meinung, ob sie nützt; Wiederholung: Passiv aus Recap.
+- `leserbrief`: Opening: Artikel über Plastik in der Schule; Wechsel: Brief lesen → Teile markieren → Lücken → eigener Brief; Belohnung: ein vollständiger Leserbrief; Story: der Brief geht an die Schülerzeitung.
+- `konsum-werbung`: Opening: Frage „Was hast du zuletzt gekauft und warum?“; Lesestück: Sachtext mit Zahlen (nur belegte); Belohnung: eine Meinung zu Kauf und Rechten, begründet. Kein Figuren-Chat.
+- `jugendkultur`: Opening: Bild/Begriff raten (Mods, Punks, Hip-Hop); Lesestück: kurze Texte früher und heute; Belohnung: eine Jugendkultur beschreiben (simple past und present).
+- `kommentar`: Opening: Waage mit leeren Schalen, Argumente einsortieren; Lesestück: ein argumentativer Text (Beispielthema für 9-10: Handys in der Schule, mit belegten Fakten); Belohnung: eigener argumentativer Text mit Entscheidung.
+- `werbung`: Opening: zwei erfundene Anzeigen vergleichen (Information vs. Versprechen); Wechsel: Mittel zuordnen → Wirkung → untersuchen; Belohnung: eine Werbung selbst untersuchen (Punkte, Musterlösung).
+
+**Wie ein späterer Agent ein Kapitel ergänzt:** Seiten nach dem Muster `meinung-begruenden` (Abschnitte, Übungsarten, Hörsätze, Punkte), Burger-/Waage-Figuren gleich lassen, Quellen in „Sources“, `lernapps check` und Hörsatz-Skript.
 <!-- An explainer: per figure, model and component its learning action in two to four sentences
 (`explainer-representation-explained`); per page its prerequisites the app does not practise, and which get a recap
 page, which a link. -->
@@ -191,11 +226,24 @@ page, which a link. -->
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
 - [ ] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-<!-- tasks: pattern: the one page or screen that is the pattern for the others -->
+- [ ] Musterseite meinung-begruenden (Kapitel 1): Lesestück als Chat, Burger-Bild mit vier Schichten, Übungen leicht bis schwer, Diktat, Nachsprechen, Schreibauftrag, Zeichnung, Hörsätze; zusammen mit app.yaml, chapter.yaml und dem Inhaltsführer
+<!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
-<!-- tasks: pages: the other pages or screens, after the pattern -->
+- [ ] Kapitel 1: Wiederholungsseite das-brauchst-du und Seite meinung-sagen (Redemittel, Meinungsbarometer, Meinungswand)
+- [ ] Kapitel 1: Seite sport-musik (Chat über Lieblingsmusik und Serie, Sportarten)
+- [ ] Kapitel 1: Seite medien (Chat über soziale Medien, Chancen und Gefahren) und Kapitel-Rückblick
+- [ ] Kapitel 2: Wiederholungsseite passiv und Seite verbindungswoerter (however, therefore, moreover, on the one hand ... on the other hand, gestapelte Burger)
+- [ ] Kapitel 2: Seite umwelt (Artikel über Müll und Recycling mit belegten Fakten)
+- [ ] Kapitel 2: Seite technik-fortschritt (Erfindungen, was invented by)
+- [ ] Kapitel 2: Seite leserbrief (Artikel, Leserbrief an die Schülerzeitung) und Kapitel-Rückblick
+- [ ] Kapitel 3: Wiederholungsseite kleidung-einkaufen und Seite konsum-werbung (Sachtext mit belegten Zahlen)
+- [ ] Kapitel 3: Seite jugendkultur (Mods, Punks, Hip-Hop früher und heute, Fakten mit Quelle)
+- [ ] Kapitel 3: Seite kommentar (Waage, Gliederung kurz erklärt, argumentativer Text zu Handys in der Schule)
+- [ ] Kapitel 3: Seite werbung (erfundene Anzeigen untersuchen, Stilmittel kurz erklärt) und Kapitel-Rückblick
+- [ ] Hörsätze, Skript zur Prüfung von Hörsätzen, Wörtern und Quellen, Hörliste im Inhaltsführer, Selbsteinschätzung der drei Kapitel
+<!-- tasks: pages (12 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
