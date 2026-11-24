@@ -10,20 +10,20 @@ blocks:
     blocks:
       - type: figure
         image: images/szene-meinung-begruenden.svg
-        alt: "Im Klassenzimmer hängen links ein Poster mit vier bunten Schichten und rechts ein Meinungsbarometer mit der Skala disagree bis agree. Sophie, Ellie und Amir stehen links, Mr Hill steht rechts und fragt in einer Sprechblase: „Why do you think so?“"
-        caption: "An der Meinungswand: links das Poster Argument-Burger, rechts das Meinungsbarometer. Von links: Sophie (Zöpfe), Ellie (roter Pferdeschwanz), Amir (Brille) und Mr Hill (graue Haare)."
+        alt: "Im Klassenzimmer hängen links ein Poster mit vier beschrifteten bunten Schichten und rechts ein Meinungsbarometer mit der Skala disagree bis agree und zwei Namenskärtchen, Amir und Sophie. Sophie, Ellie und Amir stehen links, Mr Hill steht rechts und fragt in einer Sprechblase: „Why do you think so?“"
+        caption: "An der Meinungswand: links das Poster Argument-Burger, rechts das Meinungsbarometer mit den Namenskärtchen. Von links: Sophie (Zöpfe), Ellie (roter Pferdeschwanz), Amir (Brille) und Mr Hill (graue Haare)."
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: text
-        text: "An der **Meinungswand** stellen die Kinder ihr Kärtchen auf agree oder disagree. Sophie sagt: „I think pizza is the best food.“ Mr Hill fragt: „Why do you think so?“ Sophie hat gesagt, was sie meint. Mr Hill will mehr wissen."
+        text: "An der **Meinungswand** stellen die Kinder ihr Kärtchen auf agree oder disagree. Sophie sagt: „I think pizza is the best food.“ Mr Hill fragt: „Why do you think so?“ (Warum denkst du das?) Sophie hat gesagt, was sie meint. Mr Hill will mehr wissen."
       - type: single-choice
         id: begruenden-start
         text: Was braucht Sophie jetzt für ihre Antwort?
         options:
-          - text: Einen Grund, zum Beispiel mit because
+          - text: Eine Begründung für ihre Meinung
             correct: true
             info: Mr Hill fragt nach dem Warum.
-          - text: Ihre Meinung noch einmal mit anderen Worten
+          - text: Dieselbe Meinung noch einmal
             correct: false
             info: Das sagt nichts Neues.
           - text: Eine Frage an Mr Hill
@@ -31,7 +31,7 @@ blocks:
             info: Mr Hill hat schon gefragt.
         explanation: Ein Grund macht die Meinung stark.
       - type: text
-        text: "**Das kannst du danach:** Du sagst nicht nur, was du denkst, sondern auch warum. Du stützt deine Meinung mit einem Grund und einem Beispiel."
+        text: "**Das kannst du danach:** Du antwortest auf Why? mit einem Burger aus vier Sätzen."
   - type: section
     id: lesen
     title: Zwei Burger in einem Chat
@@ -44,14 +44,18 @@ blocks:
             source: Leinwand, Bildschirm
           - target: huge
             source: riesig
-          - target: detail
-            source: Einzelheit
           - target: amazing
             source: toll, erstaunlich
           - target: expensive
             source: teuer
           - target: pause
             source: anhalten
+          - target: agree, disagree
+            source: zustimmen, widersprechen
+          - target: exciting
+            source: spannend
+          - target: both sides
+            source: beide Seiten
           - target: reason
             source: Grund
           - target: example
@@ -74,7 +78,7 @@ blocks:
 
           **6** Sophie: Why?
 
-          **7** Ellie: The cinema is expensive, and you cannot pause the film. Last Sunday I made snacks at home, and I paused the film three times for pizza!
+          **7** Ellie: The cinema is expensive, and you cannot pause the film. For example, last Sunday I made snacks at home, and I paused the film three times for pizza!
 
           **8** Sophie: I see both sides. I agree with Ellie, because it is cheaper at home. But Amir is right too, because the big screen is exciting.
 
@@ -98,7 +102,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              **Eine Meinung braucht vier Schichten.** Oben steht die Meinung (**Opinion**), zum Beispiel mit *I think …*. Dann kommt der Grund (**Reason**), meist mit *because*. Danach folgt ein Beispiel (**Example**), meist mit *For example, …*. Unten sagst du die Meinung noch einmal, zum Beispiel mit *So …* oder *That is why …*. Nach *because* steht ein ganzer Satz mit Verb.
+              **Eine Meinung braucht vier Schichten.** Oben steht die Meinung (**Opinion**), zum Beispiel mit *I think …*. Dann kommt der Grund (**Reason**), meist mit *because*. Danach folgt ein Beispiel (**Example**), meist mit *For example, …*. Unten sagst du die Meinung noch einmal, zum Beispiel mit *So …* oder *That is why …*. Nach *because* steht ein ganzer Satz mit Verb. Der Grund hängt am Satz davor: *I like it because …*.
   - type: section
     id: uebung
     title: Schichten finden, ordnen und schreiben
@@ -126,7 +130,7 @@ blocks:
             info: "Amir erzählt vom letzten Film im Kino: For example, …"
           - text: Zeile 7
             correct: true
-            info: Ellie erzählt vom letzten Sonntag.
+            info: "Ellie erzählt vom letzten Sonntag: For example, …"
           - text: Zeile 2
             correct: false
             info: Hier sagt Amir nur seine Meinung.
@@ -176,7 +180,7 @@ blocks:
       - type: language-task
         id: begruenden-satz
         languages: { source: de, target: en }
-        task: "Schreibe die Sätze auf Englisch. Satz 1: Ich denke, Lesen ist nützlich. Satz 2: Ich mag Züge, weil sie leise sind. Satz 3: Zum Beispiel lese ich jede Woche ein Buch. Die englischen Wörter stehen als Hilfe da."
+        task: "Schreibe die Sätze auf Englisch. Satz 1: Ich denke, Lesen ist nützlich. Satz 2: Ich mag Züge, weil sie leise sind. Satz 3: Zum Beispiel lese ich jede Woche ein Buch. Die englischen Wörter sind nur eine Hilfe: Ergänze, was für einen ganzen Satz fehlt (Verb, Artikel)."
         form: { case: hint, punctuation: ok, apostrophe: ok }
         items:
           - cue: I · think · reading · useful
@@ -233,9 +237,9 @@ blocks:
         id: begruenden-schreiben
         task: "Wähle ein Thema, zu dem du eine Meinung hast (zum Beispiel ein Essen, ein Hobby oder ein Fach). Schreibe in vier Sätzen deinen Argument-Burger: Meinung, Grund, Beispiel, Meinung."
         points:
-          - text: Es sind vier Sätze, die in dieser Reihenfolge stehen, Opinion, Reason, Example, Opinion.
+          - text: Der Text hat vier Teile in der richtigen Reihenfolge.
             source: /was-ich-denke/meinung-begruenden/#neu
-          - text: Der Grund beginnt mit because und ist ein ganzer Satz mit Verb.
+          - text: Der Grund hängt mit because an der Meinung und ist ein ganzer Satz mit Verb.
             source: /was-ich-denke/meinung-begruenden/#neu
           - text: Das Beispiel ist etwas, das wirklich passiert ist, mit For example.
             source: /was-ich-denke/meinung-begruenden/#neu
