@@ -234,18 +234,18 @@ page, which a link. -->
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
       Creator: Orchestrator: Muster bestätigt, übrige Seiten dürfen folgen; Gesamtcheck und Sprachprüfung vor dem PR
-- [ ] Kapitel 1: Wiederholungsseite das-brauchst-du und Seite meinung-sagen (Redemittel, Meinungsbarometer, Meinungswand)
-- [ ] Kapitel 1: Seite sport-musik (Chat über Lieblingsmusik und Serie, Sportarten)
-- [ ] Kapitel 1: Seite medien (Chat über soziale Medien, Chancen und Gefahren) und Kapitel-Rückblick
-- [ ] Kapitel 2: Wiederholungsseite passiv und Seite verbindungswoerter (however, therefore, moreover, on the one hand ... on the other hand, gestapelte Burger)
-- [ ] Kapitel 2: Seite umwelt (Artikel über Müll und Recycling mit belegten Fakten)
-- [ ] Kapitel 2: Seite technik-fortschritt (Erfindungen, was invented by)
-- [ ] Kapitel 2: Seite leserbrief (Artikel, Leserbrief an die Schülerzeitung) und Kapitel-Rückblick
-- [ ] Kapitel 3: Wiederholungsseite kleidung-einkaufen und Seite konsum-werbung (Sachtext mit belegten Zahlen)
-- [ ] Kapitel 3: Seite jugendkultur (Mods, Punks, Hip-Hop früher und heute, Fakten mit Quelle)
-- [ ] Kapitel 3: Seite kommentar (Waage, Gliederung kurz erklärt, argumentativer Text zu Handys in der Schule)
-- [ ] Kapitel 3: Seite werbung (erfundene Anzeigen untersuchen, Stilmittel kurz erklärt) und Kapitel-Rückblick
-- [ ] Hörsätze, Skript zur Prüfung von Hörsätzen, Wörtern und Quellen, Hörliste im Inhaltsführer, Selbsteinschätzung der drei Kapitel
+- [x] Kapitel 1: Wiederholungsseite das-brauchst-du und Seite meinung-sagen (Redemittel, Meinungsbarometer, Meinungswand)
+- [x] Kapitel 1: Seite sport-musik (Chat über Lieblingsmusik und Serie, Sportarten)
+- [x] Kapitel 1: Seite medien (Chat über soziale Medien, Chancen und Gefahren) und Kapitel-Rückblick
+- [x] Kapitel 2: Wiederholungsseite passiv und Seite verbindungswoerter (however, therefore, moreover, on the one hand ... on the other hand, gestapelte Burger)
+- [x] Kapitel 2: Seite umwelt (Artikel über Müll und Recycling mit belegten Fakten)
+- [x] Kapitel 2: Seite technik-fortschritt (Erfindungen, was invented by)
+- [x] Kapitel 2: Seite leserbrief (Artikel, Leserbrief an die Schülerzeitung) und Kapitel-Rückblick
+- [x] Kapitel 3: Wiederholungsseite kleidung-einkaufen und Seite konsum-werbung (Sachtext mit belegten Zahlen)
+- [x] Kapitel 3: Seite jugendkultur (Mods, Punks, Hip-Hop früher und heute, Fakten mit Quelle)
+- [x] Kapitel 3: Seite kommentar (Waage, Gliederung kurz erklärt, argumentativer Text zu Handys in der Schule)
+- [x] Kapitel 3: Seite werbung (erfundene Anzeigen untersuchen, Stilmittel kurz erklärt) und Kapitel-Rückblick
+- [x] Hörsätze, Skript zur Prüfung von Hörsätzen, Wörtern und Quellen, Hörliste im Inhaltsführer, Selbsteinschätzung der drei Kapitel
 <!-- tasks: pages (12 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.
