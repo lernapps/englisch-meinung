@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 250" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 310" role="img">
   <title>Drei Mülleimer</title>
-  <rect width="560" height="250" fill="#f4efe2"/>
+  <rect width="560" height="310" fill="#f4efe2"/>
   <rect y="210" width="560" height="40" fill="#c9a77a"/>
   <rect x="40" y="70" width="130" height="140" rx="8" fill="#c9ced6" stroke="#333" stroke-width="3"/>
   <rect x="32" y="52" width="146" height="22" rx="6" fill="#555" stroke="#333" stroke-width="3"/>

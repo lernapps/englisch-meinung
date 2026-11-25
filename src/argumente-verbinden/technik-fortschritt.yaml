@@ -20,15 +20,15 @@ blocks:
         id: technik-start
         text: Welche dieser Erfindungen gibt es schon am längsten?
         options:
+          - text: Das Fahrrad mit Kette
+            correct: false
+            info: Vergleiche die Jahreszahlen im Chat.
+          - text: Das World Wide Web
+            correct: false
+            info: Vergleiche die Jahreszahlen im Chat.
           - text: Das Papier
             correct: true
             info: Papier wurde schon vor etwa 1900 Jahren gemacht.
-          - text: Das Fahrrad mit Kette
-            correct: false
-            info: Das Fahrrad mit Kette kam viel später.
-          - text: Das World Wide Web
-            correct: false
-            info: Das Web ist die jüngste der drei Erfindungen.
         explanation: Papier ist viel älter als ein Fahrrad mit Kette und als das Web.
       - type: text
         text: "**Das kannst du danach:** Du sagst, wann und von wem etwas erfunden wurde."
@@ -42,8 +42,8 @@ blocks:
         entries:
           - target: invent, invention
             source: erfinden, Erfindung
-          - target: the public
-            source: die Öffentlichkeit
+          - target: code
+            source: Programmcode
           - target: process
             source: Verfahren
           - target: ink
@@ -66,7 +66,7 @@ blocks:
 
           **2** Sophie: Cool! Is it used for anything special?
 
-          **3** Amir: It is used for sharing information. It was opened to the public in 1993.
+          **3** Amir: It is used for sharing information. In 1993 the code of the web was made free for everyone.
 
           **4** Sophie: My fact is about paper. Paper was made in China at least as early as the year 105.
 
@@ -111,22 +111,23 @@ blocks:
         id: technik-lesen
         text: Warum sagt Sophie in Zeile 6 „People say“?
         options:
-          - text: Man hat ältere papierähnliche Stücke gefunden, darum ist nicht sicher, wer das Verfahren erfand
-            correct: true
-            info: Das steht in Zeile 6 nach However.
           - text: Cai Lun lebte nicht in China
             correct: false
             info: Davon steht nichts im Chat.
+          - text: Man hat ältere papierähnliche Stücke gefunden, darum ist nicht sicher, wer das Verfahren erfand
+            correct: true
+            info: Das steht in Zeile 6 nach However.
           - text: Papier wurde erst 1989 erfunden
             correct: false
             info: Die Jahreszahl 1989 gehört zum Web.
         explanation: Wenn nicht klar ist, wer etwas erfunden hat, sagt man People say.
       - type: number
         id: technik-jahr
-        text: In welchem Jahr wurde das Web für alle geöffnet? Lies Zeile 3.
+        text: In welchem Jahr wurde der Code des Web für alle frei? Lies Zeile 3.
         answer: 1993
         tolerance: 0
-        explanation: Das Web wurde 1993 für die Öffentlichkeit geöffnet. 1989 ist das Jahr, in dem es erfunden wurde.
+        hint: In Zeile 1 steht ein anderes Jahr.
+        explanation: Seit 1993 darf jeder den Code des Web frei benutzen. 1989 ist das Jahr, in dem es erfunden wurde.
       - type: matching
         id: technik-zuordnen
         text: Welche Erfindung gehört zu welcher Person oder Jahreszahl? Ordne zu.
@@ -138,6 +139,7 @@ blocks:
           - left: the first upright bike with a chain
             right: um 1885
         explanation: Die Fakten stehen in den Zeilen 1, 7 und 9.
+        hint: Suche Namen und Jahreszahlen im Chat.
       - type: language-task
         id: technik-luecke
         languages: { source: de, target: en }
@@ -175,8 +177,6 @@ blocks:
                 message: Das Partizip von open endet auf -ed.
               - answer: The window was opened from Mr Hill.
                 message: Die Person steht nach by, nicht nach from.
-              - answer: The window opened by Mr Hill.
-                message: Im Passiv fehlt ein Hilfsverb.
           - cue: bicycles · use · travel
             target: Bicycles are used for (travelling|travel).
             mistakes:
@@ -237,4 +237,4 @@ blocks:
     title: Wie es weitergeht
     blocks:
       - type: text
-        text: "Auf der letzten Seite schreibst du einen Leserbrief an die Schülerzeitung. Er antwortet auf den Artikel über Plastikmüll."
+        text: "Danach schreibst du den Leserbrief zu dem Artikel über Plastikmüll."

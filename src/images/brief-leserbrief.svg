@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690 400" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690 460" role="img">
   <title>Aufbau eines Leserbriefs</title>
-  <rect width="690" height="400" fill="#f4efe2"/>
+  <rect width="690" height="460" fill="#f4efe2"/>
   <rect x="10" y="10" width="440" height="380" fill="#fff" stroke="#333" stroke-width="3"/>
   <text x="26" y="40" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222">Dear Editor,</text>
   <text x="26" y="78" font-family="sans-serif" font-size="16" fill="#222">In your article about the library,</text>
@@ -22,6 +22,6 @@
   <text x="482" y="90.0" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222">Bezug zum Artikel</text>
   <path d="M458 112 h12 V268 h-12" fill="none" stroke="#333" stroke-width="3"/>
   <text x="482" y="196.0" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222">Meinung mit Burger</text>
-  <path d="M458 318 h12 V384 h-12" fill="none" stroke="#333" stroke-width="3"/>
-  <text x="482" y="357.0" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222">Schluss</text>
+  <path d="M458 286 h12 V384 h-12" fill="none" stroke="#333" stroke-width="3"/>
+  <text x="482" y="341.0" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222">Schluss</text>
 </svg>

@@ -27,12 +27,12 @@ blocks:
     id: passiv-wahl
     text: Welcher Satz ist richtig?
     options:
-      - text: The picture was drawn by Amir
-        correct: true
-        info: Nach was steht das Partizip drawn.
       - text: The picture was drew by Amir
         correct: false
         info: Drew ist die Vergangenheitsform, kein Partizip.
+      - text: The picture was drawn by Amir
+        correct: true
+        info: Nach was steht das Partizip drawn.
       - text: The picture was drawing by Amir
         correct: false
         info: Die ing-Form gehört nicht ins Passiv.
@@ -50,3 +50,5 @@ blocks:
         target: "The book [is] often read."
         distractors: [[are, was]]
     explanation: Heute is oder are, früher was oder were. Die Mehrzahl braucht are oder were.
+  - type: text
+    text: "**Wie es weitergeht:** Als Nächstes lernst du Verbindungswörter wie however und therefore. Das Passiv brauchst du später auf der Seite über Erfindungen."

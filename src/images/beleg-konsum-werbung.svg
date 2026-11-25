@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 330" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 390" role="img">
 <title>Ein Kassenbon aus einem Geschäft</title>
-<rect width="480" height="330" fill="#f4efe2"/>
+<rect width="480" height="390" fill="#f4efe2"/>
 <path d="M20 14 H270 V292 L257.5 304 L245.0 292 L232.5 304 L220.0 292 L207.5 304 L195.0 292 L182.5 304 L170.0 292 L157.5 304 L145.0 292 L132.5 304 L120.0 292 L107.5 304 L95.0 292 L82.5 304 L70.0 292 L57.5 304 L45.0 292 L32.5 304 L20.0 292 Z" fill="#fff" stroke="#333" stroke-width="2"/>
 <text x="145" y="44" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#222">EXAMPLE SHOP</text>
 <text x="145" y="68" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#555">Receipt</text>

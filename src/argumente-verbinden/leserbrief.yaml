@@ -20,15 +20,15 @@ blocks:
         id: brief-start
         text: Was ist ein Leserbrief?
         options:
-          - text: Ein Brief an die Zeitung, der auf einen Artikel antwortet
-            correct: true
-            info: Die Leser schreiben der Zeitung ihre Meinung.
           - text: Ein Artikel, den die Zeitung über ihre Leser schreibt
             correct: false
             info: Beim Leserbrief schreiben die Leser.
           - text: Ein Brief der Zeitung an alle Leser
             correct: false
             info: Beim Leserbrief geht die Post an die Zeitung.
+          - text: Ein Brief an die Zeitung, der auf einen Artikel antwortet
+            correct: true
+            info: Die Leser schreiben der Zeitung ihre Meinung.
         explanation: Ein Leserbrief ist die Antwort eines Lesers.
       - type: text
         text: "**Das kannst du danach:** Du schreibst einen Brief, der auf einen Artikel antwortet, mit Anrede, Bezug, Meinung und Schluss."
@@ -66,7 +66,7 @@ blocks:
 
           **6** So a water station is the best way to make less plastic waste at our school, and every pupil can use it every day.
 
-          **7** Some pupils say it is too expensive. However, a bottle that we use again is cheaper than a new bottle every day. Moreover, a water station is good for the environment.
+          **7** Some pupils say it is too expensive. However, a pupil who fills one bottle every day saves a lot of money. Moreover, a water station is good for the environment.
 
           **8** Thank you for reading my letter. I hope the school will try the idea for one term.
 
@@ -92,7 +92,7 @@ blocks:
 
               **2. Bezug:** Sage, auf welchen Artikel du antwortest: *In your article about …, you say that …*
 
-              **3. Meinung:** Ein Burger mit Opinion, Reason, Example und Opinion. Mit however oder moreover fügst du eine Gegenseite an.
+              **3. Meinung:** Ein Burger mit Opinion, Reason, Example und Opinion. Grund: *because* oder *My reason is that …*. *However* fügt eine Gegenseite an, *moreover* ergänzt.
 
               **4. Schluss:** Ein Dank, dann *Yours faithfully,* nach einer Anrede ohne Namen, und *Yours sincerely,* nach einer Anrede mit Namen. Dann steht dein Name.
   - type: section
@@ -103,33 +103,33 @@ blocks:
         id: brief-lesen
         text: Was schlägt Ellie in ihrem Brief vor?
         options:
-          - text: Die Schule soll eine Trinkwasserstelle kaufen
-            correct: true
-            info: Das steht in Zeile 3.
           - text: Die Schule soll mehr Mülleimer aufstellen
             correct: false
             info: Das steht im Artikel, nicht in Ellies Brief.
+          - text: Die Schule soll eine Trinkwasserstelle kaufen
+            correct: true
+            info: Das steht in Zeile 3.
           - text: Die Schule soll keine Flaschen mehr erlauben
             correct: false
             info: Davon steht nichts im Brief.
         explanation: Ellies Meinung steht in Zeile 3.
       - type: single-choice
         id: brief-beleg
-        text: In welcher Zeile steht der Bezug zum Artikel?
+        text: In welcher Zeile steht das Beispiel?
         options:
           - text: Zeile 2
-            correct: true
-            info: "Hier steht: In your article about plastic waste …"
+            correct: false
+            info: Hier steht der Bezug zum Artikel.
           - text: Zeile 3
             correct: false
             info: Hier steht die Meinung.
           - text: Zeile 5
-            correct: false
-            info: Hier steht das Beispiel.
+            correct: true
+            info: Hier schreibt Ellie, was sie selbst jede Woche tut.
           - text: Zeile 8
             correct: false
             info: Hier steht der Schluss.
-        explanation: Der Bezug nennt den Artikel und sein Thema.
+        explanation: Ein Beispiel ist etwas, das wirklich passiert.
       - type: matching
         id: brief-teile
         text: Zu welchem Teil des Briefs gehört der Satz? Ordne zu.
@@ -143,6 +143,7 @@ blocks:
           - left: Thank you for your time. Yours faithfully,
             right: Schluss
         explanation: Anrede, Bezug, Meinung und Schluss.
+        hint: Schau in den Merke-Kasten. Dort stehen die vier Teile mit Beispielen.
       - type: language-task
         id: brief-bezug
         languages: { source: de, target: en }
@@ -150,13 +151,13 @@ blocks:
         form: { case: hint, punctuation: ok, apostrophe: ok }
         items:
           - cue: in your article · school trips · you · say · too expensive
-            target: In your article about school trips, you say (that |)they are too expensive.
+            target: In your article (about|on) school trips, you say (that |)they are too expensive.
             mistakes:
-              - answer: On your article about school trips, you say they are too expensive.
-                message: Auf Englisch sagt man hier nicht on.
-              - answer: In your article school trips, you say they are too expensive.
+              - answer: On your article (about|on) school trips, you say (that |)they are too expensive.
+                message: Am Satzanfang steht ein anderes kleines Wort vor your article.
+              - answer: In your article school trips, you say (that |)they are too expensive.
                 message: Vor dem Thema des Artikels fehlt ein kleines Wort.
-              - answer: In your article about school trips, you say they too expensive.
+              - answer: In your article (about|on) school trips, you say (that |)they too expensive.
                 message: Hinter they fehlt ein Verb.
           - cue: I · think · school · should · buy · more · books
             target: I think (that |)the school should buy more books.
@@ -198,6 +199,7 @@ blocks:
           - I hope you will think about my idea.
           - Yours faithfully,
         explanation: Anrede, Bezug, Meinung, Schluss.
+        hint: Ein Brief beginnt mit der Anrede und endet mit der Schlussformel. Dazwischen stehen Bezug und Meinung.
       - type: language-task
         id: brief-hoeren
         languages: { source: de, target: en }
@@ -208,8 +210,8 @@ blocks:
             target: I am writing about your last article.
           - audio: please-send-your-letters-to-the-editor-by-friday.mp3
             target: Please send your letters to the editor by Friday.
-          - audio: many-pupils-have-answered-our-question.mp3
-            target: Many pupils have answered our question.
+          - audio: many-pupils-answered-our-question.mp3
+            target: Many pupils answered our question.
   - type: section
     id: anwenden
     title: Dein eigener Leserbrief
@@ -227,7 +229,7 @@ blocks:
         hint: Hör zu. Sprich dann langsam nach.
       - type: open-task
         id: brief-schreiben
-        task: "Stell dir vor, die Schülerzeitung hat einen Artikel über das Schulessen gedruckt. Schreibe einen Leserbrief in sechs bis acht Sätzen mit Anrede, Bezug zum Artikel, einem Burger und einem Schluss."
+        task: "Stell dir vor, die Schülerzeitung hat einen Artikel über das Schulessen gedruckt. Schreibe einen Leserbrief in acht bis zehn Sätzen (ohne Anrede und Schlussformel) mit Bezug zum Artikel, einem Burger, einem Satz mit however oder moreover und einem Dank."
         points:
           - text: Die Anrede und die Schlussformel passen zusammen.
             source: /argumente-verbinden/leserbrief/#neu
