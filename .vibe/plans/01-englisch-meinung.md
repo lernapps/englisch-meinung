@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: code
+phase: commit
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -36,6 +36,7 @@ Jugendliche lernen, zu Themen aus ihrem Leben (Musik, Medien, Umwelt, Technik, K
 - Kein Alter, keine Familie, kein Datum der Figuren im Seitentext; die Startseite nennt nur Namen und Rollen.
 - Ort für Kapitel 1: die „Meinungswand“ im Klassenzimmer von Mr Hill mit dem Meinungsbarometer (Skala agree – disagree, Namenskärtchen) und dem Argument-Burger als Poster. Neuer Ort, nur für diesen Explainer (guess; muss in den Konventionen als Kommentar eingetragen werden).
 - Kapitel 2: Die Schülerzeitung der Millbrook School (aus #486) nimmt den Leserbrief auf; ihr Name bleibt offen („the school newspaper“), damit #486 nicht widersprochen wird (guess).
+- Kapitel 3 Belegen über Absatznummern (guess), Frage der Waage „Should schools ban phones?“ (guess), erfundene Marken Rovix und Tavok (guess).
 - `scope`: ja, in `src/app.yaml` und auf jeder Seite (Text und `out`), wie die Vorgänger-Apps: der Tutor bekommt so den genauen Inhalt (guess).
 - Look and feel: fixed by the archetype.
 
@@ -60,6 +61,9 @@ Alle zwölf sind Lücken der Karte (`practisedBy` leer).
 **Quellen (nur Fakten, keine Sätze; geöffnet am 2026-11-24):** Wikipedia „Mod (subculture)“, „Punk subculture“, „Plastic pollution“ (Zusammenfassungen abgerufen, CC BY-SA: nur Fakten); erreichbar und beim Bau zu öffnen: weitere Wikipedia-Artikel (Hip hop, Grime, World Wide Web, Fast fashion), gov.uk (Fakten zu Plastiktüten-Gebühr, Offene Regierungslizenz OGL), VOA Learning English (nur exklusiv von VOA erstellte Texte, Public Domain; Lizenzseite beim Bau öffnen), Wikinews (CC BY). Nicht erreichbar: UNESCO (403), Ofcom (403): Zahlen daraus nur, wenn eine erreichbare Quelle sie belegt. Jede Faktenangabe steht im Inhaltsführer unter „Sources“ mit Stand; was nicht geöffnet wurde, bleibt als „nicht geprüft“ draußen.
 
 **Wörter:** Grundwortschatz A1/A2 (`https://lernapps.net/apps/map/englisch/grundwortschatz/`); Wörter außerhalb (opinion, argument, reason, advertisement …) im Vokabelblock mit Bedeutung; Liste im Inhaltsführer.
+
+**Prüfungen und Korrekturen (Code):** Lerner-Check der Musterseite (Kind Stufe 7-8, 360/1280 px): leere Poster-Balken und Kärtchen im Bild beschriftet, Einstieg verriet die Antwort, Beispiel-Aufgabe mit zwei klar markierten Zeilen, Wörterkasten ergänzt, Cue-Hinweis, Merke zu because. Gesamtcheck je Kapitel (drei Sub-Agenten als Kinder der Stufe, alle Übungen richtig und falsch bedient, Selbsteinschätzung, Audio, Links, Quellen gegen Wikipedia und gov.uk geprüft) und Prüfung der englischen und deutschen Sprache (Sub-Agent). Behoben: richtige Option nicht mehr immer zuerst; Meldungen nennen nicht mehr die Lösung; `mistakes.answer` greifen auch ohne Schlusspunkt; gleichwertige Antworten zugelassen (made of/from, for travel, I disagree with you, £30, many/much-Varianten); Merke-Beispiele verrieten Übungen (medien, konsum-werbung, kommentar, verbindungswoerter); Past Simple und since/for im Merke kurz erklärt; Present-Perfect-Hörsatz ersetzt; Waage und Pro/Contra vereinheitlicht (Frage „Should schools ban phones?“, Pro = für das Verbot), Burger-Bezug im Kapitel 3, belegte Contra-Seite, Quellenzahlen genau wiedergegeben (58 % zweifach getrennt, Studie zu Sperrbeuteln, Plastik 6,3 Mrd. t als Müll, Web 1989/1991/1993 nach Wikipedia); Zeitleiste und Anzeigen neu gezeichnet; mögliche echte Marken (Skimble, Zoomo) durch erfundene (Rovix, Tavok) ersetzt; Rand unter allen Zeichnungen, damit das CC-Feld nichts verdeckt; Sachfehler im Deutschen (interessant/spannend, Druckfarbe, Kaffeebars).
+Nicht geändert (Vorlage): allgemeine Meldungen bei matching/ordering/Standardmeldung „Deine Fassung kann trotzdem richtig sein“, KI-Tutor-Kasten, `explainer-text-load` als Hinweis in Kapitel 3 (Lesestücke 300 bis 600 Wörter nach Konvention §8).
 
 **Seiten und nicht geübte Voraussetzungen:** `meinung-redemittel` (needs: that-saetze → Wiederholungsseite); `meinung-begruenden` (meinung-redemittel, geübt); `sport-musik`, `medien` (freizeit-hobbys → Wiederholungsseite); `verbindungswoerter-argumentieren` (konjunktionen → Wiederholungsseite Kapitel 1, in Kapitel 2 nur Verweis); `umwelt` (keine); `technik-fortschritt` (passiv → Wiederholungsseite Kapitel 2); `leserbrief` (meinung-begruenden, geübt); `konsum-werbung` (kleidung-einkaufen → Wiederholungsseite Kapitel 3; umwelt geübt); `jugendkultur` (sport-musik, geübt); `kommentar` (meinung-begruenden, verbindungswoerter: geübt; text-gliedern: Lücke, auf der Seite erklärt); `werbung` (konsum-werbung geübt; stilmittel: Lücke, auf der Seite erklärt).
 
@@ -248,10 +252,10 @@ page, which a link. -->
 - [x] Hörsätze, Skript zur Prüfung von Hörsätzen, Wörtern und Quellen, Hörliste im Inhaltsführer, Selbsteinschätzung der drei Kapitel
 <!-- tasks: pages (12 added): the other pages or screens, after the pattern -->
 - [x] Update the content guide so that it describes the app as built (`app-content-matches`).
-- [ ] Run `npx --no -- lernapps check` until it passes.
-- [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
+- [x] Run `npx --no -- lernapps check` until it passes.
+- [x] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
       Compare each with its sketch.
-- [ ] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
+- [x] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
       fixed.
 
 ## Commit
