@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Was ich mag und was ich denke
+summary: An der Meinungswand sagen Mr Hills Schülerinnen und Schüler, was sie denken. Du lernst, deine Meinung zu sagen, mit einem Grund und einem Beispiel zu stützen und über Sport, Musik, Fernsehen und soziale Medien zu sprechen.
+pages: [das-brauchst-du, meinung-sagen, meinung-begruenden, sport-musik, medien]
+selfAssessment:
+  pages:
+    - exercises:
+        - /was-ich-denke/meinung-sagen/#sagen-faecher
+        - /was-ich-denke/meinung-sagen/#sagen-luecken
+    - exercises:
+        - /was-ich-denke/meinung-begruenden/#begruenden-schichten
+        - /was-ich-denke/meinung-begruenden/#begruenden-fehlt
+    - exercises:
+        - /was-ich-denke/sport-musik/#sport-verben
+        - /was-ich-denke/sport-musik/#sport-ing
+    - exercises:
+        - /was-ich-denke/medien/#medien-woerter
+        - /was-ich-denke/medien/#medien-praeposition

@@ -1,0 +1,282 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: "Sport, Musik und Fernsehen"
+description: "Du sprichst über Lieblingsmusik, Fernsehen und Sport und sagst, was du magst."
+competencies: [sport-musik]
+scope: Die Seite zeigt, wie man auf Englisch über Sport, Musik und Fernsehen spricht. Bei Sportarten steht play bei Ballspielen und Spielen, do bei Sportarten wie yoga und karate und go bei Sportarten mit -ing, zum Beispiel go swimming. Nach like, love und enjoy steht das Verb mit -ing, bei he und she steht likes. My favourite sport is football ist ein ganzer Satz. Ein Lesestück (ein Chat über Lieblingsmusik, eine Serie und Sport) zeigt die Wörter im Gespräch. Gefragt wird, welche Zeile ein Beispiel enthält, welches Verb zur Sportart passt, wie like mit -ing gebildet wird und wie ein Burger zu einem Lieblingsthema aussieht. Nicht hier, weil es andere Seiten sind, nämlich Redemittel für Zustimmung und Widerspruch, soziale Medien und Freizeit als Situation.
+blocks:
+  - type: section
+    id: einstieg
+    title: Mr Hill fragt nach euren Lieblingen
+    blocks:
+      - type: figure
+        image: images/poster-sport-musik.svg
+        alt: "Ein Poster mit der Frage „What is your favourite …?“ und drei Bildern: zwei Noten, ein Fernseher mit Abspielzeichen und ein Ball. Unter den Bildern stehen die Wörter music, TV und sport."
+        caption: Mr Hills Poster neben der Meinungswand. Die Klasse schreibt dazu in den Klassenchat.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "Mr Hill fragt nach der Lieblingsmusik, der Lieblingssendung und dem Lieblingssport. Sophie, Ellie und Amir antworten im Chat."
+      - type: single-choice
+        id: sport-start
+        text: Welcher Satz ist richtig?
+        options:
+          - text: I plays table tennis after school
+            correct: false
+            info: Bei I bekommt das Verb kein -s.
+          - text: I play table tennis after school
+            correct: true
+            info: Nach I steht das Verb ohne am und ohne -s.
+          - text: I am play table tennis after school
+            correct: false
+            info: Vor play steht kein am.
+        explanation: Im simple present steht nach I das Verb allein.
+      - type: text
+        text: "**Das kannst du danach:** Du erzählst, welche Musik, welche Sendung und welchen Sport du magst, und sagst warum."
+  - type: section
+    id: lesen
+    title: Ein Chat über Musik, eine Serie und Sport
+    blocks:
+      - type: vocabulary
+        caption: Klassenzimmer-Poster · Wörter zum Chat und zum Sport
+        languages: { source: de, target: en }
+        entries:
+          - target: favourite
+            source: Lieblings-
+          - target: prefer
+            source: lieber mögen
+          - target: series
+            source: Serie
+          - target: episode
+            source: Folge
+          - target: quiz show
+            source: Quizsendung
+          - target: actor
+            source: Schauspieler, Schauspielerin
+          - target: concert
+            source: Konzert
+          - target: surprise
+            source: Überraschung
+          - target: basketball
+            source: Basketball
+          - target: volleyball
+            source: Volleyball
+          - target: hockey
+            source: Hockey
+          - target: karate
+            source: Karate
+          - target: skating
+            source: Schlittschuh laufen, skaten
+          - target: running
+            source: Laufen, Joggen
+          - target: yoga
+            source: Yoga
+          - target: tennis
+            source: Tennis
+      - type: text
+        text: "Ellie, Amir und Sophie erzählen im Klassenchat, was sie mögen. Die Zahlen sind die Zeilen."
+      - type: text
+        text: |
+          **1** Ellie: Mr Hill wants to know our favourites. My favourite music is pop. I love singing in my room!
+
+          **2** Amir: I like rock music, but my favourite thing is sport. I like playing football on Wednesdays, and I go swimming on Saturdays.
+
+          **3** Sophie: I do judo on Mondays. It is difficult, but I enjoy it.
+
+          **4** Ellie: Judo? I do not like judo. I prefer dancing.
+
+          **5** Amir: What about TV? I watch a quiz show on Thursdays. It is funny, and I learn new things.
+
+          **6** Sophie: I like quiz shows, too. But my favourite is a new series about a school band. The songs are great, and the actors play their own music.
+
+          **7** Ellie: I think the series is boring. The story is too slow.
+
+          **8** Sophie: I disagree. I think it is exciting because every episode ends with a surprise.
+
+          **9** Amir: For example, last week the band lost their guitar one hour before a concert!
+
+          **10** Ellie: That sounds funny. I want to watch one episode.
+
+          **11** Sophie: Great! Then we can talk about it on Friday.
+  - type: section
+    id: neu
+    title: play, do, go und like mit -ing
+    blocks:
+      - type: figure
+        image: images/burger-sport-musik.svg
+        alt: "Ein Burger aus vier farbigen Schichten. Oben orange: Opinion mit einem Satz zu einem Sport. Darunter blau: Reason mit einem Grund. Darunter grün: Example mit einem Beispiel. Unten wieder orange: Opinion mit dem Schluss. Unter dem Bild steht: Opinion, Reason, Example, Opinion."
+        caption: "Ein Burger zu einem Lieblingssport. Orange sind die Meinungen, blau ist der Grund, grün das Beispiel."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              **Sport mit play, do oder go:** *play* für Ballspiele und Spiele (*play tennis, play chess*), *do* für Sportarten wie *do yoga, do gymnastics*, *go* für Sportarten mit -ing (*go cycling, go swimming*).
+
+              **Sagen, was du magst:** Nach *like, love* und *enjoy* steht meist das Verb mit -ing: *I love dancing.* Bei *like* und *love* geht auch *to* + Grundform (*I like to dance*), hier üben wir -ing. Bei he und she steht *likes*: *She likes music.*
+
+              **Lieblings-:** *My favourite sport is tennis.* Nach *is* steht der Name der Sportart, nicht *play*.
+  - type: section
+    id: uebung
+    title: Belegen, ordnen und schreiben
+    blocks:
+      - type: single-choice
+        id: sport-lesen
+        text: Welche Sportart macht Sophie am Montag?
+        options:
+          - text: Schwimmen
+            correct: false
+            info: Das macht Amir am Samstag.
+          - text: Fußball
+            correct: false
+            info: Das spielt Amir am Mittwoch.
+          - text: Judo
+            correct: true
+            info: Das sagt Sophie in Zeile 3.
+        explanation: Bei Judo steht do, bei Fußball steht play.
+      - type: single-choice
+        id: sport-beleg
+        text: In welcher Zeile steht ein Beispiel, warum die Serie spannend ist?
+        options:
+          - text: Zeile 6
+            correct: false
+            info: Hier sagt Sophie, was sie mag.
+          - text: Zeile 9
+            correct: true
+            info: Amir erzählt, was in einer Folge passiert ist.
+          - text: Zeile 7
+            correct: false
+            info: Hier sagt Ellie nur ihre Meinung.
+          - text: Zeile 8
+            correct: false
+            info: Hier steht der Grund mit because, aber noch kein Beispiel.
+        explanation: Ein Beispiel erzählt, was wirklich passiert ist.
+      - type: language-task
+        id: sport-verben
+        languages: { source: de, target: en }
+        mode: choice
+        task: Wähle das Verb, das zur Sportart passt.
+        form: { case: hint, punctuation: ok }
+        items:
+          - source: Ich spiele Basketball.
+            target: "I [play] basketball."
+            distractors: [[do, go]]
+          - source: Ich gehe samstags laufen.
+            target: "I [go] running on Saturdays."
+            distractors: [[do, play]]
+          - source: Ich mache Karate.
+            target: "I [do] karate."
+            distractors: [[play, go]]
+      - type: language-task
+        id: sport-ing
+        languages: { source: de, target: en }
+        mode: choice
+        task: Wähle die richtige Form.
+        form: { case: hint, punctuation: ok }
+        items:
+          - source: Ellie singt gern.
+            target: "Ellie [likes] singing."
+            distractors: [[like, is like]]
+          - source: Ich höre gern Musik.
+            target: "I enjoy [listening] to music."
+            distractors: [[listen, listened]]
+          - source: Meine Freunde mögen Serien.
+            target: "My friends [like] series."
+            distractors: [[likes, is like]]
+      - type: ordering
+        id: sport-burger
+        text: Bringe die Sätze in die Reihenfolge des Burgers.
+        items:
+          - I love playing basketball.
+          - It is exciting because the game is fast.
+          - For example, last week we won a match in the last minute.
+          - So basketball is my favourite sport.
+        explanation: Meinung, Grund, Beispiel, Meinung.
+      - type: language-task
+        id: sport-satz
+        languages: { source: de, target: en }
+        task: "Schreibe die Sätze auf Englisch. Satz 1: Ich spiele gern Hockey. Satz 2: Mein Lieblingssport ist Volleyball. Satz 3: Wir gehen sonntags Schlittschuh laufen. Satz 4: Ich spiele dienstags Fußball. Die englischen Wörter sind nur eine Hilfe: Ergänze, was für einen ganzen Satz fehlt."
+        form: { case: hint, punctuation: ok, apostrophe: ok }
+        items:
+          - cue: I · like · play · hockey
+            target: I (like playing|like to play|play) hockey.
+            mistakes:
+              - answer: I like play hockey(.|)
+                message: Nach like steht das Verb mit -ing.
+              - answer: I am like playing hockey(.|)
+                message: Vor like steht kein am.
+          - cue: my · favourite · sport · volleyball
+            target: My favourite sport is volleyball.
+            mistakes:
+              - answer: My favourite sport is play volleyball(.|)
+                message: Nach is steht hier nur die Sportart.
+              - answer: My favourite sport is the volleyball(.|)
+                message: Vor einer Sportart steht kein Artikel.
+              - answer: My favourite sport volleyball(.|)
+                message: Im Satz fehlt ein Verb.
+          - cue: we · go · skating · Sunday
+            target: We go (ice |)skating (on Sundays|on Sunday|every Sunday).
+            mistakes:
+              - answer: We do (ice |)skating on Sundays(.|)
+                message: Sportarten mit -ing brauchen go.
+              - answer: We play (ice |)skating on Sundays(.|)
+                message: Play passt zu Ballspielen und Spielen, nicht zu skating.
+          - cue: I · play · football · Tuesday
+            target: I play football (on Tuesdays|on Tuesday|every Tuesday).
+            mistakes:
+              - answer: I play the football on Tuesdays(.|)
+                message: Vor einer Sportart steht kein Artikel.
+              - answer: I play football in Tuesdays(.|)
+                message: Vor einem Wochentag steht on, nicht in.
+      - type: language-task
+        id: sport-hoeren
+        languages: { source: de, target: en }
+        task: Hör zu und schreibe, was du hörst.
+        form: { case: hint, punctuation: ok }
+        items:
+          - audio: does-your-friend-like-playing-the-guitar.mp3
+            target: Does your friend like playing the guitar?
+          - audio: my-sister-does-judo-on-fridays.mp3
+            target: My sister does judo on Fridays.
+          - audio: i-enjoy-watching-a-good-series-after-school.mp3
+            target: I enjoy watching a good series after school.
+  - type: section
+    id: anwenden
+    title: Dein eigener Burger
+    blocks:
+      - type: speaking-task
+        id: sport-nachsprechen
+        language: en
+        items:
+          - audio: what-is-your-favourite-sport.mp3
+            text: What is your favourite sport?
+          - audio: do-you-like-this-song.mp3
+            text: Do you like this song?
+          - audio: what-kind-of-music-do-you-like.mp3
+            text: What kind of music do you like?
+        hint: Hör zu. Sprich dann langsam nach.
+      - type: open-task
+        id: sport-schreiben
+        task: "Wähle Musik, Fernsehen oder Sport. Schreibe in vier Sätzen deinen Burger zu etwas, das du magst: Meinung, Grund, Beispiel, Meinung."
+        points:
+          - text: Der Text hat vier Teile in der richtigen Reihenfolge.
+            source: /was-ich-denke/meinung-begruenden/#neu
+          - text: Nach like, love oder enjoy steht das Verb mit -ing.
+            source: /was-ich-denke/sport-musik/#neu
+          - text: Bei Sportarten stehen play, do oder go richtig.
+            source: /was-ich-denke/sport-musik/#neu
+          - text: Das Beispiel ist etwas, das wirklich passiert ist, mit For example.
+            kind: form
+        solution: |
+          I love listening to piano music.
+          It is calm because there are no words.
+          For example, I listen to a piano piece after school, and I relax within ten minutes.
+          So piano music is my favourite music.
+        hint: Die App bewertet nicht. Prüfe deinen Text anhand der Punkte.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Auf der nächsten Seite sprichst du über Medien und soziale Netzwerke und über ihre Chancen und Gefahren."

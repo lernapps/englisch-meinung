@@ -1,0 +1,257 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: "Medien und soziale Netzwerke"
+description: "Du sprichst über soziale Medien, über ihre Chancen und Gefahren, und sagst deine Meinung."
+competencies: [medien]
+scope: Die Seite zeigt, wie man auf Englisch über Medien und soziale Netzwerke spricht, auch über Chancen und Gefahren. Wörter wie post, follow, share, comment, message, online, safe und private, der Ausdruck interested in (nicht interesting in), on the internet und on social media (nicht in), for und since bei einem Zeitraum oder einem Zeitpunkt und der Satz Some people say …, but I think …. Ein Lesestück (ein Chat über soziale Medien) zeigt mehrere Sichtweisen, ohne zu belehren. Gefragt wird, wer zustimmt, welche Zeile welches Thema hat, welches Wort passt und wie man eine eigene Meinung mit einem Gegenargument sagt. Nicht hier, weil es andere Seiten sind, nämlich Redemittel für Zustimmung und Widerspruch, Sport und Musik, Verbindungswörter wie however und Werbung.
+blocks:
+  - type: section
+    id: einstieg
+    title: Das Barometer zu sozialen Medien
+    blocks:
+      - type: figure
+        image: images/barometer-medien.svg
+        alt: "Ein Meinungsbarometer mit der Aussage „Social media is good for friends.“ und einer Skala von disagree links bis agree rechts. Drei Namenskärtchen stehen auf der Skala: Ellie, Amir und Sophie."
+        caption: "Mr Hills Aussage an der Meinungswand und die Kärtchen von Ellie, Amir und Sophie."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "Mr Hill hängt eine neue Aussage an die Meinungswand."
+      - type: single-choice
+        id: medien-start
+        text: Wer stimmt der Aussage am meisten zu?
+        options:
+          - text: Amir
+            correct: false
+            info: Sein Kärtchen steht rechts, aber nicht ganz außen.
+          - text: Ellie
+            correct: false
+            info: Ihr Kärtchen steht links von der Mitte.
+          - text: Sophie
+            correct: true
+            info: Ihr Kärtchen steht am weitesten rechts, bei agree.
+        explanation: Rechts heißt mehr Zustimmung.
+      - type: text
+        text: "**Das kannst du danach:** Du sprichst über soziale Medien, nennst Chancen und Gefahren und sagst deine Meinung dazu."
+  - type: section
+    id: lesen
+    title: Ein Chat über soziale Medien
+    blocks:
+      - type: vocabulary
+        caption: Klassenzimmer-Poster · Wörter zum Chat
+        languages: { source: de, target: en }
+        entries:
+          - target: social media
+            source: soziale Medien
+          - target: post
+            source: etwas ins Netz stellen, veröffentlichen
+          - target: follow
+            source: folgen
+          - target: share
+            source: teilen
+          - target: comment
+            source: Kommentar
+          - target: message
+            source: Nachricht
+          - target: online
+            source: im Netz
+          - target: safe
+            source: sicher
+          - target: private
+            source: privat, nur für ausgewählte Leute sichtbar
+          - target: interested in
+            source: an etwas interessiert
+          - target: unfriendly
+            source: unfreundlich
+          - target: chance
+            source: Chance, Möglichkeit
+          - target: danger
+            source: Gefahr
+          - target: address
+            source: Adresse
+      - type: text
+        text: "Mr Hill fragt im Chat nach sozialen Medien. Die Zahlen sind die Zeilen."
+      - type: text
+        text: |
+          **1** Mr Hill: People use social media every day. Is it a chance or a danger? Where is your card?
+
+          **2** Sophie: I think it is a chance. I send messages to my friends at home every day.
+
+          **3** Amir: I agree. You can share your hobbies, too. I am interested in photos, so I follow a group of young photographers on a photo app.
+
+          **4** Ellie: I see your point, but there is a problem. We spend too much time on the internet. Last Sunday I watched videos for three hours!
+
+          **5** Sophie: That is true. And some comments are unfriendly.
+
+          **6** Amir: Yes, but you can delete a comment. You can also tell a teacher.
+
+          **7** Ellie: I want to stay safe online. I never post my address, and my page is private.
+
+          **8** Sophie: Good idea. I have been on my app for two years, and I never post my school name.
+
+          **9** Amir: I have followed my group since last year. So social media is good and bad. It depends on how we use it.
+
+          **10** Mr Hill: Some people say it is a chance, and others say it is a danger.
+  - type: section
+    id: neu
+    title: Wörter, Präpositionen und zwei Seiten
+    blocks:
+      - type: figure
+        image: images/burger-medien.svg
+        alt: "Ein Burger aus vier farbigen Schichten. Oben orange: Opinion mit einem Satz zu einer Video-App. Darunter blau: Reason mit einem Grund. Darunter grün: Example mit einem Beispiel. Unten wieder orange: Opinion mit dem Schluss. Unter dem Bild steht: Opinion, Reason, Example, Opinion."
+        caption: "Ein Burger zu einer Video-App. Orange sind die Meinungen, blau ist der Grund, grün das Beispiel."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              **interested in:** *I am interested in music.* *Interesting* heißt interessant, *interested* heißt, dass du dich interessierst. **on:** *on social media, on a website*, nicht *in*. **for und since:** *for* steht bei einem Zeitraum (*for a week*), *since* bei einem Zeitpunkt (*since Monday*). Dazu steht *have* oder *has* und eine zweite Verbform: *I have lived here for a week.*
+
+              **Zwei Seiten zeigen:** *Some people say that games are loud, but I think they are fun.*
+  - type: section
+    id: uebung
+    title: Zeilen finden, Wörter wählen und schreiben
+    blocks:
+      - type: single-choice
+        id: medien-lesen
+        text: Warum findet Sophie soziale Medien gut?
+        options:
+          - text: Sie folgt einer Gruppe von Fotografen
+            correct: false
+            info: Das macht Amir in Zeile 3.
+          - text: Sie schickt ihren Freunden Nachrichten
+            correct: true
+            info: Das sagt Sophie in Zeile 2.
+          - text: Sie sieht jeden Tag drei Stunden Videos
+            correct: false
+            info: Das erzählt Ellie in Zeile 4.
+        explanation: Sophies Grund steht in Zeile 2.
+      - type: matching
+        id: medien-zeilen
+        text: Welches Thema steht in welcher Zeile?
+        pairs:
+          - left: Zeile 3
+            right: Hobbys teilen
+          - left: Zeile 4
+            right: Zu viel Zeit im Netz
+          - left: Zeile 5
+            right: Unfreundliche Kommentare
+          - left: Zeile 7
+            right: Persönliche Daten
+        explanation: Zeile 3 nennt eine Chance, die anderen Gefahren.
+      - type: language-task
+        id: medien-woerter
+        languages: { source: de, target: en }
+        mode: choice
+        task: Wähle das Wort, das passt.
+        form: { case: hint, punctuation: ok }
+        items:
+          - source: Sie stellt ein Foto ins Netz.
+            target: "She [posts] a photo."
+            distractors: [[follows, comments]]
+          - source: Ich schreibe einen Kommentar unter das Video.
+            target: "I write a [comment] under the video."
+            distractors: [[message, address]]
+          - source: Wir teilen lustige Videos.
+            target: "We [share] funny videos."
+            distractors: [[follow, post]]
+      - type: language-task
+        id: medien-praeposition
+        languages: { source: de, target: en }
+        mode: choice
+        task: Wähle das Wort, das passt.
+        form: { case: hint, punctuation: ok }
+        items:
+          - source: Ich interessiere mich für Tiere.
+            target: "I am [interested] in animals."
+            distractors: [[interesting, interest]]
+          - source: Ich lese viel im Internet.
+            target: "I read a lot [on] the internet."
+            distractors: [[in, at]]
+          - source: Ich bin seit zwei Stunden online.
+            target: "I have been online [for] two hours."
+            distractors: [[since, from]]
+          - source: Ich folge ihr seit gestern.
+            target: "I have followed her [since] yesterday."
+            distractors: [[for, from]]
+      - type: language-task
+        id: medien-satz
+        languages: { source: de, target: en }
+        task: "Schreibe die Sätze auf Englisch. Satz 1: Wir sind Freunde in den sozialen Medien. Satz 2: Meine Freundin stellt jede Woche ein Foto ins Netz. Satz 3: Manche Leute sagen, dass Apps Spaß machen, aber ich denke, sie brauchen zu viel Zeit. Die englischen Wörter sind nur eine Hilfe: Ergänze, was für einen ganzen Satz fehlt."
+        form: { case: hint, punctuation: ok, apostrophe: ok }
+        items:
+          - cue: we · be · friends · social media
+            target: We are friends on social media.
+            mistakes:
+              - answer: We are friends in social media(.|)
+                message: Mit social media steht nicht in.
+              - answer: We friends on social media(.|)
+                message: Im Satz fehlt ein Verb.
+          - cue: my · friend · post · photo · every week
+            target: My friend posts a photo every week.
+            mistakes:
+              - answer: My friend post a photo every week(.|)
+                message: Bei he, she und it, also auch my friend, braucht das Verb ein -s.
+              - answer: My friend posts photo every week(.|)
+                message: Vor photo fehlt ein Artikel.
+          - cue: some people · say · apps · fun · but · I · think · they · take · too much time
+            target: Some people say (that |)apps are fun, but I think (that |)they take too much time.
+            mistakes:
+              - answer: Some people says (that |)apps are fun, but I think (that |)they take too much time(.|)
+                message: Some people sind mehrere Personen, darum steht say ohne -s.
+              - answer: Some people say (that |)apps fun, but I think (that |)they take too much time(.|)
+                message: Im ersten Teil fehlt ein Verb.
+      - type: language-task
+        id: medien-hoeren
+        languages: { source: de, target: en }
+        task: Hör zu und schreibe, was du hörst.
+        form: { case: hint, punctuation: ok }
+        items:
+          - audio: i-post-a-photo-once-a-week.mp3
+            target: I post a photo once a week.
+          - audio: my-friend-sends-me-a-message-every-morning.mp3
+            target: My friend sends me a message every morning.
+          - audio: it-is-safe-to-talk-to-friends-online.mp3
+            target: It is safe to talk to friends online.
+  - type: section
+    id: anwenden
+    title: Deine Meinung mit zwei Seiten
+    blocks:
+      - type: speaking-task
+        id: medien-nachsprechen
+        language: en
+        items:
+          - audio: do-you-follow-anyone-online.mp3
+            text: Do you follow anyone online?
+          - audio: please-be-kind-in-your-comments.mp3
+            text: Please be kind in your comments.
+          - audio: what-do-you-think-about-social-media.mp3
+            text: What do you think about social media?
+        hint: Hör zu. Sprich dann langsam nach.
+      - type: open-task
+        id: medien-schreiben
+        task: "Wähle eine Aussage über Medien, zum Beispiel „Online games are good for children.“ Stelle dein Kärtchen auf das Barometer und schreibe fünf Sätze: Meinung, Grund, Beispiel, ein Satz mit „Some people say …, but I think …“ und deine Schlussmeinung."
+        points:
+          - text: Die Meinung hat einen Grund mit because und ein Beispiel mit For example.
+            source: /was-ich-denke/meinung-begruenden/#neu
+          - text: Ein Satz zeigt die andere Sicht mit Some people say …, but I think ….
+            source: /was-ich-denke/medien/#neu
+          - text: Wörter wie post, share oder interested in und die Präpositionen on, for und since sind richtig benutzt.
+            source: /was-ich-denke/medien/#neu
+          - text: Der Text ist sachlich und belehrt niemanden.
+            kind: form
+        solution: |
+          I think online games are fun.
+          They are fun because I can play with other children.
+          For example, last week I played a game with a team and we won.
+          Some people say that games take too much time, but I think one hour is fine.
+          So online games are good if we play for a short time and stay safe.
+        hint: Die App bewertet nicht. Prüfe deinen Text anhand der Punkte.
+  - type: section
+    id: weiter
+    title: Rückblick auf das Kapitel
+    blocks:
+      - type: text
+        text: |
+          In diesem Kapitel hast du drei Dinge gelernt. Du sagst deine Meinung, stimmst zu und widersprichst, stützt sie mit dem Argument-Burger und sprichst über Sport, Musik, Fernsehen und soziale Medien. Im nächsten Kapitel verbindest du deine Argumente.

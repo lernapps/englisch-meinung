@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du hier
+description: "Kurze Wiederholung: Kleidung benennen und beim Einkaufen nach Größe und Preis fragen."
+recap: [englisch/kleidung-einkaufen]
+scope: Die Seite wiederholt knapp, was für Kapitel 3 gebraucht wird. Ich kann Kleidung benennen und beim Einkaufen nach Größe und Preis fragen. Gezeigt werden Wörter für Kleidung und drei feste Fragen und Antworten (How much is it?, Have you got this in a larger size?, It costs …). Zwei kurze Übungen prüfen das. Neue Inhalte gibt es hier nicht. Nicht hier, weil es andere Seiten sind, nämlich Konsum und Verbraucherrechte, Jugendkulturen, der argumentative Text und Werbung.
+blocks:
+  - type: text
+    text: |
+      Kannst du das schon? **Ich kann Kleidung benennen und beim Einkaufen nach Größe und Preis fragen.** Auf den nächsten Seiten liest du Sachtexte über Kleidung, Konsum und Jugendkulturen. Dafür brauchst du diese Wörter und Fragen.
+  - type: vocabulary
+    caption: Wörterkasten · Kleidung und Einkaufen
+    languages: { source: de, target: en }
+    entries:
+      - target: jumper
+        source: Pullover
+      - target: trainers
+        source: Turnschuhe
+      - target: changing room
+        source: Umkleidekabine
+      - target: How much is it?
+        source: Was kostet das?
+      - target: It costs twenty pounds.
+        source: Es kostet zwanzig Pfund.
+      - target: Have you got this in a larger size?
+        source: Haben Sie das in einer größeren Größe?
+  - type: text
+    text: "Bei Preisen fragst du mit *how much*. Bei mehreren Dingen heißt es *How much are these jeans?*"
+  - type: matching
+    id: kleidung-situationen
+    text: Was sagst du in der Situation? Ordne zu.
+    pairs:
+      - left: Du willst wissen, was die Schuhe kosten.
+        right: How much are these shoes?
+      - left: Die Jeans sind dir zu groß.
+        right: Have you got these in a smaller size?
+      - left: Du willst an der Kasse bezahlen.
+        right: Can I pay by card, please?
+    explanation: Zuerst die Situation, dann der passende Satz.
+    hint: Schau in den Wörterkasten oben.
+  - type: language-task
+    id: kleidung-schreiben
+    languages: { source: de, target: en }
+    task: "Schreibe die Sätze auf Englisch. Satz 1: Was kosten diese Socken? Satz 2: Haben Sie das in einer kleineren Größe? Satz 3: Der Pullover kostet dreißig Pfund. Die englischen Wörter sind nur eine Hilfe: Ergänze, was für einen ganzen Satz fehlt."
+    form: { case: hint, punctuation: ok, apostrophe: ok }
+    items:
+      - cue: how much · these socks
+        target: How much are these socks?
+        mistakes:
+          - answer: How much is these socks?
+            message: Socks steht im Plural, das Verb muss dazu passen.
+          - answer: How many are these socks?
+            message: Nach dem Preis fragst du mit how much.
+      - cue: have · you · this · smaller size
+        target: (Have you got|Do you have) this in a smaller size?
+        mistakes:
+          - answer: Have you got this on a smaller size?
+            message: Bei einer Größe steht in, nicht on.
+      - cue: the jumper · cost · thirty pounds
+        target: The jumper costs (thirty pounds|30 pounds|£30).
+        mistakes:
+          - answer: The jumper cost thirty pounds.
+            message: Bei the jumper braucht das Verb ein s.

@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Pro und contra
+summary: Du wägst Argumente ab. Du sprichst über Konsum und Werbung, beschreibst Jugendkulturen früher und heute, schreibst einen argumentativen Text mit Pro, Contra und Schlussfolgerung und untersuchst Werbung.
+pages: [das-brauchst-du, konsum-werbung, jugendkultur, kommentar, werbung]
+selfAssessment:
+  pages:
+    - exercises:
+        - /pro-und-contra/konsum-werbung/#konsum-woerter
+        - /pro-und-contra/konsum-werbung/#konsum-procontra
+    - exercises:
+        - /pro-und-contra/jugendkultur/#jugend-zeit
+        - /pro-und-contra/jugendkultur/#jugend-procontra
+    - exercises:
+        - /pro-und-contra/kommentar/#kommentar-waage
+        - /pro-und-contra/kommentar/#kommentar-verbinden
+    - exercises:
+        - /pro-und-contra/werbung/#werbung-mittel
+        - /pro-und-contra/werbung/#werbung-wirkung

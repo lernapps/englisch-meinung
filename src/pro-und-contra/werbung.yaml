@@ -1,0 +1,312 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: "Werbung untersuchen: Mittel und Wirkung"
+description: "Du untersuchst erfundene Anzeigen: Mit welchen Mitteln wollen sie wirken, und was ist Information, was nur ein Versprechen?"
+competencies: [werbung]
+scope: "Die Seite zeigt, wie man untersucht, mit welchen sprachlichen und bildlichen Mitteln eine Werbung wirken will. Alle Anzeigen und Marken auf der Seite sind erfunden. Ein Sachtext über Werbung und Jugendliche nennt Fakten aus Wikipedia (Ausgaben, Werbesprüche, Vorteile, Kritik, Regeln). Knapp erklärt werden sechs Mittel (repetition, rhetorical question, comparison, imperative, slogan, emotive words) und vier Wirkungen (attention, trust, curiosity, urgency), jeweils mit eigenem Beispiel. Die Seite trennt Information, die man prüfen kann, vom Werbeversprechen. Gefragt wird, welches Mittel ein Beispiel zeigt, welche Wirkung es hat, wie eine Anzeige in ganzen Sätzen untersucht wird und was eine rhetorical question von einer echten Frage unterscheidet. Am Ende blickt die Seite auf das Kapitel und auf die ganze App zurück (Burger, gestapelte Burger, Waage aus Burgern). Nicht hier, weil es andere Seiten sind, nämlich Stilmittel in der Literatur, Konsumrechte, Jugendkulturen, der argumentative Text und Politik."
+blocks:
+  - type: section
+    id: einstieg
+    title: Information oder Versprechen?
+    blocks:
+      - type: figure
+        image: images/anzeige-werbung-pocketvolt.svg
+        alt: "Eine blaue Anzeige für die erfundene Marke Pocketvolt, rechts ein gelbes Gerät mit Blitz. Der Text lautet: „Pocketvolt. Power for a perfect day! Be the one who never runs out of power. 120 g, 5,000 mAh. Charges one phone once.“"
+        caption: "Eine erfundene Anzeige. Die Marke Pocketvolt gibt es nicht wirklich."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "Alle Anzeigen und Marken auf dieser Seite sind erfunden. Eine Anzeige sagt oft viele Dinge auf einmal. Manche kannst du nachprüfen, andere nicht."
+      - type: single-choice
+        id: werbung-start
+        text: Welche Aussage der Anzeige kannst du nachprüfen?
+        options:
+          - text: Mit dem Gerät wird dein Tag perfekt
+            correct: false
+            info: Nicht messbar, also ein Versprechen.
+          - text: Mit dem Gerät hast du nie leere Akkus
+            correct: false
+            info: Auch das ist ein Versprechen.
+          - text: Das Gerät wiegt 120 Gramm
+            correct: true
+            info: Das kannst du messen.
+        explanation: Information prüfst du, ein Versprechen nicht.
+      - type: text
+        text: "**Das kannst du danach:** Du untersuchst eine Anzeige. Du sagst, mit welchen Mitteln sie wirkt und was davon Information ist."
+  - type: section
+    id: lesen
+    title: "Werbung und Jugendliche: sechs Fragen"
+    blocks:
+      - type: vocabulary
+        caption: Wörterkasten · Wörter zum Sachtext
+        languages: { source: de, target: en }
+        entries:
+          - target: advert, ad
+            source: Anzeige, Werbung
+          - target: product
+            source: Produkt
+          - target: service
+            source: Dienstleistung
+          - target: buyer
+            source: Käufer, Käuferin
+          - target: to spend, spending
+            source: ausgeben, Ausgaben
+          - target: per cent
+            source: Prozent
+          - target: slogan
+            source: Werbespruch
+          - target: celebrity
+            source: berühmte Person
+          - target: to restrict
+            source: einschränken
+          - target: claim
+            source: Behauptung
+          - target: promise
+            source: Versprechen
+          - target: billion, trillion
+            source: Milliarde, Billion
+          - target: to mislead
+            source: täuschen
+          - target: headline
+            source: Überschrift
+          - target: small print
+            source: Kleingedrucktes
+          - target: means
+            source: Mittel, Methoden
+          - target: to compete
+            source: um Kunden konkurrieren
+      - type: text
+        text: "Die Zahlen sind die Absätze. Alle Fakten stammen aus der Quelle unter dem Text."
+      - type: text
+        text: |
+          **Advertising and young people: six questions**
+
+          **1** What is advertising? Advertising draws attention to a product or a service. It shows what the product can do and why it could be interesting for buyers. Adverts, or ads for short, are made to be noticed.
+
+          **2** Where do we meet it? In 2025, companies worldwide were expected to spend more than one trillion US dollars on advertising. In 2024, 59.4 per cent of the money went to digital advertising and 24.9 per cent to TV. Social media alone was expected to take 247 billion dollars in 2024. So most of the money goes to adverts on screens.
+
+          **3** Are slogans new? No. In August 1859 a British medicine company used the sentence "Worth a guinea a box". It is seen as the first advertising slogan. In 1882 a soap company in London asked a well-known actress to appear in its adverts. She is seen as the first celebrity to advertise a product.
+
+          **4** Is advertising only bad? No, supporters see several advantages. Adverts inform consumers about new products and services, so people can find out what exists. Supporters also say that adverts help companies to compete for customers, which can push them to offer something better or cheaper. And money from advertising can pay for services that look free for users: in the 1990s, some online companies lived only from advertising and offered things like free internet access.
+
+          **5** What do critics say? Critics say that adverts for food with a lot of sugar, fat and salt are often aimed at children. Children may not understand that someone wants to sell them something. Some adverts can also mislead people.
+
+          **6** What rules are there? Many countries restrict adverts for alcohol, tobacco and gambling. In parts of Europe, adverts aimed at children are banned. Many rules check whether the claims in an advert are true. That is why it helps to ask which sentence is information that you can check and which one is only a promise.
+
+          **7** How do adverts work on us? They use words and pictures in a clever way: a short slogan, a question, a famous face or a bright colour. The next part shows the most common means.
+      - type: text
+        text: "*Quelle, abgerufen am 24.11.2026:* Wikipedia, „Advertising“ (Stand 19.11.2026): Ausgaben, Werbesprüche, Vorteile, Kritik und Regeln. Der Text ist eigen formuliert."
+  - type: section
+    id: neu
+    title: Sechs Mittel und vier Wirkungen
+    blocks:
+      - type: figure
+        image: images/anzeige-werbung-fizzlo.svg
+        alt: "Eine gelbe Anzeige für die erfundene Marke Fizzlo mit einer orangen Flasche. Der Text lautet: „Fizzlo. Pop into summer. Who says juice has to be boring? Fresh, fresh, fresh: new every day! More fruit than any other juice.“ Vier Zeilen tragen die Nummern 1 bis 4, eine Legende darunter nennt die Mittel."
+        caption: "Eine erfundene Anzeige mit vier markierten Mitteln. Die Marke Fizzlo gibt es nicht wirklich."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              Eine Anzeige will etwas bewirken: **attention** (Aufmerksamkeit), **trust** (Vertrauen), **curiosity** (Neugier) oder **urgency** (Zeitdruck). Mehr zu Stilmitteln: [Stilmittel](https://lernapps.net/apps/map/englisch/c/stilmittel/).
+
+              - **repetition** (Wiederholung): *Soft socks, soft feeling, soft life.* Die Wörter bleiben im Kopf: attention.
+              - **rhetorical question** (Frage ohne Antwort): *Why wait for the weekend?* Du denkst weiter: curiosity.
+              - **comparison** (Vergleich mit than oder as): *Our bag is lighter than any other bag.* Es klingt wie ein Beweis: trust.
+              - **imperative** (Befehl): *Order today.* Er drängt: urgency.
+              - **slogan** (kurzer Satz der Marke): *Pippa's Pies: the taste of home.* Man merkt ihn sich: attention.
+              - **emotive words** (Wörter mit Gefühl): *a wonderful, warm, cosy blanket.* Sie wecken Gefühle: attention.
+
+              **Mittel und Wirkung:** Das Mittel steht im Text, die Wirkung entsteht bei dir.
+              **Frage oder rhetorical question?** *What time does the film start?* will eine Antwort.
+              **comparison oder Bild?** *This bag is a rock* ist ein Bild, denn es hat kein than und kein as.
+              **Information oder Versprechen?** *The tent weighs two kilos* kannst du prüfen, *the best tent ever* nicht.
+  - type: section
+    id: uebung
+    title: Mittel erkennen, Wirkung wählen, Anzeige untersuchen
+    blocks:
+      - type: single-choice
+        id: werbung-lesen
+        text: Wie viel Prozent der Werbeausgaben gingen 2024 laut Text an digitale Werbung?
+        options:
+          - text: Etwa 25 Prozent
+            correct: false
+            info: Das ist der Anteil des Fernsehens.
+          - text: Etwa 59 Prozent
+            correct: true
+            info: Das steht in Absatz 2.
+          - text: Eine Billion US-Dollar
+            correct: false
+            info: Das ist die Summe, keine Prozentzahl.
+        explanation: Absatz 2 nennt zwei Anteile.
+      - type: single-choice
+        id: werbung-beleg
+        text: In welchem Absatz steht, dass es schon im 19. Jahrhundert einen Werbespruch gab?
+        options:
+          - text: Absatz 2
+            correct: false
+            info: Hier stehen Zahlen zu Ausgaben.
+          - text: Absatz 3
+            correct: true
+            info: Dort steht das Jahr 1859.
+          - text: Absatz 4
+            correct: false
+            info: Hier geht es um Vorteile von Werbung.
+          - text: Absatz 5
+            correct: false
+            info: Hier geht es um Kritik.
+        explanation: Das 19. Jahrhundert endet 1900.
+      - type: matching
+        id: werbung-mittel
+        text: Ordne jedes Beispiel dem Mittel zu.
+        pairs:
+          - left: Crunch after crunch after crunch.
+            right: repetition
+          - left: Isn't it time for a change?
+            right: rhetorical question
+          - left: Our trainers are cheaper than any others.
+            right: comparison
+          - left: Join the team today.
+            right: imperative
+          - left: Tavok, the bike for every road.
+            right: slogan
+          - left: Delicious, brilliant, simply amazing!
+            right: emotive words
+        explanation: Achte auf than, Fragezeichen und Befehle.
+        hint: Schau in die Merke-Box.
+      - type: single-choice
+        id: werbung-wirkung
+        text: "Eine Anzeige sagt: „Only three days left!“ Welche Wirkung soll das haben?"
+        options:
+          - text: curiosity
+            correct: false
+            info: Neugier kommt von Fragen.
+          - text: trust
+            correct: false
+            info: Vertrauen kommt von Beweisen.
+          - text: urgency
+            correct: true
+            info: Die Zeit läuft ab.
+          - text: imperative
+            correct: false
+            info: Das ist ein Mittel, keine Wirkung.
+        explanation: Die Wirkung ist das Ziel der Anzeige.
+      - type: single-choice
+        id: werbung-frage
+        text: Welche Frage ist eine rhetorical question?
+        options:
+          - text: Do you want red or blue?
+            correct: false
+            info: Hier sollst du antworten.
+          - text: Who wants to be second best?
+            correct: true
+            info: Niemand erwartet eine Antwort.
+          - text: What time does the shop open?
+            correct: false
+            info: Das ist eine echte Frage.
+        explanation: Die Antwort steckt in der Frage.
+      - type: language-task
+        id: werbung-untersuchen
+        languages: { source: de, target: en }
+        task: "Untersuche die Anzeige. Sie hat vier nummerierte Blöcke. Schreibe Sätze nach dem Muster „The … uses … to create …“. Satz 4 sagt, was du prüfen kannst. Ergänze, was für einen ganzen Satz fehlt."
+        material:
+          - type: figure
+            image: images/anzeige-werbung-rovix.svg
+            alt: "Eine grüne Anzeige für die erfundene Marke Rovix, rechts ein weißer Schuh mit gelber Sohle. Vier nummerierte Blöcke: 1 „Why walk when you can fly?“, 2 „Faster than the rest. Lighter than ever.“, 3 „Lace up. Jump in. Go!“, 4 im Kleingedruckten „Sizes 3 to 12. 40% recycled material.“ Dazu der Satz „Rovix. Your feet fly.“"
+            caption: "Eine erfundene Anzeige. Die Marke Rovix gibt es nicht wirklich."
+            source: eigene Zeichnung
+            licence: CC-BY-4.0
+        form: { case: hint, punctuation: ok, apostrophe: ok }
+        items:
+          - cue: block 1 · rhetorical question · curiosity
+            target: (The first block|The headline|Block 1|Block one) uses a rhetorical question to create curiosity.
+            mistakes:
+              - answer: The first block uses rhetorical question to create curiosity.
+                message: Vor rhetorical question fehlt a.
+              - answer: The first block uses a rhetorical question to create urgency.
+                message: Zeitdruck kommt woanders her.
+              - answer: The first block uses a question to create curiosity.
+                message: Nenne das genaue Mittel.
+          - cue: block 3 · imperatives · urgency
+            target: (The third block|Block 3|Block three) uses (imperatives|an imperative|the imperative) to create urgency.
+            mistakes:
+              - answer: The third block use imperatives to create urgency.
+                message: Das Verb muss zum Subjekt passen.
+              - answer: The third block uses imperatives to create trust.
+                message: Befehle drängen dich.
+          - cue: block 2 · comparisons · trust
+            target: (The second block|Block 2|Block two) uses (comparisons|a comparison) to create trust.
+            mistakes:
+              - answer: The second block uses comparison to create trust.
+                message: Vor comparison fehlt a.
+              - answer: The second block uses comparisons to create attention.
+                message: Ein Vergleich klingt wie ein Beweis.
+          - cue: block 4 · small print · information · you · can check
+            target: The small print gives information (that|which) you can check.
+            mistakes:
+              - answer: The small print gives information what you can check.
+                message: Hier passt ein Relativwort.
+              - answer: The small print gives a promise that you can check.
+                message: Ein Versprechen kannst du nicht prüfen.
+      - type: language-task
+        id: werbung-hoeren
+        languages: { source: de, target: en }
+        task: Hör zu und schreibe, was du hörst.
+        form: { case: hint, punctuation: ok }
+        items:
+          - audio: a-short-slogan-is-easy-to-remember.mp3
+            target: A short slogan is easy to remember.
+          - audio: think-about-the-people-the-advert-wants-to-reach.mp3
+            target: Think about the people the advert wants to reach.
+          - audio: some-promises-sound-great-but-cannot-be-checked.mp3
+            target: Some promises sound great but cannot be checked.
+  - type: section
+    id: anwenden
+    title: Untersuche eine Anzeige
+    blocks:
+      - type: speaking-task
+        id: werbung-nachsprechen
+        language: en
+        items:
+          - audio: is-this-information-or-a-promise.mp3
+            text: Is this information or a promise?
+          - audio: both-adverts-want-to-get-your-attention.mp3
+            text: Both adverts want to get your attention.
+          - audio: i-would-like-to-look-at-another-advert.mp3
+            text: I would like to look at another advert.
+        hint: Hör zu. Sprich dann langsam nach.
+      - type: figure
+        image: images/anzeige-werbung-glowly.svg
+        alt: "Eine violette Anzeige für die erfundene Marke Glowly Lamps, rechts eine gelbe Lampe. Der Text lautet: „Glowly Lamps. Why live in the dark? Light up your room. Light up your mood! Buy two, get one free. This week only! Glowly. Home is where the light is.“"
+        caption: "Eine weitere erfundene Anzeige. Die Marke Glowly gibt es nicht wirklich."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: open-task
+        id: werbung-schreiben
+        task: "Untersuche die Anzeige für Glowly Lamps in vier bis fünf englischen Sätzen. Nenne Mittel und Wirkung und sage, was Information und was nur ein Versprechen ist."
+        points:
+          - text: Du nennst mindestens drei Mittel der Anzeige mit ihrem englischen Namen.
+            source: /pro-und-contra/werbung/#neu
+          - text: Du sagst zu jedem Mittel die Wirkung (attention, trust, curiosity oder urgency).
+            source: /pro-und-contra/werbung/#neu
+          - text: Du trennst Information, die man prüfen kann, von einem Versprechen.
+            source: /pro-und-contra/werbung/#neu
+          - text: Du schreibst ganze Sätze nach dem Muster The … uses … to create ….
+            kind: form
+        solution: |
+          The headline is a rhetorical question and creates curiosity. The second and third lines use repetition and imperatives to create attention and urgency. The line This week only! creates urgency, because time is running out. The slogan is short and easy to remember. The offer "buy two, get one free" is information that you can check, but the promise that a lamp lights up your mood cannot be checked.
+        hint: Die App bewertet nicht. Prüfe deinen Text anhand der Punkte.
+  - type: section
+    id: weiter
+    title: "Rückblick: vom Burger zur Waage"
+    blocks:
+      - type: figure
+        image: images/rueckblick-werbung.svg
+        alt: "Drei Bilder nebeneinander. Links ein Burger aus vier farbigen Schichten. In der Mitte zwei Burger übereinander mit einem Schild dazwischen. Rechts eine Waage mit einem Gewicht mit rotem Rand in der Schale Pro und zwei Gewichten mit blauem Rand in der Schale Contra. Unten steht ein Satz über den Weg von der Meinung zur Entscheidung."
+        caption: "Die drei Bilder der App: der Burger, die gestapelten Burger und die Waage."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "In dieser App hast du gelernt, eine Meinung zu begründen (Burger), mehrere Gedanken mit Verbindungswörtern zu halten (gestapelte Burger) und Argumente abzuwägen (Waage). In diesem Kapitel hast du Konsum, Jugendkulturen, den Kommentar und Werbung untersucht. Nun kannst du Argumente in deinen eigenen Texten bauen und Werbung untersuchen. Jede Schale der Waage besteht aus Burgern: Opinion, Reason, Example."

@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Argumente verbinden
+summary: Du verbindest Gedanken mit however, therefore und moreover, sprichst über Umwelt und Technik und schreibst einen Leserbrief an die Schülerzeitung.
+pages: [das-brauchst-du, verbindungswoerter, umwelt, technik-fortschritt, leserbrief]
+selfAssessment:
+  pages:
+    - exercises:
+        - /argumente-verbinden/verbindungswoerter/#verbinden-zuordnen
+        - /argumente-verbinden/verbindungswoerter/#verbinden-waehlen
+    - exercises:
+        - /argumente-verbinden/umwelt/#umwelt-3r
+        - /argumente-verbinden/umwelt/#umwelt-woerter
+    - exercises:
+        - /argumente-verbinden/technik-fortschritt/#technik-zuordnen
+        - /argumente-verbinden/technik-fortschritt/#technik-luecke
+    - exercises:
+        - /argumente-verbinden/leserbrief/#brief-teile
+        - /argumente-verbinden/leserbrief/#brief-verbinden

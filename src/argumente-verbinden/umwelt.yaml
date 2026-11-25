@@ -1,0 +1,281 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: "Umwelt: Müll, Recycling und ein Vorschlag"
+description: "Die Schülerzeitung fragt, was die Schule gegen Plastikmüll tun kann. Du liest den Artikel und machst Vorschläge mit should."
+competencies: [umwelt]
+scope: Die Seite handelt von Müll, Recycling und Nachhaltigkeit auf Englisch. Ein Artikel der Schülerzeitung über Plastikmüll nennt Zahlen zu Plastik und Recycling, die drei Wörter reduce, reuse und recycle und Vorschläge für die Schule. Gelernt werden Wörter wie waste, rubbish bin, environment und sustainable, Vorschläge mit should, der Unterschied zwischen should und must, much und many, less und fewer und nature ohne the. Gefragt wird, was im Artikel steht, in welcher Zeile es steht und wie man einen Vorschlag baut. Nicht hier, weil es andere Seiten sind, nämlich Erfindungen und der Leserbrief.
+blocks:
+  - type: section
+    id: einstieg
+    title: Wohin mit dem Müll?
+    blocks:
+      - type: figure
+        image: images/muelleimer-umwelt.svg
+        alt: "Drei Mülleimer mit Deckel stehen nebeneinander. Auf dem ersten steht Paper, auf dem zweiten Plastic, auf dem dritten Glass."
+        caption: "Drei Mülleimer in der Schule."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: In der Schule stehen drei Mülleimer.
+      - type: single-choice
+        id: umwelt-start
+        text: Was gehört in den Mülleimer mit der Aufschrift Plastic?
+        options:
+          - text: Eine alte Zeitung
+            correct: false
+            info: Zeitungen sind aus Papier.
+          - text: Eine leere Saftflasche aus Plastik
+            correct: true
+            info: Plastik kommt zu Plastik.
+          - text: Ein leeres Marmeladenglas
+            correct: false
+            info: Gläser kommen zu Glass.
+        explanation: Jeder Mülleimer ist für ein Material.
+      - type: text
+        text: "**Das kannst du danach:** Du sprichst über Müll und Recycling und machst einen Vorschlag für deine Schule."
+  - type: section
+    id: lesen
+    title: Ein Artikel der Schülerzeitung
+    blocks:
+      - type: vocabulary
+        caption: Klassenzimmer-Poster · Wörter zum Artikel
+        languages: { source: de, target: en }
+        entries:
+          - target: waste
+            source: Abfall, Müll
+          - target: rubbish bin
+            source: Mülleimer
+          - target: packaging
+            source: Verpackung
+          - target: environment
+            source: Umwelt
+          - target: sustainable
+            source: nachhaltig
+          - target: recycle
+            source: recyceln, wiederverwerten
+          - target: reuse
+            source: wieder benutzen
+          - target: reduce
+            source: verringern
+          - target: energy
+            source: Energie
+          - target: estimate
+            source: schätzen
+          - target: per cent
+            source: Prozent
+          - target: tonne
+            source: Tonne (1000 Kilo)
+          - target: aluminium
+            source: Aluminium
+          - target: break down
+            source: zerfallen
+          - target: plastic
+            source: Plastik
+          - target: nature
+            source: Natur
+          - target: tap water
+            source: Leitungswasser
+          - target: canteen
+            source: Kantine
+          - target: water station
+            source: Trinkwasserstelle
+          - target: fill
+            source: füllen
+          - target: separate
+            source: getrennt
+      - type: text
+        text: "Die Zahlen sind die Zeilen."
+      - type: text
+        text: |
+          **Plastic waste at our school**
+
+          **1** Look into the rubbish bin near the canteen. What do you see? Plastic bottles, paper and a lot of packaging.
+
+          **2** Plastic is a big problem for the environment. It is cheap and strong, but it breaks down very slowly.
+
+          **3** Experts estimate that people made about 8.3 billion tonnes of plastic by 2018. About 6.3 billion tonnes became waste. Only 9 per cent of it was recycled.
+
+          **4** Recycling means that old things become new things. Making an aluminium can from an old one uses only about 5 per cent of the energy that a new one needs.
+
+          **5** But recycling is only the last of three steps. First, we can reduce: we buy less. Then we can reuse: we use a bottle again. Last, we recycle: we put things in the right bin.
+
+          **6** What can our school do? A sustainable school makes less waste. We should have a water station, so pupils can fill their own bottles. Moreover, we should have separate bins for paper and plastic.
+
+          **7** Some pupils say this costs too much. However, a bottle that you use again is cheaper than a new bottle every day. Therefore, we think the school should try it.
+
+          **8** What do you think? Write to us!
+  - type: section
+    id: neu
+    title: Vorschläge machen und Mengen sagen
+    blocks:
+      - type: figure
+        image: images/burger-umwelt.svg
+        alt: "Ein Burger aus vier farbigen Schichten. Oben orange: Opinion mit einem Vorschlag. Darunter blau: Reason mit einem Grund. Darunter grün: Example mit einem Beispiel. Unten wieder orange: Opinion mit dem Schluss. Unter dem Bild steht: Opinion, Reason, Example, Opinion."
+        caption: "Ein Burger, dessen Meinung ein Vorschlag mit should ist."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              **Mit should machst du einen Vorschlag.** Danach steht das Verb ohne to: *We should plant a tree.* **Must** ist stärker. Es ist eine Pflicht: *You must wear a helmet.*
+
+              **Zählbar oder nicht?** Was du zählen kannst, sagst du mit **many** und **fewer**: *many cans, fewer cans.* Was du nicht zählen kannst, sagst du mit **much** und **less**: *much water, less water.*
+
+              **Nature** steht ohne the: *Nature is important for all of us.* Die Umgebung, in der wir leben, heißt **the environment**.
+  - type: section
+    id: uebung
+    title: Verstehen, belegen, Vorschläge schreiben
+    blocks:
+      - type: true-false
+        id: umwelt-wahr
+        text: Laut Artikel wurde etwa die Hälfte des Plastiks recycelt.
+        answer: false
+        explanation: "Nur etwa 9 Prozent, das steht in Zeile 3."
+        hint: Suche in Zeile 3.
+      - type: single-choice
+        id: umwelt-lesen
+        text: Warum ist Plastik laut Zeile 2 ein Problem für die Umwelt?
+        options:
+          - text: Es ist zu teuer
+            correct: false
+            info: In Zeile 2 steht, dass Plastik billig ist.
+          - text: Man kann es nicht recyceln
+            correct: false
+            info: Ein Teil wird recycelt, siehe Zeile 3.
+          - text: Es zerfällt sehr langsam
+            correct: true
+            info: Das steht in Zeile 2.
+        explanation: Plastik bleibt lange in der Umwelt.
+      - type: multiple-choice
+        id: umwelt-beleg
+        text: In welchen Zeilen steht eine Menge in Tonnen oder ein Anteil in Prozent? Wähle alle richtigen.
+        options:
+          - text: Zeile 2
+            correct: false
+            info: Hier steht keine Menge.
+          - text: Zeile 3
+            correct: true
+            info: Hier stehen Tonnen und ein Prozentwert.
+          - text: Zeile 4
+            correct: true
+            info: Hier steht 5 per cent.
+          - text: Zeile 5
+            correct: false
+            info: Hier steht nur die Zahl der Schritte.
+        explanation: Mengen und Anteile belegen eine Aussage.
+      - type: matching
+        id: umwelt-3r
+        text: Welches Wort passt zu dem Satz? Ordne zu.
+        pairs:
+          - left: I use a glass jar again for my pencils.
+            right: reuse
+          - left: I put my old newspaper in the right bin.
+            right: recycle
+          - left: I take fewer bags from the shop.
+            right: reduce
+        explanation: Weniger nehmen, wieder benutzen, aus Altem Neues machen.
+        hint: Schau in Zeile 5.
+      - type: language-task
+        id: umwelt-woerter
+        languages: { source: de, target: en }
+        mode: choice
+        task: Wähle das richtige Wort.
+        items:
+          - source: Wir sollten weniger Plastik benutzen.
+            target: "We should use [less] plastic."
+            distractors: [[fewer, many]]
+          - source: Es gibt zu viele Flaschen.
+            target: "There are too [many] bottles."
+            distractors: [[much, less]]
+          - source: Ich gehe gern in der Natur spazieren.
+            target: "I like walking in [nature]."
+            distractors: [[the nature, environment]]
+          - source: Wir brauchen weniger Flaschen.
+            target: "We need [fewer] bottles."
+            distractors: [[less, much]]
+        explanation: Many und fewer für Zählbares, much und less für Nicht-Zählbares.
+      - type: language-task
+        id: umwelt-satz
+        languages: { source: de, target: en }
+        task: "Schreibe auf Englisch. Satz 1: Wir sollten Wasser aus dem Hahn trinken. Satz 2: Plastik ist billig. Aber es ist schlecht für die Umwelt. Satz 3: Wir sollten unsere Taschen wieder benutzen. Die englischen Wörter sind nur eine Hilfe: Ergänze, was für einen ganzen Satz fehlt."
+        form: { case: hint, apostrophe: ok }
+        hint: Achte auf Punkt und Komma.
+        items:
+          - cue: we · should · drink · tap water
+            target: We should drink (tap water|water from the tap).
+            mistakes:
+              - answer: We should to drink (tap water|water from the tap)(.|)
+                message: Nach should steht das Verb ohne to.
+              - answer: We must drink (tap water|water from the tap)(.|)
+                message: Must ist eine Pflicht. Du machst einen Vorschlag.
+          - cue: plastic · cheap · however · bad · environment
+            target: Plastic is cheap. However, it is bad for the environment.
+            mistakes:
+              - answer: Plastic is cheap. However, it is bad for the nature(.|)
+                message: Für die Umwelt gibt es ein eigenes Wort. Nature steht außerdem ohne the.
+              - answer: Plastic is cheap because it is bad for the environment(.|)
+                message: Because gibt einen Grund. Hier brauchst du einen Gegensatz.
+              - answer: Plastic is cheap. However it is bad for the environment(.|)
+                message: Nach However steht ein Komma.
+              - answer: Plastic is cheap, however(,|) it is bad for the environment(.|)
+                message: Ein Komma allein verbindet zwei ganze Sätze nicht.
+          - cue: we · should · reuse · bags
+            target: We should reuse (our |the |)bags.
+            mistakes:
+              - answer: We should recycle (our |the |)bags(.|)
+                message: Recycle macht aus Altem Neues. Hier benutzt man die Tasche wieder.
+              - answer: We should reduce (our |the |)bags(.|)
+                message: Reduce heißt, weniger zu nehmen.
+      - type: language-task
+        id: umwelt-hoeren
+        languages: { source: de, target: en }
+        task: Hör zu und schreibe, was du hörst.
+        form: { case: hint, punctuation: ok }
+        items:
+          - audio: every-pupil-should-have-a-bottle-for-water.mp3
+            target: Every pupil should have a bottle for water.
+          - audio: plastic-is-useful-but-it-is-bad-for-nature.mp3
+            target: Plastic is useful, but it is bad for nature.
+          - audio: our-town-has-a-new-recycling-centre.mp3
+            target: Our town has a new recycling centre.
+  - type: section
+    id: anwenden
+    title: Dein Vorschlag
+    blocks:
+      - type: speaking-task
+        id: umwelt-nachsprechen
+        language: en
+        items:
+          - audio: what-can-we-do-for-the-environment.mp3
+            text: What can we do for the environment?
+          - audio: i-always-bring-my-own-bag-to-the-supermarket.mp3
+            text: I always bring my own bag to the supermarket.
+          - audio: let-us-plant-some-trees-in-the-school-garden.mp3
+            text: Let us plant some trees in the school garden.
+        hint: Hör zu. Sprich dann langsam nach.
+      - type: open-task
+        id: umwelt-schreiben
+        task: "Mach einen Vorschlag zum Thema Müll, für deine Schule oder dein Zuhause. Schreibe einen Burger aus vier Sätzen. Der Vorschlag steht mit should in der ersten Schicht. Danach kommt ein fünfter Satz mit however oder moreover."
+        points:
+          - text: Der Vorschlag hat should und danach ein Verb ohne to.
+            source: /argumente-verbinden/umwelt/#neu
+          - text: Der Text hat vier Schichten in der richtigen Reihenfolge.
+            source: /was-ich-denke/meinung-begruenden/#neu
+          - text: Der fünfte Satz beginnt mit however oder moreover, danach steht ein Komma.
+            source: /argumente-verbinden/verbindungswoerter/#neu
+          - text: Die Sätze sind ganze Sätze mit Verb.
+            kind: form
+        solution: |
+          We should use both sides of the paper.
+          We need fewer new sheets, because we can write on the back of old ones.
+          For example, my class wrote a short test on the back of an old worksheet last week.
+          So we should always use both sides.
+          Moreover, we can save a lot of money.
+        hint: Die App bewertet nicht. Prüfe deinen Text anhand der Punkte.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Der Artikel endet mit „Write to us!“. Darauf antwortest du erst am Ende des Kapitels. Als Nächstes sprichst du über Erfindungen."
