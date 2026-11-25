@@ -12,6 +12,7 @@
   <line x1="520.0" y1="122" x2="520.0" y2="138" stroke="#34495e" stroke-width="3"/>
   <text x="40" y="164" font-family="sans-serif" font-size="16" fill="#222">disagree</text>
   <text x="520" y="164" text-anchor="end" font-family="sans-serif" font-size="16" fill="#222">agree</text>
+  <text x="280" y="164" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#222">not sure</text>
   <rect x="60.599999999999994" y="82" width="74" height="28" rx="4" fill="#d6e4ff" stroke="#333" stroke-width="1.5"/>
   <text x="97.6" y="102" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#222">Sophie</text>
   <path d="M91.6 110 L97.6 122 L103.6 110 Z" fill="#d6e4ff" stroke="#333" stroke-width="1.5"/>

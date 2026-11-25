@@ -2,30 +2,30 @@
 title: Konsum, Werbung und deine Rechte
 description: "Ein Sachtext über billige Kleidung und über deine Rechte beim Einkaufen in Großbritannien. Du sprichst darüber und sagst deine Meinung mit Grund und Beispiel."
 competencies: [konsum-werbung]
-scope: Die Seite zeigt, wie man auf Englisch über Konsum, Kleidung und die Rechte als Verbraucherin oder Verbraucher spricht. Ein Sachtext (Stand 24. November 2026, nach Wikipedia und gov.uk) nennt Zahlen zu fast fashion, zur Umwelt und zu Rechten beim Einkaufen in Großbritannien, jeweils mit mehreren Sichtweisen. Gelernt werden die Wörter consumer, refund, receipt, warranty, fast fashion, sustainable, second-hand und brand, der Unterschied von consumer und customer, buy und by, borrow und lend, much und many, und was ein Pro und ein Contra ist. Gefragt wird, in welcher Zeile eine Zahl steht, welches Recht zu welcher Lage passt und wie man eine Meinung zu einem Kauf mit Grund und Beispiel schreibt. Nicht hier, weil es andere Seiten sind, nämlich die Waage mit Pro und Contra in einem ganzen Text, die Analyse von Werbung und Jugendkulturen. Rechtsberatung gibt es nicht.
+scope: Die Seite zeigt, wie man auf Englisch über Konsum, Kleidung und die Rechte als Verbraucherin oder Verbraucher spricht. Ein Sachtext (Stand 24. November 2026, nach Wikipedia und gov.uk) nennt Zahlen zu fast fashion, zur Umwelt und zu Rechten beim Einkaufen in Großbritannien, jeweils mit mehreren Sichtweisen. Gelernt werden die Wörter consumer, refund, receipt, warranty, fast fashion, sustainable, second-hand und brand, der Unterschied von consumer und customer, buy und by, borrow und lend, much und many, und was ein Pro und ein Contra ist. Auch Werbung kommt kurz vor, als Teil des Konsums. Gefragt wird, in welchem Absatz eine Zahl steht, welches Recht zu welcher Lage passt und wie man eine Meinung zu einem Kauf mit Grund und Beispiel schreibt. Nicht hier, weil es andere Seiten sind, nämlich die Waage mit Pro und Contra in einem ganzen Text, die Analyse von Werbung und Jugendkulturen. Rechtsberatung gibt es nicht.
 blocks:
   - type: section
     id: einstieg
     title: Was zeigst du, wenn etwas kaputt ist?
     blocks:
       - type: text
-        text: "Du kaufst in einem Geschäft in Großbritannien ein T-Shirt. Zu Hause siehst du ein Loch im Stoff. Du gehst am nächsten Tag zurück in den Laden."
+        text: "Du kaufst in einem Geschäft in Großbritannien ein T-Shirt. Zu Hause siehst du ein Loch im Stoff. Du gehst am nächsten Tag zurück in den Laden. Der Sachtext danach hat nummerierte Absätze. Zahlen und Aussagen belegst du mit der Absatznummer."
       - type: single-choice
         id: konsum-start
         text: Was bringst du mit, damit man dir glaubt, dass du das T-Shirt dort gekauft hast?
         options:
-          - text: Den Kassenbon
-            correct: true
-            info: Der Bon zeigt, was du wann bezahlt hast.
           - text: Ein Foto vom Schaufenster
             correct: false
             info: Das zeigt nur, dass es den Laden gibt.
           - text: Die Werbung des Ladens
             correct: false
             info: Eine Werbung zeigt nicht, dass du etwas gekauft hast.
+          - text: Den Kassenbon
+            correct: true
+            info: Der Bon zeigt, was du wann bezahlt hast.
         explanation: Einen Beleg über den Kauf kannst du vorzeigen.
       - type: text
-        text: "**Das kannst du danach:** Du sprichst über Kleidung und Konsum, nennst deine Rechte beim Einkaufen und sagst deine Meinung zu einem Kauf mit Grund und Beispiel."
+        text: "**Das kannst du danach:** Du sprichst über Kleidung, Werbung und Konsum, nennst deine Rechte beim Einkaufen und sagst deine Meinung zu einem Kauf mit Grund und Beispiel."
   - type: section
     id: lesen
     title: Billige Kleidung und deine Rechte
@@ -40,6 +40,8 @@ blocks:
             source: schnelle, billige Mode
           - target: brand
             source: Marke
+          - target: advert, ad
+            source: Werbung, Anzeige
           - target: sustainable
             source: nachhaltig
           - target: second-hand
@@ -73,20 +75,20 @@ blocks:
           - target: label
             source: Etikett
       - type: text
-        text: "Der Text ist ein eigener Text nach Fakten aus Wikipedia („Fast fashion“) und von gov.uk („Accepting returns and giving refunds: the law“), Stand 24. November 2026. Die Zahlen sind die Zeilen."
+        text: "Der Text ist ein eigener Text nach Fakten aus Wikipedia („Fast fashion“) und von gov.uk („Accepting returns and giving refunds: the law“), Stand 24. November 2026. Die Zahlen sind die Absätze."
       - type: text
         text: |
-          **1** Many young people like new clothes, and shops are happy to sell them. The term *fast fashion* describes shops that copy new trends quickly and sell them cheaply. According to Wikipedia, about 36% of all clothes that people bought in the world in 2026 belong to this group.
+          **1** Many young people like new clothes, and shops are happy to sell them. The term *fast fashion* describes shops that copy new trends quickly and sell them cheaply. Brands often use adverts on social media to make the newest styles look exciting. According to a market report that Wikipedia quotes, about 36% of the clothing purchases in the world in 2026 belong to this group.
 
-          **2** There are good reasons for this. Low prices mean that more people can wear the latest styles, and the same article estimates that the industry gives work to 60 to 70 million people. For many consumers, a cheap top for a party is simply a good deal.
+          **2** There are good reasons for this. Low prices mean that more people can wear the latest styles, and one estimate says that the industry gives work to roughly 60 to 70 million people. For many consumers, a cheap top for a party is simply a good deal.
 
           **3** However, there is another side. The United Nations Environment Programme says that people buy about 60% more clothes than they used to, but keep each item for only half as long. It also says that every second, the equivalent of a truckload of old textiles is buried in landfill or burned. Wikipedia gives an estimate of 2 to 8% of the world's greenhouse gas emissions for the fashion industry.
 
-          **4** What can consumers do? A study of T-shirts, mentioned by Wikipedia, found that if a garment lasts longer, its carbon emissions could fall by about half. That is why some people prefer second-hand clothes, repair a jumper instead of throwing it away, or look for sustainable brands. Others say that they cannot pay more for quality, or that clothes and brands are a way to show who you are. Both sides have a point.
+          **4** What can consumers do? A study of polyester and cotton T-shirts, mentioned by Wikipedia, estimated that if a T-shirt is worn for longer, its carbon emissions could fall by about half. That is why some people prefer second-hand clothes, repair a jumper instead of throwing it away, or look for sustainable brands. Others say that they cannot pay more for quality, or that clothes and brands are a way to show who you are. Both sides have a point.
 
-          **5** Whatever you choose, you have rights when you buy something in Britain. The government explains them on gov.uk. In a sale, your rights are exactly the same as at full price. A shop is not allowed to put up a sign that says "no refunds" to take them away.
+          **5** Adverts and trends can make you want something, but when you pay, the law protects you. In Britain you have rights as a buyer, and the government explains them on gov.uk. In a sale, your rights are exactly the same as at full price. A shop is not allowed to put up a sign that says "no refunds" to take them away.
 
-          **6** If an item is faulty, not as described or does not do what it should, the shop must offer a full refund. If you only change your mind in a shop, for example because the size or the colour is wrong, the shop does not have to give your money back.
+          **6** If an item is faulty, not as described or does not do what it is supposed to, the shop must offer a full refund. There is an exception: if you knew about the fault when you bought the item, you cannot ask for your money back. If you only change your mind in a shop, for example because the size or the colour is wrong, the shop does not have to give it back either.
 
           **7** Online, it is different. You can cancel an order within 14 days after you receive the item, and then you have another 14 days to send it back. The shop must refund you within 14 days of getting it back.
 
@@ -110,45 +112,45 @@ blocks:
 
               **Kleine Wörter, große Fehler.**
 
-              - *consumer* ist eine Person, die etwas verbraucht oder kauft, ganz allgemein. *customer* ist die Kundin oder der Kunde in einem Geschäft: *The customer at the desk is waiting.*
+              - *consumer* ist eine Person, die etwas verbraucht oder kauft, ganz allgemein. *customer* ist die Kundin oder der Kunde in einem Geschäft: *The customer in the bakery wants two rolls.*
               - *much* gehört zu Dingen, die du nicht zählst, *many* zu Dingen, die du zählst: *How much water? How many bottles?*
-              - *buy* heißt kaufen, *by* heißt mit oder bei: *I buy a scarf. I travel by bus.*
+              - *buy* heißt kaufen, *by* heißt mit oder bei: *She buys a magazine. I travel by bus.*
               - *borrow* heißt sich etwas leihen, *lend* heißt jemandem etwas leihen: *I borrow a book. The library lends me the book.*
-              - *in the sale* heißt reduziert: *The coats are in the sale this week.*
+              - *in the sale* heißt reduziert: *All bags in this shop are in the sale today.*
   - type: section
     id: uebung
     title: Zahlen belegen, Rechte zuordnen, Wörter wählen
     blocks:
       - type: single-choice
         id: konsum-lesen
-        text: Was bedeutet fast fashion nach Zeile 1?
+        text: Was bedeutet fast fashion nach Absatz 1?
         options:
-          - text: Neue Trends werden schnell kopiert und billig verkauft
-            correct: true
-            info: So beschreibt es Zeile 1.
           - text: Kleidung, die besonders lange hält
             correct: false
-            info: Zeile 3 sagt das Gegenteil, die Stücke werden kürzer getragen.
+            info: Absatz 3 sagt das Gegenteil, die Stücke werden kürzer getragen.
+          - text: Neue Trends werden schnell kopiert und billig verkauft
+            correct: true
+            info: So beschreibt es Absatz 1.
           - text: Kleidung, die es nur in großen Städten gibt
             correct: false
             info: Davon steht im Text nichts.
         explanation: Das Wort fast beschreibt, wie schnell neue Mode in die Läden kommt.
       - type: matching
         id: konsum-beleg
-        text: Welche Angabe steht in welcher Zeile?
+        text: Welche Angabe steht in welchem Absatz?
         pairs:
-          - left: 36 % der gekauften Kleidung weltweit
-            right: Zeile 1
+          - left: 36 % der Käufe von Kleidung weltweit
+            right: Absatz 1
           - left: Etwa 60 % mehr Kleidung als früher
-            right: Zeile 3
+            right: Absatz 3
           - left: 14 Tage, um online zu widerrufen
-            right: Zeile 7
+            right: Absatz 7
           - left: Sechs Monate für Reparatur oder Ersatz
-            right: Zeile 8
+            right: Absatz 8
         explanation: Zahlen findest du schnell, wenn du den Text nach ihnen durchsuchst.
       - type: matching
         id: konsum-rechte
-        text: Welches Recht passt zu welcher Lage? Die Zeilen 5 bis 8 helfen.
+        text: Welches Recht passt zu welcher Lage? Die Absätze 5 bis 8 helfen.
         pairs:
           - left: Ein kaputtes T-Shirt war im Angebot.
             right: Die Rechte sind wie bei vollem Preis.
@@ -188,38 +190,40 @@ blocks:
         form: { case: hint, punctuation: ok, apostrophe: ok }
         items:
           - cue: how many · jumpers · you · have
-            target: How many jumpers do you have?
+            target: How many jumpers (do you have|have you got)?
             mistakes:
               - answer: How much jumpers do you have?
-                message: Pullover kannst du zählen, dann passt many.
+                message: Pullover kannst du zählen. Überlege, welches Wort zu zählbaren Dingen passt.
               - answer: How many jumpers you have?
                 message: In der Frage steht do vor you.
           - cue: I · not · have · much · money
-            target: (I do not|I don't) have much money.
+            target: (I do not have|I don't have|I have not got|I haven't got) much money.
             mistakes:
               - answer: I don't have many money.
-                message: Money kannst du nicht zählen, dann passt much.
+                message: Money ist nicht zählbar. Überlege, welches Wort zu Dingen passt, die man nicht zählt.
+              - answer: I do not have many money.
+                message: Money ist nicht zählbar. Überlege, welches Wort zu Dingen passt, die man nicht zählt.
           - cue: can · you · lend · me · five pounds
-            target: Can you lend me five pounds?
+            target: (Can|Could) you lend me five pounds?
             mistakes:
               - answer: Can you borrow me five pounds?
-                message: Die Person gibt das Geld her, dann passt lend, nicht borrow.
+                message: Überlege, wer das Geld hergibt und wer es bekommt.
       - type: multiple-choice
         id: konsum-procontra
         text: "Das Thema ist: Young people should buy new clothes often. Welche Sätze sind ein Contra? Wähle alle richtigen."
         options:
           - text: Old clothes often end up in landfill.
             correct: true
-            info: Das ist ein Problem, siehe Zeile 3.
+            info: Das ist ein Problem, siehe Absatz 3.
           - text: Cheap prices let more people follow trends.
             correct: false
-            info: Das ist ein Pro, siehe Zeile 2.
+            info: Das ist ein Pro, siehe Absatz 2.
           - text: People keep clothes for only half as long as before.
             correct: true
-            info: Das spricht gegen häufiges Kaufen, siehe Zeile 3.
+            info: Das spricht gegen häufiges Kaufen, siehe Absatz 3.
           - text: Clothes can show who you are.
             correct: false
-            info: Das ist ein Pro, siehe Zeile 4.
+            info: Das ist ein Pro, siehe Absatz 4.
         explanation: Ein Contra nennt ein Problem, ein Pro einen Vorteil.
       - type: language-task
         id: konsum-hoeren

@@ -36,6 +36,7 @@ blocks:
       - left: Du willst an der Kasse bezahlen.
         right: Can I pay by card, please?
     explanation: Zuerst die Situation, dann der passende Satz.
+    hint: Schau in den Wörterkasten oben.
   - type: language-task
     id: kleidung-schreiben
     languages: { source: de, target: en }
@@ -55,7 +56,7 @@ blocks:
           - answer: Have you got this on a smaller size?
             message: Bei einer Größe steht in, nicht on.
       - cue: the jumper · cost · thirty pounds
-        target: The jumper costs (thirty pounds|£30).
+        target: The jumper costs (thirty pounds|30 pounds|£30).
         mistakes:
           - answer: The jumper cost thirty pounds.
             message: Bei the jumper braucht das Verb ein s.

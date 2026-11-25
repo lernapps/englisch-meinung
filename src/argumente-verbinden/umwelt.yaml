@@ -84,7 +84,7 @@ blocks:
 
           **2** Plastic is a big problem for the environment. It is cheap and strong, but it breaks down very slowly.
 
-          **3** Experts estimate that people made about 6.3 billion tonnes of plastic between the 1950s and 2018. Only about 9 per cent of it was recycled.
+          **3** Experts estimate that people made about 8.3 billion tonnes of plastic by 2018. About 6.3 billion tonnes became waste. Only 9 per cent of it was recycled.
 
           **4** Recycling means that old things become new things. Making an aluminium can from an old one uses only about 5 per cent of the energy that a new one needs.
 
@@ -144,7 +144,7 @@ blocks:
         options:
           - text: Zeile 3
             correct: true
-            info: Hier stehen 6.3 billion tonnes und 9 per cent.
+            info: Hier stehen drei Zahlen.
           - text: Zeile 4
             correct: true
             info: Hier steht 5 per cent.

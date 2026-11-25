@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 title: "Kommentar: Pro und Contra auf der Waage"
-description: "Du wägst Argumente zu Handys in der Schule ab und lernst, einen Kommentar mit Einleitung, Hauptteil und Schluss zu schreiben."
+description: "Du wägst Argumente zu Handyverboten in der Schule ab und lernst, einen argumentativen Text (Kommentar) mit Einleitung, Hauptteil und Schluss zu schreiben."
 competencies: [kommentar]
-scope: "Die Seite zeigt, wie man auf Englisch einen argumentativen Text (einen Kommentar) mit Pro und Contra schreibt. Ein Lesestück wägt ab, ob Schulen Handys verbieten sollen, mit Zahlen aus geöffneten Quellen (Hinweise der englischen Regierung, Wikipedia). Der Argument-Burger wird zur Waage, mit zwei Schalen Pro (rot) und Contra (blau); die Neigung der Waage ist die conclusion, die Schlussfolgerung. Die Gliederung wird knapp erklärt: Einleitung, Hauptteil mit einem Gedanken je Absatz (erst alle Pro-Absätze, dann alle Contra-Absätze) und Schluss mit Entscheidung ohne neues Argument. Dazu kommen Verbindungswörter (on the one hand … on the other hand, first of all, moreover, however, therefore, to sum up, in conclusion). Gefragt wird, welche Argumente auf welche Schale gehören, wie Absätze geordnet werden, welches Verbindungswort passt und wie ein Schlusssatz lautet. Typische Fehler sind vermischte Seiten, ein Schluss ohne Entscheidung, neue Argumente im Schluss, eine Meinung ohne Beleg und eine zu persönliche I-Form. Nicht hier, weil es andere Seiten sind, nämlich Konsum und Werbung, Jugendkulturen, Stilmittel in der Werbung, die Gliederung von Zeitungstexten im Einzelnen und Politik."
+scope: "Die Seite zeigt, wie man auf Englisch einen argumentativen Text (einen Kommentar) mit Pro und Contra schreibt. Ein Lesestück wägt ab, ob Schulen Handys verbieten sollen (Pro = für das Verbot, Contra = dagegen), mit Zahlen aus geöffneten Quellen (Hinweise der englischen Regierung, Wikipedia). Der Argument-Burger wird zur Waage: Jede Schale besteht aus Burgern (Opinion, Reason, Example), mit zwei Schalen Pro (rot) und Contra (blau); die Neigung der Waage ist die conclusion, die Schlussfolgerung. Die Gliederung wird knapp erklärt: Einleitung, Hauptteil mit einem Gedanken je Absatz (erst alle Pro-Absätze, dann alle Contra-Absätze) und Schluss mit Entscheidung ohne neues Argument. Dazu kommen Verbindungswörter (on the one hand … on the other hand, first of all, moreover, however, therefore, to sum up, in conclusion). Belegt wird mit Absatznummern. Gefragt wird, welche Argumente auf welche Schale gehören, wie Absätze geordnet werden, welches Verbindungswort passt und wie ein Schlusssatz lautet. Typische Fehler sind vermischte Seiten, ein Schluss ohne Entscheidung, neue Argumente im Schluss, eine Meinung ohne Beleg und eine zu persönliche I-Form. Nicht hier, weil es andere Seiten sind, nämlich Konsum und Werbung, Jugendkulturen, Stilmittel in der Werbung, die Gliederung von Zeitungstexten im Einzelnen und Politik."
 blocks:
   - type: section
     id: einstieg
@@ -10,28 +10,28 @@ blocks:
     blocks:
       - type: figure
         image: images/waage-kommentar-leer.svg
-        alt: "Eine Waage mit zwei leeren Schalen im Gleichgewicht. Links steht Pro in Rot, rechts Contra in Blau. Oben steht die Frage „Should schools ban phones?“, unten ein Feld mit „conclusion“ und einem Fragezeichen."
+        alt: "Eine Waage mit zwei leeren Schalen im Gleichgewicht. Links steht Pro in Rot mit dem Zusatz for a ban, rechts Contra in Blau mit dem Zusatz against a ban. Oben steht die Frage „Should schools ban phones?“, unten ein Feld mit „conclusion“ und einem Fragezeichen."
         caption: "Die leere Waage: links die Schale Pro, rechts die Schale Contra, unten das Feld für die conclusion."
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: text
-        text: "In einem Kommentar wägst du eine Frage ab, zu der es mehr als eine Meinung gibt. Diese Frage kennen viele aus dem Schulalltag."
+        text: "In einem Kommentar (einem argumentativen Text) wägst du eine Frage ab, zu der es mehr als eine Meinung gibt. Diese Frage kennen viele aus dem Schulalltag. Pro heißt hier: für ein Verbot. Contra heißt: gegen ein Verbot. Im Lesestück belegst du mit den Absatznummern."
       - type: single-choice
         id: kommentar-start
         text: Du sollst die Frage auf der Waage abwägen. Was machst du als Erstes?
         options:
-          - text: Ich sammle Argumente für beide Seiten
-            correct: true
-            info: Erst dann kannst du abwägen.
           - text: Ich suche nur Argumente für meine Meinung
             correct: false
             info: Die andere Schale bleibt leer.
           - text: Ich schreibe zuerst den Schluss
             correct: false
             info: Der Schluss braucht erst Argumente.
+          - text: Ich sammle Argumente für beide Seiten
+            correct: true
+            info: Erst dann kannst du abwägen.
         explanation: Beide Schalen brauchen Gewichte.
       - type: text
-        text: "**Das kannst du danach:** Du schreibst einen Kommentar mit Pro, Contra und einer Entscheidung am Ende."
+        text: "**Das kannst du danach:** Du schreibst einen argumentativen Text (Kommentar) mit Pro, Contra und einer Entscheidung am Ende."
   - type: section
     id: lesen
     title: "Handys in der Schule: ein Kommentar"
@@ -54,8 +54,10 @@ blocks:
             source: Umfrage
           - target: per cent
             source: Prozent
-          - target: bullying
-            source: Mobbing
+          - target: nasty, hurtful
+            source: gemein, verletzend
+          - target: lockable pouch
+            source: abschließbare Handyhülle
           - target: emergency
             source: Notfall
           - target: evidence
@@ -71,34 +73,36 @@ blocks:
           - target: reliable
             source: zuverlässig
       - type: text
-        text: "Die Zahlen sind die Absätze. Alle Zahlen im Text stammen aus den Quellen unter dem Text."
+        text: "Die Zahlen sind die Absätze. Alle Zahlen im Text stammen aus den Quellen unter dem Text. Achtung: Es gibt zwei verschiedene Angaben mit 58 Prozent. Absatz 1 zählt Länder, Absatz 2 zählt Schülerinnen und Schüler."
       - type: text
         text: |
           **Phones at school: should schools ban them?**
 
-          **1** Should schools ban phones during the school day? More and more countries have decided to limit phones in schools. An overview on Wikipedia, which refers to UNESCO's monitoring, says that the share of countries with a ban rose from 23 per cent in 2023 to 40 per cent in 2024 and to 58 per cent in 2026. In England, government guidance asks schools to be phone-free by default, even at break and lunchtime. This comment weighs the arguments on both sides and then reaches a conclusion.
+          **1** Should schools ban phones during the school day? More and more countries have decided to limit phones in schools. An overview on Wikipedia, which refers to UNESCO's monitoring, says that the share of countries with a ban rose from 23 per cent in 2023 to 40 per cent in 2024 and to 58 per cent in 2026. In England, government guidance asks schools to be phone-free by default, even at break and lunchtime. This comment weighs the arguments for a ban (Pro) and against a ban (Contra) and then reaches a conclusion.
 
-          **2** On the one hand, there are strong reasons to keep phones out of lessons. First of all, phones distract. In England's National Behaviour Survey for 2024 to 2025, 58 per cent of secondary pupils said that phones were used without permission in at least some lessons. A phone does not only take the attention of one pupil. It can interrupt the work of the whole class.
+          **2** On the one hand, there are strong reasons to keep phones out of lessons. First of all, phones can distract. In England's National Behaviour Survey for 2024 to 2025, 58 per cent of secondary pupils reported that phones were used without permission in at least some lessons. The government says that this distracts not only the pupil with the phone but the whole class. The survey counts use without permission, so it does not show how much learning is lost.
 
           **3** Moreover, a phone-free break leaves more room for other things. The government guidance points out that screen time can take the place of talking to friends, exercise and sleep. Without phones, a break can become a time to meet and to move.
 
-          **4** A third argument is online bullying. According to Ofcom data quoted by the government, 31 per cent of children aged 8 to 17 have experienced someone being nasty or hurtful through communications technology. Supporters of bans hope that fewer such messages are sent during the school day.
+          **4** A third argument is about unkind messages. According to Ofcom data quoted by the government, 31 per cent of children aged 8 to 17 have experienced someone being nasty or hurtful towards them through communications technology. That is not only a school problem, but supporters of bans hope that fewer such messages are sent during the school day.
 
           **5** On the other hand, there are also good arguments against a strict ban. Phones help with safety. Pupils can call home if a bus is late or plans change, and many families like to be able to reach their children. Schools can solve a part of this problem. In England, parents can contact the school office in an emergency, and some schools let pupils hand their phones to staff in the morning and collect them at the end of the day.
 
-          **6** In addition, phones can be a tool for learning. Supporters say that pupils can practise searching for information, checking whether it is reliable and using apps for school work. A ban takes away this chance. However, the evidence is not clear. A study published in 2026 in the Quarterly Journal of Economics found only limited effects of school phone bans on well-being and learning results. So the effects of a ban may be smaller than some people hope.
+          **6** In addition, supporters of phones say that they can be a tool for learning. In a study from 2017 with about a hundred students at a British university, 45 per cent said that phones in class support their education. The most common example was digital access to textbooks. The researcher added that some answers may only show what students think they should say. The group was small and older than school pupils, so the result is only a hint.
 
-          **7** To sum up, both sides have strong arguments. Safety and learning are real concerns, but schools can deal with them, for example with a phone drop-off or a call through the office. Distraction in lessons is the argument that is best supported by numbers. Therefore phones should be put away during lessons. For breaks the arguments are closer, so each school should decide carefully, as long as pupils can still be reached in an emergency.
+          **7** However, a ban may achieve less than some people hope. A study published in 2026 in the Quarterly Journal of Economics looked at lockable phone pouches in schools. It found only limited effects on well-being and on learning results. The study is about pouches, not about every kind of ban.
+
+          **8** To sum up, both sides have real arguments. Distraction in lessons is a clear concern, because many pupils report phones being used without permission. Safety and learning matter too, but schools can often deal with them, for example with a phone drop-off or a call through the office. At the same time, the research on bans is limited, so the benefits should not be overstated. Therefore, schools should keep phones away during lessons. For breaks the arguments are closer, so each school should decide carefully, as long as pupils can still be reached in an emergency.
       - type: text
-        text: "*Quellen, abgerufen am 24.11.2026:* gov.uk, „Mobile phones in schools“ und „Communicating your policy for prohibiting the use of mobile phones in schools to parents“ (Stand 29.06.2026); Wikipedia, „Mobile phone use in schools“. Der Text ist eigen formuliert."
+        text: "*Quellen, abgerufen am 24.11.2026:* gov.uk, „Mobile phones in schools“ und „Communicating your policy for prohibiting the use of mobile phones in schools to parents“ (Stand 29.06.2026); Wikipedia, „Mobile phone use in schools“ (Studie von 2026 im Quarterly Journal of Economics zu Sperrbeuteln; Studie von 2017 mit etwa 100 Studierenden). Der Text ist eigen formuliert."
   - type: section
     id: neu
     title: Die Waage und der Aufbau
     blocks:
       - type: figure
         image: images/waage-kommentar.svg
-        alt: "Eine Waage zum Thema Hausaufgaben. In der roten Pro-Schale liegen zwei Gewichte, in der blauen Contra-Schale drei. Die Waage neigt sich nach rechts. Unten steht die conclusion."
-        caption: "Eine Beispielwägung zu einem anderen Thema: Jedes Gewicht ist ein Argument, die Neigung zeigt die conclusion."
+        alt: "Eine Waage zum Thema Hausaufgaben. In der roten Pro-Schale liegen zwei Gewichte, in der blauen Contra-Schale drei. Gewichte mit dem Zusatz evidence sind größer, in der Pro-Schale eines, in der Contra-Schale zwei. Die Waage neigt sich nach rechts. Unten steht die conclusion."
+        caption: "Eine Beispielwägung zu einem anderen Thema: Jedes Gewicht ist ein Argument, ein Beleg macht es schwerer, die Neigung zeigt die conclusion."
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: note
@@ -106,67 +110,71 @@ blocks:
         blocks:
           - type: text
             text: |
-              **Die Waage:** Pro liegt in der roten Schale, Contra in der blauen. Ein Argument mit Beleg wiegt mehr. Die Neigung der Waage ist die **conclusion**, die Schlussfolgerung.
+              **Die Waage:** Jede Schale der Waage besteht aus Burgern: Opinion, Reason, Example. Das Example ist der Beleg, und ein Argument mit Beleg wiegt mehr. Pro liegt in der roten Schale, Contra in der blauen. Bei der Frage „Should schools ban phones?“ ist Pro ein Argument für das Verbot, Contra ein Argument dagegen. Die Neigung der Waage ist die **conclusion**, die Schlussfolgerung.
 
               **Der Aufbau:** Die **Einleitung** nennt die Frage und kündigt beide Seiten an. Im **Hauptteil** hat jeder Absatz einen Gedanken. Erst kommen alle Pro-Absätze, dann alle Contra-Absätze, und jedes Argument hat einen Beleg (Zahl, Quelle oder Beispiel). Der **Schluss** entscheidet sich und bringt kein neues Argument. Mehr zum Gliedern von Texten: [Texte gliedern](https://lernapps.net/apps/map/englisch/c/text-gliedern/).
 
-              **Verbindungswörter:** *On the one hand … On the other hand …* (zwei Seiten) · *First of all,* *Moreover,* *In addition,* (weiteres Argument) · *However,* (Gegensatz) · *Therefore,* (Folge) · *To sum up,* *In conclusion,* (Schluss). Beispiel: *The film was long. However, it was never boring.*
+              **Verbindungswörter:** *On the one hand … On the other hand …* (zwei Seiten) · *First of all,* *Moreover,* *In addition,* (weiteres Argument) · *However,* (Gegensatz) · *Therefore,* (Folge) · *To sum up,* *In conclusion,* (Schluss). Beispiel: *The bag is cheap. However, it breaks easily.*
 
-              **Ton:** Ein Kommentar ist sachlich. Schreibe *The arguments for … are stronger* statt *I think …*.
+              **Ton:** Ein Kommentar ist sachlich. Statt *I think …* passt oft besser *In my opinion, …* oder *The arguments for … are stronger*.
   - type: section
     id: uebung
     title: Abwägen, ordnen und schreiben
     blocks:
       - type: single-choice
         id: kommentar-lesen
-        text: Welchen Beleg nennt der Kommentar dafür, dass Handys im Unterricht ablenken?
+        text: Welche Zahl nennt der Kommentar, um zu zeigen, dass Handys im Unterricht ein Problem sein können?
         options:
-          - text: 58 Prozent der Jugendlichen an weiterführenden Schulen sagen, dass Handys ohne Erlaubnis im Unterricht benutzt wurden
-            correct: true
-            info: Das steht in Absatz 2.
           - text: 31 Prozent der Kinder haben schon etwas Gemeines über Technik erlebt
             correct: false
-            info: Das gehört zu Mobbing, Absatz 4.
+            info: Das gehört zu den gemeinen Nachrichten, Absatz 4.
           - text: Der Anteil der Länder mit einem Verbot stieg auf 58 Prozent
             correct: false
             info: Das zeigt mehr Verbote, Absatz 1.
+          - text: 58 Prozent der Schülerinnen und Schüler an weiterführenden Schulen berichten von Handynutzung ohne Erlaubnis im Unterricht
+            correct: true
+            info: Das steht in Absatz 2.
           - text: Eine Studie von 2026 fand nur kleine Wirkungen
             correct: false
-            info: Das ist Contra, Absatz 6.
-        explanation: Ein Beleg stützt genau diesen Gedanken.
+            info: Das ist Contra, Absatz 7.
+        explanation: Die Zahl misst unerlaubte Nutzung, nicht direkt die Ablenkung.
       - type: multiple-choice
         id: kommentar-beleg
         text: In welchen Absätzen stehen Argumente für ein Verbot (Pro)? Wähle alle richtigen.
         options:
+          - text: Absatz 5
+            correct: false
+            info: Sicherheit spricht gegen ein Verbot.
           - text: Absatz 2
             correct: true
             info: Ablenkung spricht für ein Verbot.
+          - text: Absatz 6
+            correct: false
+            info: Lernen spricht gegen ein Verbot.
           - text: Absatz 3
             correct: true
             info: Mehr Zeit für Freunde und Bewegung.
+          - text: Absatz 7
+            correct: false
+            info: Die Studie spricht gegen zu große Erwartungen an ein Verbot.
           - text: Absatz 4
             correct: true
-            info: Weniger Mobbing.
-          - text: Absatz 5
-            correct: false
-            info: Sicherheit spricht dagegen.
-          - text: Absatz 6
-            correct: false
-            info: Lernen spricht dagegen.
+            info: Weniger gemeine Nachrichten.
         explanation: Erst kommt Pro, dann Contra.
       - type: matching
         id: kommentar-waage
-        text: "Lege Argumente zur Frage „Soll die Schule später beginnen?“ auf die Waage. Ordne jedes Argument seinem Gewicht zu."
+        text: "Lege Argumente zur Frage „Soll die Schule später beginnen?“ auf die Waage. Pro heißt hier: für den späteren Beginn. Jedes Argument ist ein Gewicht auf einer Schale, mit Pro oder Contra und seinem Thema. Ordne jedem Argument sein Gewicht zu."
         pairs:
           - left: Pupils can sleep longer in the morning.
             right: Pro · Schlaf
           - left: Buses and working hours of parents are hard to change.
             right: Contra · Fahrpläne
-          - left: Pupils are more awake in the first lesson.
-            right: Pro · Konzentration
+          - left: Pupils have time for a proper breakfast at home.
+            right: Pro · Frühstück
           - left: The school day ends later, so there is less time for clubs.
             right: Contra · Nachmittag
         explanation: Was dafür spricht, ist Pro.
+        hint: Schau in die Merke-Box.
       - type: ordering
         id: kommentar-ordnen
         text: Bringe die Absätze eines kurzen Kommentars in die richtige Reihenfolge.
@@ -174,8 +182,9 @@ blocks:
           - Some schools plan a sports day every month. Is that a good idea?
           - On the one hand, pupils move a lot and learn to play in a team.
           - On the other hand, a sports day means that pupils miss other lessons.
-          - To sum up, the pros are stronger. Therefore schools should try one sports day each month.
+          - To sum up, the pros are stronger. Therefore, schools should try one sports day each month.
         explanation: Einleitung, Pro, Contra, Schluss.
+        hint: Schau in die Merke-Box.
       - type: language-task
         id: kommentar-verbinden
         languages: { source: de, target: en }
@@ -205,11 +214,11 @@ blocks:
             target: To sum up, (a|the) school garden has more pros than cons.
             mistakes:
               - answer: To sum up, a school garden have more pros than cons.
-                message: Nach a school garden steht has.
+                message: Das Verb muss zu a school garden passen.
               - answer: To sum up, school garden has more pros than cons.
                 message: Vor school garden fehlt der Artikel.
           - cue: therefore · school · should · start · garden
-            target: Therefore the school should start a garden.
+            target: Therefore, the school should start a garden.
             mistakes:
               - answer: Therefore the school should to start a garden.
                 message: Nach should steht kein to.
@@ -219,9 +228,9 @@ blocks:
             target: In conclusion, the pros are stronger than the cons.
             mistakes:
               - answer: In conclusion, the pros stronger than the cons.
-                message: Im Satz fehlt das Verb are.
+                message: Im Satz fehlt ein Verb.
               - answer: In conclusion, the pros are stronger as the cons.
-                message: Nach stronger steht than, nicht as.
+                message: Prüfe das Wort, das nach stronger den Vergleich einleitet.
       - type: single-choice
         id: kommentar-fehler
         text: "Welcher Schluss eines Kommentars über eine längere Mittagspause ist am besten?"
@@ -229,15 +238,15 @@ blocks:
           - text: "Both sides have good arguments."
             correct: false
             info: Hier fehlt die Entscheidung.
-          - text: "To sum up, a longer break is good for most pupils. Therefore schools should try it."
-            correct: true
-            info: Er wägt ab und entscheidet.
           - text: "To sum up, a longer break is good for most pupils. Moreover, it is cheaper than a new sports hall."
             correct: false
             info: Die Sporthalle ist ein neues Argument.
-          - text: "In my opinion, I love long lunch breaks because I am always hungry."
+          - text: "I love long lunch breaks because I am always hungry."
             correct: false
             info: Zu persönlich und ohne Beleg.
+          - text: "To sum up, a longer break is good for most pupils. Therefore, schools should try it."
+            correct: true
+            info: Er wägt ab und entscheidet.
         explanation: Ein guter Schluss wägt ab und entscheidet.
       - type: language-task
         id: kommentar-hoeren
@@ -250,7 +259,7 @@ blocks:
           - audio: moreover-many-pupils-use-their-phones-to-learn-new-things.mp3
             target: Moreover, many pupils use their phones to learn new things.
           - audio: therefore-the-school-should-listen-to-pupils-and-parents.mp3
-            target: Therefore the school should listen to pupils and parents.
+            target: Therefore(,|) the school should listen to pupils and parents.
   - type: section
     id: anwenden
     title: Dein eigener Kommentar
@@ -285,11 +294,11 @@ blocks:
 
           Some schools offer cooking lessons, while others use the time for other subjects. This comment weighs both sides.
 
-          On the one hand, cooking is a useful skill for life. For example, a pupil who can make a simple meal can look after himself or herself later. Moreover, cooking in a group trains teamwork.
+          On the one hand, cooking is a useful skill for life. For example, a pupil who can make a simple meal can look after himself or herself later. Moreover, cooking in a group builds teamwork.
 
           On the other hand, cooking lessons need a kitchen, equipment and money. For example, a school without a kitchen would have to build one first. However, this problem can be solved step by step.
 
-          To sum up, both sides have strong arguments, but the skill is more important than the cost. Therefore every pupil should learn to cook, even if a school needs time to build a kitchen.
+          To sum up, both sides have strong arguments, but the skill is more important than the cost. Therefore, every pupil should learn to cook, even if a school needs time to build a kitchen.
         hint: Die App bewertet nicht. Prüfe deinen Text anhand der Punkte.
   - type: section
     id: weiter

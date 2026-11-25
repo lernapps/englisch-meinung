@@ -11,21 +11,21 @@ blocks:
       - type: figure
         image: images/szene-meinung-sagen.svg
         alt: "Im Klassenzimmer hängen links ein Poster mit vier beschrifteten bunten Schichten und rechts ein Meinungsbarometer mit der Skala disagree bis agree und zwei Namenskärtchen, Peter und Ellie. Ellie, Peter und Amir stehen links, Mr Hill steht rechts und fragt in einer Sprechblase: „What do you think?“"
-        caption: "An der Meinungswand: links das Poster Argument-Burger, rechts das Meinungsbarometer. Von links: Ellie (roter Pferdeschwanz), Amir (Brille), Peter (gelbe Jacke) und Mr Hill (graue Haare)."
+        caption: "An der Meinungswand: links das Poster Argument-Burger, rechts das Meinungsbarometer mit den Kärtchen von Peter und Ellie. Von links: Ellie (roter Pferdeschwanz), Amir (Brille), Peter (gelbe Jacke) und Mr Hill (graue Haare)."
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: text
-        text: "Mr Hill fragt die Klasse: „What do you think?“ (Was denkt ihr?) Jeder stellt sein Namenskärtchen auf das **Meinungsbarometer**. Dann sagt jeder, warum."
+        text: "Mr Hill fragt die Klasse: „What do you think?“ (Was denkt ihr?) Jeder stellt sein Namenskärtchen auf das **Meinungsbarometer**."
       - type: single-choice
         id: sagen-start
         text: Welcher Satz sagt eine Meinung?
         options:
-          - text: I think the school bus is too slow
-            correct: true
-            info: Das ist eine Meinung. Eine andere Person kann anders denken.
           - text: The school bus comes at eight
             correct: false
             info: Das ist eine Tatsache. Man kann sie prüfen.
+          - text: I think the school bus is too slow
+            correct: true
+            info: Das ist eine Meinung. Eine andere Person kann anders denken.
           - text: The school bus has forty seats
             correct: false
             info: Das ist eine Tatsache. Man kann sie zählen.
@@ -82,7 +82,7 @@ blocks:
 
           **10** Sophie: In the middle. I am not sure yet.
 
-          **11** Ellie: A second lunch queue would help everyone.
+          **11** Ellie: We need a second lunch queue for everyone.
 
           **12** Amir: Good idea. I agree with that.
   - type: section
@@ -100,7 +100,9 @@ blocks:
         blocks:
           - type: text
             text: |
-              **Meinung sagen:** *In my opinion, …* oder *I think that …*. Nimm nur einen der beiden Ausdrücke, nicht *In my opinion I think*. **Zustimmen:** *I agree.* **Widersprechen:** *I disagree.* Nach *I* steht *agree* ohne *am*: nicht *I am agree*. Für *think* gilt dasselbe: *I think*, nicht *I am thinking*. Das Kärtchen links heißt disagree, rechts agree, in der Mitte steht man bei *I am not sure*.
+              Ein **Fach** ist eine Gruppe von Ausdrücken, die dasselbe tun.
+
+              **Meinung sagen:** *In my opinion, …*, *I think that …* oder *I believe that …*. **Zustimmen:** *I agree.*, *You are right.* oder *That is true.* **Widersprechen:** *I disagree.* oder *I do not agree.* Nach *I* steht *agree* ohne *am*: nicht *I am agree*. Für *think* gilt dasselbe: *I think*, nicht *I am thinking*. Das Kärtchen links heißt disagree, rechts agree, in der Mitte steht man bei *I am not sure*.
   - type: section
     id: uebung
     title: Ausdrücke sortieren, einsetzen und schreiben
@@ -109,12 +111,12 @@ blocks:
         id: sagen-lesen
         text: Was meint Ellie über die Mittagspause?
         options:
-          - text: Sie ist zu kurz
-            correct: true
-            info: Das sagt Ellie in Zeile 2.
           - text: Sie ist lang genug
             correct: false
             info: Das glaubt Amir in Zeile 3.
+          - text: Sie ist zu kurz
+            correct: true
+            info: Das sagt Ellie in Zeile 2.
           - text: Sie ist zu lang
             correct: false
             info: Das sagt in dem Chat niemand.
@@ -123,22 +125,25 @@ blocks:
         id: sagen-beleg
         text: In welchen Zeilen stimmt jemand einer anderen Person zu? Wähle alle richtigen.
         options:
+          - text: Zeile 3
+            correct: false
+            info: Hier widerspricht Amir.
           - text: Zeile 5
             correct: true
             info: Amir sagt That is true zu Sophie.
+          - text: Zeile 7
+            correct: false
+            info: Hier widerspricht Amir Ellie.
+          - text: Zeile 8
+            correct: true
+            info: Sophie sagt I agree zu Ellie und zu Amir.
           - text: Zeile 6
             correct: true
             info: Ellie sagt You are right zu Sophie.
           - text: Zeile 12
             correct: true
             info: Amir sagt I agree zu Ellies Idee.
-          - text: Zeile 3
-            correct: false
-            info: Hier widerspricht Amir mit I disagree.
-          - text: Zeile 7
-            correct: false
-            info: Hier widerspricht Amir Ellie.
-        explanation: Zustimmen heißt, dass jemand dasselbe denkt.
+        explanation: Zustimmen heißt dasselbe denken.
       - type: matching
         id: sagen-faecher
         text: In welches Fach gehört der Ausdruck?
@@ -149,7 +154,7 @@ blocks:
             right: Zustimmen
           - left: I do not agree with you.
             right: Widersprechen
-        explanation: Jeder Ausdruck hat ein Fach.
+        explanation: Jedes Fach hat einen Ausdruck.
       - type: language-task
         id: sagen-luecken
         languages: { source: de, target: en }
@@ -170,45 +175,49 @@ blocks:
         id: sagen-barometer
         text: "Mr Hill fragt: „Is a school uniform a good idea?“ Peter sagt: „I do not agree.“ Wo steht sein Kärtchen?"
         options:
-          - text: Links, bei disagree
-            correct: true
-            info: Peter widerspricht, darum steht sein Kärtchen links.
-          - text: In der Mitte
-            correct: false
-            info: In der Mitte steht, wer sagt I am not sure.
           - text: Rechts, bei agree
             correct: false
             info: Rechts steht, wer zustimmt. Peter stimmt nicht zu.
-        explanation: Wer widerspricht, steht bei disagree.
+          - text: In der Mitte
+            correct: false
+            info: In der Mitte steht, wer sagt I am not sure.
+          - text: Links, bei disagree
+            correct: true
+            info: Peter widerspricht, darum steht sein Kärtchen links.
+        explanation: Widerspruch steht links.
       - type: language-task
         id: sagen-satz
         languages: { source: de, target: en }
-        task: "Schreibe die Sätze auf Englisch. Satz 1: Meiner Meinung nach macht Fußball Spaß. Satz 2: Ich bin nicht deiner Meinung. Satz 3: Ich denke, Musik ist wichtig. Die englischen Wörter sind nur eine Hilfe: Ergänze, was für einen ganzen Satz fehlt."
+        task: "Schreibe die Sätze auf Englisch. Satz 1: Meiner Meinung nach macht Fußball Spaß. Satz 2: Ich bin nicht deiner Meinung. Satz 3: Ich denke, Musik ist wichtig. Ergänze, was für einen ganzen Satz fehlt."
         form: { case: hint, punctuation: ok, apostrophe: ok }
         items:
           - cue: in my opinion · football · fun
-            target: In my opinion, football is fun.
+            target: (In my opinion, football is fun|I think football is fun|I think that football is fun).
             mistakes:
-              - answer: In my opinion I think football is fun.
+              - answer: In my opinion(,|) I think football is fun(.|)
                 message: Du sagst die Meinung doppelt. Nimm nur einen der beiden Ausdrücke.
-              - answer: In my opinion, football fun.
-                message: Im englischen Satz braucht es ein Verb, hier is.
+              - answer: In my opinion(,|) football fun(.|)
+                message: Im Satz fehlt ein Verb.
+              - answer: I think football fun(.|)
+                message: Im Satz fehlt ein Verb.
           - cue: I · not · agree · you
-            target: I (do not|don't) agree with you.
+            target: (I do not agree with you|I don't agree with you|I disagree with you).
             mistakes:
-              - answer: I am not agree with you.
-                message: Nach I steht agree ohne am. Für nicht braucht agree das Wort do.
-              - answer: I not agree with you.
-                message: Für nicht braucht agree das Wort do.
-              - answer: I (do not|don't) agree you.
-                message: Nach agree fehlt with.
+              - answer: I am not agree with you(.|)
+                message: Nach I steht agree ohne am. Zum Verneinen braucht das Verb ein Hilfsverb.
+              - answer: I am disagree with you(.|)
+                message: Nach I steht disagree ohne am.
+              - answer: I not agree with you(.|)
+                message: Zum Verneinen braucht das Verb ein Hilfsverb.
+              - answer: I (do not|don't) agree you(.|)
+                message: Hier fehlt ein Wort nach agree.
           - cue: I · think · music · important
             target: I think (that |)music is important.
             mistakes:
-              - answer: I am thinking that music is important.
+              - answer: I am thinking (that |)music is important(.|)
                 message: Wer seine Meinung sagt, benutzt think ohne am und ohne -ing.
-              - answer: I think that music important.
-                message: Im that-Satz fehlt das Verb is.
+              - answer: I think (that |)music important(.|)
+                message: Im Satz mit think fehlt ein Verb.
       - type: language-task
         id: sagen-hoeren
         languages: { source: de, target: en }
@@ -223,7 +232,7 @@ blocks:
             target: I disagree, because the room is too small.
   - type: section
     id: anwenden
-    title: Deine Karte an der Meinungswand
+    title: Dein Kärtchen an der Meinungswand
     blocks:
       - type: speaking-task
         id: sagen-nachsprechen

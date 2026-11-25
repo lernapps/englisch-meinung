@@ -47,7 +47,7 @@ blocks:
           - target: process
             source: Verfahren
           - target: ink
-            source: Tinte
+            source: Druckfarbe
           - target: recycled
             source: wiederverwertet
           - target: chain
@@ -98,7 +98,7 @@ blocks:
             text: |
               **Passiv in der Vergangenheit:** was oder were und das Partizip. *The poster was made in a week.* Die Person nennst du mit **by**: *The poster was made by the class.*
 
-              **Passiv heute:** is oder are und das Partizip. *A pen is used for writing.* Das Material nennst du mit **from**: *The table is made from wood.* Das heißt **by** für die Person und **from** für das Material, also nie *invented from*.
+              **Passiv heute:** is oder are und das Partizip. *A pen is used for writing.* Das Material nennst du mit **of** (man erkennt es noch: *The table is made of wood.*) oder mit **from** (es wird verarbeitet: *Paper is made from wood.*). **by** nennt die Person, also nie *invented from*.
 
               Das Partizip endet oft auf -ed (invent, invented). Einige sind unregelmäßig: build, built, make, made, write, written. Nach was steht nie die Grundform (*was invent*) und nie die ing-Form (*was inventing*).
 
@@ -147,10 +147,10 @@ blocks:
           - source: Der Brief wurde von Ellie geschrieben.
             target: "The letter was [written] by Ellie."
           - source: Die Tasche wurde aus Plastik gemacht.
-            target: "The bag was made [from] plastic."
+            target: "The bag was made [from|of] plastic."
           - source: Das Buch wird von vielen Kindern gelesen.
             target: "The book is [read] by many children."
-        explanation: Nach was oder is steht das Partizip. By nennt die Person, from das Material.
+        explanation: Nach was oder is steht das Partizip. By nennt die Person, of oder from das Material.
       - type: language-task
         id: technik-passiv
         languages: { source: de, target: en }
@@ -165,7 +165,7 @@ blocks:
               - answer: The web was inventing in 1989.
                 message: Das Passiv braucht das Partizip. Die ing-Form gehört nicht dazu.
               - answer: The web invented in 1989.
-                message: Im Passiv fehlt das Wort was.
+                message: Im Passiv fehlt ein Hilfsverb.
               - answer: The web was invented at 1989.
                 message: Vor einer Jahreszahl steht ein anderes kleines Wort.
           - cue: window · open · Mr Hill
@@ -176,12 +176,12 @@ blocks:
               - answer: The window was opened from Mr Hill.
                 message: Die Person steht nach by, nicht nach from.
               - answer: The window opened by Mr Hill.
-                message: Im Passiv fehlt das Wort was.
+                message: Im Passiv fehlt ein Hilfsverb.
           - cue: bicycles · use · travel
-            target: Bicycles are used for travelling.
+            target: Bicycles are used for (travelling|travel).
             mistakes:
               - answer: Bicycles are use for travelling.
-                message: Nach are steht das Partizip used.
+                message: Prüfe die Form des Verbs nach are. Das Passiv braucht ein Partizip.
               - answer: Bicycles is used for travelling.
                 message: Bicycles ist Mehrzahl. Dazu passt eine andere Form von be.
               - answer: Bicycles are used to travelling.

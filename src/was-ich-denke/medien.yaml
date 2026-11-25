@@ -15,20 +15,20 @@ blocks:
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: text
-        text: "Mr Hill hängt eine neue Aussage an die Meinungswand. Drei Kärtchen stehen schon auf dem Barometer."
+        text: "Mr Hill hängt eine neue Aussage an die Meinungswand."
       - type: single-choice
         id: medien-start
         text: Wer stimmt der Aussage am meisten zu?
         options:
-          - text: Sophie
-            correct: true
-            info: Ihr Kärtchen steht am weitesten rechts, bei agree.
           - text: Amir
             correct: false
             info: Sein Kärtchen steht rechts, aber nicht ganz außen.
           - text: Ellie
             correct: false
             info: Ihr Kärtchen steht links von der Mitte.
+          - text: Sophie
+            correct: true
+            info: Ihr Kärtchen steht am weitesten rechts, bei agree.
         explanation: Rechts heißt mehr Zustimmung.
       - type: text
         text: "**Das kannst du danach:** Du sprichst über soziale Medien, nennst Chancen und Gefahren und sagst deine Meinung dazu."
@@ -69,7 +69,7 @@ blocks:
           - target: address
             source: Adresse
       - type: text
-        text: "Mr Hill fragt die Klasse im Chat, was sie über soziale Medien denkt. Die Zahlen sind die Zeilen."
+        text: "Mr Hill fragt im Chat nach sozialen Medien. Die Zahlen sind die Zeilen."
       - type: text
         text: |
           **1** Mr Hill: People use social media every day. Is it a chance or a danger? Where is your card?
@@ -106,7 +106,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              **interested in:** *I am interested in music.* *Interesting* heißt spannend, *interested* heißt, dass du dich interessierst. **on:** *on the internet, on social media*, nicht *in*. **for und since:** *for* steht bei einem Zeitraum (*for a week*), *since* bei einem Zeitpunkt (*since Monday*).
+              **interested in:** *I am interested in music.* *Interesting* heißt interessant, *interested* heißt, dass du dich interessierst. **on:** *on social media, on a website*, nicht *in*. **for und since:** *for* steht bei einem Zeitraum (*for a week*), *since* bei einem Zeitpunkt (*since Monday*). Dazu steht *have* oder *has* und eine zweite Verbform: *I have lived here for a week.*
 
               **Zwei Seiten zeigen:** *Some people say that games are loud, but I think they are fun.*
   - type: section
@@ -117,12 +117,12 @@ blocks:
         id: medien-lesen
         text: Warum findet Sophie soziale Medien gut?
         options:
-          - text: Sie schickt ihren Freunden Nachrichten
-            correct: true
-            info: Das sagt Sophie in Zeile 2.
           - text: Sie folgt einer Gruppe von Fotografen
             correct: false
             info: Das macht Amir in Zeile 3.
+          - text: Sie schickt ihren Freunden Nachrichten
+            correct: true
+            info: Das sagt Sophie in Zeile 2.
           - text: Sie sieht jeden Tag drei Stunden Videos
             correct: false
             info: Das erzählt Ellie in Zeile 4.
@@ -184,24 +184,24 @@ blocks:
           - cue: we · be · friends · social media
             target: We are friends on social media.
             mistakes:
-              - answer: We are friends in social media.
-                message: Vor social media steht on, nicht in.
-              - answer: We friends on social media.
-                message: Im englischen Satz braucht es ein Verb, hier are.
+              - answer: We are friends in social media(.|)
+                message: Mit social media steht nicht in.
+              - answer: We friends on social media(.|)
+                message: Im Satz fehlt ein Verb.
           - cue: my · friend · post · photo · every week
             target: My friend posts a photo every week.
             mistakes:
-              - answer: My friend post a photo every week.
+              - answer: My friend post a photo every week(.|)
                 message: Bei he, she und it, also auch my friend, braucht das Verb ein -s.
-              - answer: My friend posts photo every week.
-                message: Vor photo fehlt der Artikel a.
+              - answer: My friend posts photo every week(.|)
+                message: Vor photo fehlt ein Artikel.
           - cue: some people · say · apps · fun · but · I · think · they · take · too much time
             target: Some people say (that |)apps are fun, but I think (that |)they take too much time.
             mistakes:
-              - answer: Some people says apps are fun, but I think they take too much time.
+              - answer: Some people says (that |)apps are fun, but I think (that |)they take too much time(.|)
                 message: Some people sind mehrere Personen, darum steht say ohne -s.
-              - answer: Some people say apps fun, but I think they take too much time.
-                message: Im ersten Teil fehlt das Verb are.
+              - answer: Some people say (that |)apps fun, but I think (that |)they take too much time(.|)
+                message: Im ersten Teil fehlt ein Verb.
       - type: language-task
         id: medien-hoeren
         languages: { source: de, target: en }
@@ -254,4 +254,4 @@ blocks:
     blocks:
       - type: text
         text: |
-          In diesem Kapitel hast du drei Dinge gelernt. Du sagst deine Meinung, stimmst zu und widersprichst. Du stützt eine Meinung mit dem Argument-Burger. Und du sprichst über Sport, Musik, Fernsehen und soziale Medien. Im nächsten Kapitel verbindest du deine Argumente.
+          In diesem Kapitel hast du drei Dinge gelernt. Du sagst deine Meinung, stimmst zu und widersprichst, stützt sie mit dem Argument-Burger und sprichst über Sport, Musik, Fernsehen und soziale Medien. Im nächsten Kapitel verbindest du deine Argumente.

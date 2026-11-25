@@ -52,13 +52,15 @@ blocks:
     id: brauchen-that
     text: Welcher Satz ist richtig?
     options:
-      - text: I think that the film is good
-        correct: true
-        info: Nach think steht ein ganzer Satz mit Verb, hier is.
-      - text: I am thinking that the film is good
-        correct: false
-        info: Wer seine Meinung sagt, benutzt think ohne am und ohne -ing.
       - text: I think that the film good
         correct: false
         info: Im that-Satz fehlt das Verb is.
-    explanation: Meinung sagen heißt I think, ohne am und ohne -ing.
+      - text: I think that the film is good
+        correct: true
+        info: Nach think steht ein ganzer Satz mit Verb, hier is.
+      - text: I think that the film good is
+        correct: false
+        info: Im englischen Satz steht das Verb vor good, nicht am Ende.
+    explanation: Meinung sagen heißt I think, ohne am und ohne -ing, dann ein ganzer Satz mit Verb.
+  - type: text
+    text: "**Wie es weitergeht:** Auf den nächsten Seiten sagst du deine Meinung, stimmst zu und widersprichst. Danach stützt du sie mit einem Grund und einem Beispiel."

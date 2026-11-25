@@ -100,7 +100,7 @@ blocks:
 
               - **However** zeigt einen Gegensatz: *I like the park. However, it is often windy.*
               - **Therefore** zeigt eine Folge: *The pool is closed. Therefore, we play outside.*
-              - **Moreover** ergänzt etwas Gleichgerichtetes: *The museum is free. Moreover, it is warm inside.*
+              - **Moreover** ergänzt etwas Zusätzliches: *The museum is free. Moreover, it is warm inside.*
               - **On the one hand … on the other hand …** zeigt zwei Seiten einer Sache: *On the one hand, a cat is quiet. On the other hand, it needs care.*
 
               Diese Wörter beginnen einen neuen Satz: Davor steht ein Punkt, danach ein Komma. Zwei ganze Sätze nur mit einem Komma zu verbinden ist ein Fehler. **However** und **because** sind verschieden: Because gibt einen Grund, however einen Gegensatz. Und **but** und **however** zusammen brauchst du nie.
@@ -170,7 +170,7 @@ blocks:
         explanation: Gegensatz, Folge, Ergänzung.
       - type: ordering
         id: verbinden-ordnen
-        text: Bringe die Sätze in eine gute Reihenfolge. Es sind ein Burger und ein Schild.
+        text: Bringe die Sätze in eine gute Reihenfolge. Zwei Sätze beginnen mit einem Schild.
         items:
           - I like walking to school.
           - It is good for my health.

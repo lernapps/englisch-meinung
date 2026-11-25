@@ -15,17 +15,17 @@ blocks:
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: text
-        text: "An der **Meinungswand** stellen die Kinder ihr Kärtchen auf agree oder disagree. Sophie sagt: „I think pizza is the best food.“ Mr Hill fragt: „Why do you think so?“ (Warum denkst du das?) Sophie hat gesagt, was sie meint. Mr Hill will mehr wissen."
+        text: "An der **Meinungswand** stellen die Kinder ihr Kärtchen auf agree oder disagree. Sophie sagt: „I think pizza is the best food.“ Mr Hill fragt: „Why do you think so?“ (Warum denkst du das?)"
       - type: single-choice
         id: begruenden-start
         text: Was braucht Sophie jetzt für ihre Antwort?
         options:
-          - text: Eine Begründung für ihre Meinung
-            correct: true
-            info: Mr Hill fragt nach dem Warum.
           - text: Dieselbe Meinung noch einmal
             correct: false
             info: Das sagt nichts Neues.
+          - text: Eine Begründung für ihre Meinung
+            correct: true
+            info: Mr Hill fragt nach dem Warum.
           - text: Eine Frage an Mr Hill
             correct: false
             info: Mr Hill hat schon gefragt.
@@ -34,7 +34,7 @@ blocks:
         text: "**Das kannst du danach:** Du antwortest auf Why? mit einem Burger aus vier Sätzen."
   - type: section
     id: lesen
-    title: Zwei Burger in einem Chat
+    title: Ein Chat über einen Filmabend
     blocks:
       - type: vocabulary
         caption: Klassenzimmer-Poster · Wörter zum Chat
@@ -63,7 +63,7 @@ blocks:
           - target: opinion
             source: Meinung
       - type: text
-        text: "Ellie, Amir und Sophie wählen einen Film für Freitag. Die Zahlen sind die Zeilen."
+        text: "Ellie, Amir und Sophie wählen einen Film für Freitag. Achte darauf, wer einen Grund und wer ein Beispiel nennt und wo eine Schicht fehlt. Die Zahlen sind die Zeilen."
       - type: text
         text: |
           **1** Ellie: Mr Hill says we can choose a film for Friday. Cinema or home?
@@ -102,7 +102,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              **Eine Meinung braucht vier Schichten.** Oben steht die Meinung (**Opinion**), zum Beispiel mit *I think …*. Dann kommt der Grund (**Reason**), meist mit *because*. Danach folgt ein Beispiel (**Example**), meist mit *For example, …*. Unten sagst du die Meinung noch einmal, zum Beispiel mit *So …* oder *That is why …*. Nach *because* steht ein ganzer Satz mit Verb. Der Grund hängt am Satz davor: *I like it because …*.
+              **Eine Meinung braucht vier Schichten.** Oben steht die Meinung (**Opinion**), zum Beispiel mit *I think …*. Dann kommt der Grund (**Reason**), meist mit *because*. Danach folgt ein Beispiel (**Example**), meist mit *For example, …*. Unten sagst du die Meinung noch einmal, zum Beispiel mit *So …* oder *That is why …*. Nach *because* steht ein ganzer Satz mit Verb. Der Grund hängt am Satz davor: *I like it because …*. Ein Beispiel erzählt oft, was passiert ist. Dann steht das Verb meist im simple past: *I visited a museum.* Manche Verben ändern sich ganz, zum Beispiel *see* zu *saw*.
   - type: section
     id: uebung
     title: Schichten finden, ordnen und schreiben
@@ -111,32 +111,32 @@ blocks:
         id: begruenden-lesen
         text: Warum findet Amir das Kino besser als zu Hause?
         options:
-          - text: Die Leinwand ist riesig
-            correct: true
-            info: Das sagt Amir in Zeile 4.
           - text: Das Kino ist billiger
             correct: false
             info: Das sagt Sophie über zu Hause.
           - text: Man kann den Film anhalten
             correct: false
             info: Das sagt Ellie über zu Hause.
+          - text: Die Leinwand ist riesig
+            correct: true
+            info: Das sagt Amir in Zeile 4.
         explanation: Amirs Grund steht nach because.
       - type: multiple-choice
         id: begruenden-beleg
         text: In welchen Zeilen steht ein Beispiel? Wähle alle richtigen.
         options:
-          - text: Zeile 4
-            correct: true
-            info: "Amir erzählt vom letzten Film im Kino: For example, …"
-          - text: Zeile 7
-            correct: true
-            info: "Ellie erzählt vom letzten Sonntag: For example, …"
           - text: Zeile 2
             correct: false
             info: Hier sagt Amir nur seine Meinung.
+          - text: Zeile 4
+            correct: true
+            info: "Amir erzählt vom letzten Film im Kino: For example, …"
           - text: Zeile 5
             correct: false
             info: Hier sagt Ellie nur ihre Meinung.
+          - text: Zeile 7
+            correct: true
+            info: "Ellie erzählt vom letzten Sonntag: For example, …"
         explanation: Ein Beispiel erzählt, was wirklich passiert ist.
       - type: matching
         id: begruenden-schichten
@@ -155,18 +155,18 @@ blocks:
         id: begruenden-fehlt
         text: "Lies die Meinung: „I think cycling is great. For example, I cycle to the park every Saturday. So cycling is my favourite hobby.“ Welche Schicht fehlt?"
         options:
-          - text: Der Grund
-            correct: true
-            info: Es fehlt ein Satz mit because.
+          - text: Keine Schicht
+            correct: false
+            info: Prüfe, ob zwischen Meinung und Beispiel eine Schicht fehlt.
           - text: Das Beispiel
             correct: false
             info: Der Satz mit For example ist da.
           - text: Die Meinung unten
             correct: false
             info: Der letzte Satz mit So ist die Meinung unten.
-          - text: Keine Schicht
-            correct: false
-            info: Der Grund fehlt.
+          - text: Der Grund
+            correct: true
+            info: Es fehlt ein Satz mit because.
         explanation: Zuerst die Meinung, dann der Grund, dann das Beispiel.
       - type: ordering
         id: begruenden-ordnen
@@ -186,25 +186,25 @@ blocks:
           - cue: I · think · reading · useful
             target: I think (that |)reading is useful.
             mistakes:
-              - answer: I am think reading is useful.
+              - answer: I am think (that |)reading is useful(.|)
                 message: Nach I steht think ohne am.
-              - answer: I think reading useful.
-                message: Im englischen Satz braucht es ein Verb, hier is.
+              - answer: I think (that |)reading useful(.|)
+                message: Im Satz fehlt ein Verb.
           - cue: I · like · trains · because · quiet
             target: I like trains because (they are|they're) quiet.
             mistakes:
-              - answer: I like trains because quiet.
+              - answer: I like trains because quiet(.|)
                 message: Hinter because fehlt ein Verb.
-              - answer: I like trains because they quiet.
-                message: Nach because fehlt das Verb are.
-              - answer: I like trains because of they are quiet.
+              - answer: I like trains because they quiet(.|)
+                message: Nach because steht ein ganzer Satz, aber im Satz fehlt ein Verb.
+              - answer: I like trains because of they are quiet(.|)
                 message: Vor einem ganzen Satz steht because, nicht because of.
           - cue: for example · I · read · book · every week
             target: For example, I read a book every week.
             mistakes:
-              - answer: For example, I read book every week.
-                message: Vor book fehlt der Artikel a.
-              - answer: For example, I reading a book every week.
+              - answer: For example(,|) I read book every week(.|)
+                message: Vor book fehlt ein Artikel.
+              - answer: For example(,|) I reading a book every week(.|)
                 message: Nach I steht read ohne ing.
       - type: language-task
         id: begruenden-hoeren
